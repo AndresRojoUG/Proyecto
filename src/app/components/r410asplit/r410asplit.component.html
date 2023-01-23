@@ -1,0 +1,440 @@
+<div id="menu" class="menuu">
+
+
+  <img src="../../../assets/imagenes/hvac.png" alt="">
+  <div style="border-style: solid; border-width: 1px; margin-top: 15px;"></div>
+  <nav class="navbar">
+    <h4 class="animate__animated animate__bounce"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+        fill="currentColor" class="bi bi-patch-question" viewBox="0 0 16 16">
+        <path
+          d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z" />
+        <path
+          d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z" />
+        <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
+      </svg> Tipo de servicio</h4>
+    <ul>
+      <li><a (click)="mostrarMantenimiento()">Mantenimiento</a></li>
+      <li><a (click)="mostrarReparacion()">Reparacion</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="../home/#company">Contacto</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="contenido ">
+
+
+  <div class="contenedor">
+    <h1 style="text-align: center; margin-top: 1rem;" class="animate__jello"> HVAC SYSTEMS SUPPORT <svg
+        xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-snow2"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 16a.5.5 0 0 1-.5-.5v-1.293l-.646.647a.5.5 0 0 1-.707-.708L7.5 12.793v-1.086l-.646.647a.5.5 0 0 1-.707-.708L7.5 10.293V8.866l-1.236.713-.495 1.85a.5.5 0 1 1-.966-.26l.237-.882-.94.542-.496 1.85a.5.5 0 1 1-.966-.26l.237-.882-1.12.646a.5.5 0 0 1-.5-.866l1.12-.646-.884-.237a.5.5 0 1 1 .26-.966l1.848.495.94-.542-.882-.237a.5.5 0 1 1 .258-.966l1.85.495L7 8l-1.236-.713-1.849.495a.5.5 0 1 1-.258-.966l.883-.237-.94-.542-1.85.495a.5.5 0 0 1-.258-.966l.883-.237-1.12-.646a.5.5 0 1 1 .5-.866l1.12.646-.237-.883a.5.5 0 0 1 .966-.258l.495 1.849.94.542-.236-.883a.5.5 0 0 1 .966-.258l.495 1.849 1.236.713V5.707L6.147 4.354a.5.5 0 1 1 .707-.708l.646.647V3.207L6.147 1.854a.5.5 0 1 1 .707-.708l.646.647V.5a.5.5 0 0 1 1 0v1.293l.647-.647a.5.5 0 1 1 .707.708L8.5 3.207v1.086l.647-.647a.5.5 0 1 1 .707.708L8.5 5.707v1.427l1.236-.713.495-1.85a.5.5 0 1 1 .966.26l-.236.882.94-.542.495-1.85a.5.5 0 1 1 .966.26l-.236.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.883.237a.5.5 0 1 1-.26.966l-1.848-.495-.94.542.883.237a.5.5 0 1 1-.26.966l-1.848-.495L9 8l1.236.713 1.849-.495a.5.5 0 0 1 .259.966l-.883.237.94.542 1.849-.495a.5.5 0 0 1 .259.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.236.883a.5.5 0 1 1-.966.258l-.495-1.849-.94-.542.236.883a.5.5 0 0 1-.966.258L9.736 9.58 8.5 8.866v1.427l1.354 1.353a.5.5 0 0 1-.707.708l-.647-.647v1.086l1.354 1.353a.5.5 0 0 1-.707.708l-.647-.647V15.5a.5.5 0 0 1-.5.5z" />
+      </svg></h1>
+    <div class="imagen__mantenimiento">
+      <img
+        style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+        src="../../../assets/equipos/R-410a_split_system.PNG" alt="">
+    </div>
+    <div class="mantenimiento__split" [hidden]="mantenimiento">
+      <h3 style="text-align: center; margin-top: 1rem; "><strong>Mantenimiento para R-410a Split</strong> </h3>
+      <!--fORMULARIO PARA EL APARTADO DE MANTENIMIENTO -->
+      <div class="formulario__mantenimiento">
+        <div class="form__posicion">
+          <div class="card" style="width: 57rem; border-radius: 35px; background-color: #1982c4;">
+
+            <div class="card-body">
+              <form id="formulari__mantenimento_principal" [formGroup]="formLogin" (ngSubmit)="agregarNuevaBitacora()"
+                novalidate>
+                <div class="form-inline">
+                  <div class="pregunta1">
+                    <h3 style="text-align: center;">paso1</h3>
+
+                    <div class="row" style="display: flex;  align-items: center; ">
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+
+                          <label class="form-check-label" for="exampleRadios1">
+                            adsadlkkaskslkklkjsadjklasdjs
+                          </label>
+                          <input style="width: 130px;" id="exampleRadio" type="text" class="form-control"
+                            formControlName="paso1" required="">
+                        </div>
+                      </div>
+
+                      <div class="col-md-2">
+                        <div class="form-check ">
+
+                          <input style="margin-bottom: 0;" class="btn btn-warning" (click)="paso1('R-410a_split_system.PNG')" type="button"
+                            value="archivo">
+
+                        </div>
+
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-check ">
+
+                          <input class="btn btn-warning" (click)="paso1('R-410a_split_system.PNG')" type="button"
+                            value="archivo">
+                        </div>
+
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" formControlName="paso1check"
+                            (click)="mostrarSiguiente('paso2')" name="exampleRadios" id="exampleRadio" value="option2"
+                            required>
+                          <label class="form-check-label" for="exampleRadio">
+                            Hecho
+                          </label>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+                  </div>
+
+
+                  <div class="pregunta2" [hidden]="paso2">
+                    <h3 style="text-align: center;">paso2</h3>
+                    <div class="row" style="display: flex;  align-items: center;">
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <label class="form-check-label" for="exampleRadios">
+                            adsadlkkaskslkklkjsadjklasdjs
+                          </label>
+                          <input style="width: 130px;" id="exampleRadios" type="text" class="form-control"
+                            formControlName="paso2" required>
+
+                        </div>
+                      </div>
+
+                      <div class="col-md-2">
+                        <div class="form-check ">
+                          <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                          <input class="btn btn-warning" (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')"
+                            type="button" value="archivo">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-check ">
+
+                          <input class="btn btn-warning"
+                            (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')" type="button"
+                            value="archivo">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" formControlName="paso2check"
+                            (click)="mostrarSiguiente('paso3')" name="exampleRadios" id="exampleRadios" value="option2"
+                            required>
+                          <label class="form-check-label" for="exampleRadios">
+                            Hecho
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                  </div>
+
+                  <div class="pregunta3" [hidden]="paso3">
+                    <h3 style="text-align: center;">paso3</h3>
+                    <div class="row" style="display: flex;  align-items: center;">
+<div class="col-md-6">
+ <div class="form-check">
+                      <label class="form-check-label" for="exampleRadio1">
+                        adsadlkkaskslkklkjsadjklasdjs
+                      </label>
+                      <input style="width: 130px;" id="exampleRadio1" type="text" class="form-control"
+                        formControlName="paso3" required>
+
+                    </div>
+</div>
+<div class="col-md-2">
+
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')" type="button"
+                        value="archivo">
+
+                    </div>
+</div>
+<div class="col-md-2">
+<div class="form-check ">
+
+                      <input class="btn btn-warning" (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')"
+                        type="button" value="lanzar modal XL">
+                   
+
+                    </div>
+</div>
+<div class="col-md-2">
+<div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="paso3check"
+                        (click)="mostrarSiguiente('botonMantenimiento')" name="exampleRadios" id="exampleRadio2"
+                        value="option2" required>
+                      <label class="form-check-label" for="exampleRadio2">
+                        Hecho
+                      </label>
+                    </div>
+</div>
+                    </div>
+                   
+                    
+
+                    
+
+
+
+
+
+
+
+
+
+
+                  </div>
+
+
+                </div>
+
+                <input hidden="true" type="number" [value]="posicionn" formControlName="posicion">
+
+                <button [hidden]="botonMantenimiento" type="submit" class="btn btn-enviar">Enviar</button>
+              </form>
+
+
+            </div>
+          </div>
+
+        </div>
+        <div class="containe_form">
+          <h2 style="text-align: center;margin-top: 1rem; ">BITACORA</h2>
+          <div s class="tabla__mantenimiento">
+
+            <table class="table table-hover table-primary">
+              <thead>
+
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr *ngFor="let bit of bitacora | slice:start:start+5">
+                  <td>id peroo {{ bit.posicion }}</td>
+                  <td>{{ bit.paso1 }}</td>
+                  <td>{{ bit.paso2 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.paso3 }}</td>
+                  <td>{{ bit.fecha | date}}</td>
+
+                </tr>
+
+
+              </tbody>
+            </table>
+
+
+
+          </div>
+          <!--PARA PODER CAMBIAR DE PAGINAS EN LA TABLA-->
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" (click)="paginatioNext('regresa')">Previous</a></li>
+              <li class="page-item"><a class="page-link">{{ pagina}}</a></li>
+              <li class="page-item"><a class="page-link" (click)="paginatioNext('siguiente')">Next</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!--PARTE PARA EL APARTADO DE REPARACION-->
+
+    <div class="reparacion__split" [hidden]="reparacion">
+      <h3 style="text-align: center; margin-top: 1rem; "><strong>Reparación para R-410a Split</strong> </h3>
+
+
+
+
+      <!--fORMULARIO PARA EL APARTADO DE MANTENIMIENTO -->
+      <div class="formulario__mantenimiento">
+        <div class="form__posicion">
+          <div class="card" style="width: 57rem; border-radius: 35px; background-color: #1982c4;">
+
+            <div class="card-body">
+              <form id="formulari__mantenimento_principal" [formGroup]="formLogin" (ngSubmit)="agregarNuevaBitacora()"
+                novalidate>
+                <div class="form-inline">
+                  <div class="pregunta1">
+                    <h3 style="text-align: center;">paso1</h3>
+                    <div class="form-check">
+                      <label class="form-check-label" for="exampleRadios1">
+                        adsadlkkaskslkklkjsadjklasdjs
+                      </label>
+                      <input style="width: 130px;" id="exampleRadio" type="text" class="form-control"
+                        formControlName="paso1" required="">
+
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="paso1check"
+                        (click)="mostrarSiguiente('paso2')" name="exampleRadios" id="exampleRadio" value="option2"
+                        required>
+                      <label class="form-check-label" for="exampleRadio">
+                        Hecho
+                      </label>
+                    </div>
+
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning" (click)="paso1('R-410a_split_system.PNG')" type="button"
+                        value="archivo">
+                    </div>
+                  </div>
+
+
+                  <div class="pregunta2" [hidden]="paso2">
+                    <h3 style="text-align: center;">paso2</h3>
+                    <div class="form-check">
+                      <label class="form-check-label" for="exampleRadios">
+                        adsadlkkaskslkklkjsadjklasdjs
+                      </label>
+                      <input style="width: 130px;" id="exampleRadios" type="text" class="form-control"
+                        formControlName="paso2" required>
+
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="paso2check"
+                        (click)="mostrarSiguiente('paso3')" name="exampleRadios" id="exampleRadios" value="option2"
+                        required>
+                      <label class="form-check-label" for="exampleRadios">
+                        Hecho
+                      </label>
+                    </div>
+                    <div class="form-check ">
+                      <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                      <input class="btn btn-warning" (click)="paso1('R-410a_split_system.PNG')" type="button"
+                        value="archivo">
+                    </div>
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning" (click)="paso1('R-410a_split_system.PNG')" type="button"
+                        value="archivo">
+                    </div>
+                  </div>
+
+                  <div class="pregunta3" [hidden]="paso3">
+                    <h3 style="text-align: center;">paso3</h3>
+                    <div class="form-check">
+                      <label class="form-check-label" for="exampleRadio1">
+                        adsadlkkaskslkklkjsadjklasdjs
+                      </label>
+                      <input style="width: 130px;" id="exampleRadio1" type="text" class="form-control"
+                        formControlName="paso3" required>
+
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="paso3check"
+                        (click)="mostrarSiguiente('botonMantenimiento')" name="exampleRadios" id="exampleRadio2"
+                        value="option2" required>
+                      <label class="form-check-label" for="exampleRadio2">
+                        Hecho
+                      </label>
+                    </div>
+
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning" (click)="paso1('R-410a_split_system.PNG')" type="button"
+                        value="archivo">
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <input hidden="true" type="number" [value]="posicionn" formControlName="posicion">
+
+                <button [hidden]="botonMantenimiento" type="submit" class="btn btn-enviar">Enviar</button>
+              </form>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+<!--MODAL QUE SE LANZARA PARA LOS BOTONES-->
+
+     <ng-template #contenido let-modal>
+                        <div class="modal-header">
+                          <h4 class="modal-title">HVAC SYSTEMS SUPPORT</h4>
+                          <button class="close btn btn-danger" aria-label="close" type="button"
+                            (click)="modal.dismiss()">
+                            <span aria-hidden="true">X</span>
+                          </button>
+                        </div>
+                        <div class="modal-body" style="display: flex; justify-content: center;">
+
+                          <img src="{{archivo}}" alt="">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success" (click)="modal.close()">Ok!</button>
+                        </div>
+                      </ng-template>

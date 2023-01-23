@@ -1,0 +1,284 @@
+/*-------------------------------------------------------------------
+
+                        1. Preloader
+
+-------------------------------------------------------------------*/
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background: transparent;
+}
+
+.preloader .anim {
+  color: #FFF;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.preloader-left {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  z-index: 999;
+  transition: .7s .3s transform ease-in-out;
+}
+
+.slide-left {
+  transform: translate3d(-100%, 0, 0);
+  will-change: transform;
+}
+
+.preloader-right {
+  display: none;
+  position: fixed;
+  width: 50%;
+  right: 0;
+  height: 100%;
+  background: white;
+  z-index: 999;
+  transition: .7s .3s transform ease-in-out;
+}
+
+.slide-right {
+  transform: translate3d(100%, 0, 0);
+  will-change: transform;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1)
+  }
+  50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05)
+  }
+  100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1)
+  }
+}
+
+@keyframes pulse {
+  0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      -ms-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1)
+  }
+  50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      -ms-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05)
+  }
+  100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      -ms-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1)
+  }
+}
+
+.pulse {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+/*-------------------------------------------------------------------
+
+                      2. Home Styles
+
+-------------------------------------------------------------------*/
+
+.home {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  background-size: cover;
+  z-index: 0
+}
+
+.home.img-bg {
+  background: url('../../../assets/imagenes/hvac.png');
+  background-size: cover;
+}
+
+.home .bgScroll {
+  animation: 40s linear 0s normal none infinite running bgScroll;
+  background: black url('../../../assets/imagenes/hvac.png') repeat scroll center top;
+}
+
+.bgScroll {
+  height: 400%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+
+@-webkit-keyframes bgScroll {
+  0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+
+  100% {
+      -webkit-transform: translateY(-1934px);
+      transform: translateY(-1934px);
+  }
+}
+
+@keyframes bgScroll {
+  0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+
+  100% {
+      -webkit-transform: translateY(-1934px);
+      transform: translateY(-1934px);
+  }
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 1);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+.overlay.light {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.opacity9 {
+  opacity: 0.9;
+}
+
+.opacity7 {
+  opacity: 0.7;
+}
+
+.opacity5 {
+  opacity: 0.5;
+}
+
+.opacity3 {
+  opacity: 0.3;
+}
+
+.opacity1 {
+  opacity: 0.1;
+}
+
+.opacity0 {
+  opacity: 0.0;
+}
+
+.gradient-overlay1 {
+  background: #EB3349;
+  background: -webkit-linear-gradient(to right, #F45C43, #EB3349);
+  background: linear-gradient(to right, #F45C43, #EB3349);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+.gradient-overlay2 {
+  background: #4568DC;
+  background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+  background: linear-gradient(to right, #B06AB3, #4568DC);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+.gradient-overlay3 {
+  background: #556270;
+  background: -webkit-linear-gradient(to right, #FF6B6B, #556270);
+  background: linear-gradient(to right, #FF6B6B, #556270);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+.texto_principal{
+
+  position: relative;
+height: 380px;
+  width: 100%;
+
+  
+  
+}
+.contenido-texto{
+ 
+ position: absolute;
+ bottom: 0;
+
+  width: 50%;
+
+ 
+  
+}
+.contenido-texto h1{
+
+  color: white;
+  text-shadow: 4px 4px 7px rgb(255, 255, 255);
+  font-size: 55px;
+  
+}
+.mantenimiento_img{
+  position: absolute;
+
+ right: 180px;
+ bottom: 0;
+  margin: auto;
+}
+.mantenimiento_img img{
+
+  animation: mover infinite 5s;
+}
+
+@keyframes mover{
+ 0%{
+    -ms-transform: rotate(10deg); /* IE 9 */
+  transform: rotate(10deg);
+  }
+  50%{
+    -ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(20deg);
+  }
+  75%{
+    -ms-transform: rotate(10deg); /* IE 9 */
+    transform: rotate(10deg);
+  }
+  100%{
+    -ms-transform: rotate(0deg); /* IE 9 */
+    transform: rotate(0deg);
+  }
+}
+.tarjetas_presentacion{
+  margin-top: 2rem;
+}
+.card{
+ border: #333 solid 5px;
+ border-radius: 20px;
+ box-shadow: 24px 12px 9px rgba(0, 0, 0, 0.541);
+}

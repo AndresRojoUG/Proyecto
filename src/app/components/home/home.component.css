@@ -1,0 +1,276 @@
+.contenedor{
+    padding-top: 2rem;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    background-color: rgba(63, 121, 175, 0.63);
+    height: 100%;
+    width: 100%;
+    
+}
+.header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+.card{
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    border-style: solid;
+    border-color: black;
+}
+#textoHome{
+    color:white;
+    font-weight: bold;
+    
+}
+.textoPrincipal{
+   border-bottom-style: solid;
+   
+
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: #8ac926;
+
+}
+.logo img{
+position: absolute;
+justify-self: start;
+   width: 7rem;
+   height: 7rem;
+   border-radius: 25px;
+   margin-left: 2rem;
+   margin-top: 2rem;
+
+}
+.logo{
+    height: 15px;
+    background-color: #8ac926;
+}
+
+.cuerpo{
+   overflow-x: hidden;
+    background-image: url("../../../assets/imagenes/viento.jpg");
+}
+
+footer{
+    background-color: #000000ff;
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    padding: 3rem 2rem;
+}
+.container {
+   max-width: 1140px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+
+}
+.row{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.col{
+   min-width: 250px;
+   color:#f2f2f2f2;
+   font-family: poppins;
+   padding:0 2rem;
+}
+.col .logo{
+   width: 100px;
+   height: 100px;
+   border-radius: 35%;
+   margin-bottom:25px;
+}
+.col h3{
+   color:#ff014fff;
+   margin-bottom: 20px;
+   position: relative;
+   cursor: pointer;
+}
+.col h3::after{
+   content: '';
+   height:3px;
+   width:0px;
+   background-color: #ff014fff;
+   position: absolute;
+   bottom: 0;
+   left:0;
+   transition: 0.3s ease;
+
+}
+.col h3:hover::after{
+   width:30px
+}
+.col .social a i{
+   color:#ff014fff;
+   margin-top:2rem;
+   margin-right: 5px;
+   transition: 0.3s ease;
+}
+.col .social a i:hover{
+   transform: scale(1.5);
+   filter:grayscale(25);
+}
+.col .links a{
+   display: block;
+   text-decoration: none;
+   color:#f2f2f2;
+   margin-bottom: 2px;
+   position: relative;
+   transition: 0.3s ease;
+}
+.col .links a::before{
+   content:'';
+   height: 16px;
+   width:3px;
+   position: absolute;
+   top:5px;
+   left:-10px;
+   background-color: #ff014fff;
+   transition: 0.5s ease;
+   opacity: 0;
+}
+.col .links a:hover::before{
+   opacity: 1;
+}
+.col .links a:hover{
+   transform: translateX(-8px);
+   color:#ff014fff;
+}
+.col .contact-details{
+   display: inline-flex;
+   justify-content: space-between;
+}
+.col .contact-details i{
+   margin-right:15px;
+}
+.row .form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding:2rem 0;
+}
+.row .form input{
+   background-color: #1a1c20ff;
+   border:0;
+   outline:none;
+   padding:14px 20px;
+   border-radius: 6px;
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+}
+.form button{
+   padding:14px 20px;
+   border:0;
+   border-radius: 6px;
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+   background-color: #ff014fff;
+}
+
+/********** Responsive Design ********/
+@media(max-width:900px)
+{
+ .row{
+   flex-direction: column;
+ }
+ .col{
+   width: 100%;
+   text-align: left;
+   margin-bottom: 25px;
+ }
+}
+@media(max-width:768px)
+{
+ .row{
+   flex-direction: column;
+ }
+ .col{
+   width: 100%;
+   text-align: left;
+   margin-bottom: 20px;
+ }
+}
+.wrapper {
+  display:inline-block;
+  list-style: none;
+}
+.wrapper .icon {
+  position: relative;
+  background: #575757;
+  border-radius: 50%;
+  padding: 0;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}

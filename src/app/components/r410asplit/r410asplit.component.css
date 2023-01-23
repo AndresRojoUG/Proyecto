@@ -1,0 +1,221 @@
+.menuu nav {
+  
+    
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .menuu nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+ .menuu nav li {
+    margin-top: 15px;
+    margin-left: 10px;
+    
+  }
+  .page-item{
+    cursor: pointer;
+  }
+  
+ .menuu nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .menuu ul :hover{
+    background-color: rgb(92, 230, 172);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    
+    
+    
+  }
+
+  
+  .menuu img{
+    margin-top: 15px;
+    margin-left: 65px;
+    margin-right: 25px;
+    width: 95px;
+    height: 95px;
+    border-radius: 25px;
+   
+  }
+  .btn-enviar{
+    background-color: #8ac926;
+  }
+  .pagination{
+    padding-top: 1rem;
+  }
+  .menuu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;background-color: #8ac926;
+   
+    box-shadow: 52px 120px 182px rgb(0, 0, 0);
+    width: 20%;
+    height: 100%;
+float: left;
+    
+  }
+  .contenido{
+    
+
+
+height: 100%;
+width: 80%;
+float: right;
+
+overflow: hidden;
+  }
+  .containe_form{
+   
+    margin: 0 5rem;
+
+
+  }
+  .tabla__mantenimiento{
+    margin-top: 1rem;
+  max-width:100%;  
+  overflow-x:scroll;
+  overflow-wrap: break-word;
+  
+   }
+   tr,th,td{
+    border: solid 0.5px;
+   }
+  .contenedor{
+    
+    background-image: url("../../../assets/imagenes/viento.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    
+    position: absolute;
+
+    width: 80%;
+    height: 100%;
+   
+    overflow: auto;
+  }
+
+  .formulario__mantenimiento{
+  
+    position: relative;
+  }
+  .form__posicion{
+    display: flex;
+  text-align: center;
+   
+    width: 100%;
+    justify-content: space-around;
+  }
+  .form__posicion form{
+    justify-content:center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+  .form__posicion form label{
+    margin-right: 1rem;
+  }
+  .form__posicion form button{
+   margin-top: 1rem;
+  }
+ .form-check{
+  display: inline-block;
+ }
+ .imagen__mantenimiento{
+  border-bottom: solid;
+ }
+ 
+ .page-link{
+  background-color: rgb(22, 79, 165);
+  color: white;
+ }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .contenedor{
+        position: relative;
+        float: none;
+        width: 100%;
+    margin-left: 0;
+    background-color: aqua;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: hidden;
+    }
+    .menuu{
+        width: 100%;
+        float: none;
+        
+        position: -webkit-sticky;
+        top: 0;
+        display: flex;
+        position: sticky;
+        flex-direction: row;
+        justify-content: center;
+z-index: 50;
+
+    }
+    li{
+        display: inline;
+    }
+    .contenido{
+        float: none;
+        width: 100%;
+    }
+    .menuu img{
+        margin-top: 15px;
+        margin-left: 0;
+      
+        margin-bottom: 15px;
+        width: 75px;
+        height: 75px;
+        border-radius: 25px;
+       
+      }
+  }
+
+
+
+  /*TOOOLTIP PERROROROOR*/
+  .diagramas{
+    width: 20px;
+    height: 30px;
+  }
+  .diagramas img{
+    width: 80px;
+    height: 70px;
+  }
+  .diagramas img{
+    width: 80px;
+    height: 70px;
+  }
+  
+
+  .diagramas:hover{
+    position: absolute;
+    width:680px;
+    height: 870px;
+    top: 20vmin;
+    left: 20vmin;
+    background-color: rgba(41, 40, 39, 0.562);
+    border-radius: 35px;
+  }
+  .diagramas img:hover{
+    position: absolute;
+    width: 580px;
+    top: 7vmin;
+    left: 7vmin;
+    height: 770px;
+  }
+ 
