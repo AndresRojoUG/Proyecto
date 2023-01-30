@@ -1,0 +1,571 @@
+
+ 
+      <div class="card" style="width: 57rem; border-radius: 35px; background-color: #1982c4;">
+
+        <div class="card-body">
+          <h3 style="text-align: center; margin-top: 1rem; "><strong>UNIDADES DE CONDENSACIÓN </strong>
+          </h3>
+          
+       
+          <form id="formulari__mantenimento_principal" [formGroup]="formUnidades" (ngSubmit)="agregarNuevoReporte()"
+            novalidate>
+            <div class="form-inline">
+                <label  style="display: flex; justify-content: left;" for="">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="form-check-input" id="NoAplicaunidadescheck" type="checkbox" formControlName="NoAplicaunidadescheck"
+                    (click)="noAplicaUnidadescheck()" name="NoAplicaunidadescheck"  
+                    required>NO APLICA </label>
+              <div class="pregunta1Unidades">
+                <h3 style="text-align: center;">Paso 1</h3>
+
+                <div class="row" style="display: flex;  align-items: center; ">
+
+                  <div class="col-md-6">
+                    <div class="form-check">
+
+                      <label class="form-check-label" for="paso1Unidades">
+              <strong>Revisar el sistema de control y dispositivos para evidencia de operación impropia.
+                Repare, ajuste o reemplace componentes para asegurar operación correcta. 
+                </strong>          
+                      </label>
+                
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-check ">
+
+                      <input style="margin-bottom: 0;" class="btn btn-warning"
+                        type="button" value="archivo">
+
+                    </div>
+
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning"  type="button"
+                        value="archivo">
+                    </div>
+
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check">
+                      <input class="form-check-input" id="paso1Unidadescheck" type="checkbox" formControlName="paso1Unidadescheck"
+                        (click)="mostrarSiguienteUnidades('paso2')" name="paso1Unidadescheck"  
+                        required>
+                      <label class="form-check-label" for="paso1Unidadescheck">
+                        Hecho
+                      </label>
+                    </div>
+                  </div>
+
+
+                </div>
+
+
+
+
+
+
+
+              </div>
+
+
+              <div class="pregunta2Unidades" [hidden]="paso2Unidades">
+                <h3 style="text-align: center;">Paso 2</h3>
+                <div class="row" style="display: flex;  align-items: center;">
+                  <div class="col-md-6">
+                    <div class="form-check">
+                      <label class="form-check-label" for="paso2Unidades">
+                        <strong>Revisar tensión de correa de ventilador. Chequear por uso de correa y alineamiento propio.
+                            Reemplace si es necesario para asegurar operación correcta. 
+                            </strong>
+                      </label>
+                  
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-check ">
+                      <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                        value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                        type="button" value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="paso2check"
+                        (click)="mostrarSiguienteUnidades('paso3')" name="paso2check" id="paso2check"
+                      required>
+                      <label class="form-check-label" for="paso2check">
+                        Hecho
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+
+              <div class="pregunta3Unidades" [hidden]="paso3Unidades">
+                <h3 style="text-align: center;">Paso 3</h3>
+                <div class="row" style="display: flex;  align-items: center;">
+                  <div class="col-md-6">
+                    <div class="form-check">
+                      <label class="form-check-label" for="paso3Unidades">
+                        <strong>Revisar la caja de control por suciedad, desechos y/o terminaciones flojas. Limpie y ajuste como sea necesario.  
+                            </strong>
+                      </label>
+                  
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-check ">
+                      <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                        value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                        type="button" value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="paso3check"
+                        (click)="mostrarSiguienteUnidades('paso4')" name="paso2check" id="paso3check"
+                      required>
+                      <label class="form-check-label" for="paso3check">
+                        Hecho
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+
+              <div class="pregunta4Unidades" [hidden]="paso4Unidades">
+                <h3 style="text-align: center;">Paso 4</h3>
+                <div class="row" style="display: flex;  align-items: center;">
+                  <div class="col-md-6">
+                    <div class="form-check">
+                      <label class="form-check-label" for="paso4Unidades">
+                        <strong>Revisar contactos del motor por picaduras u otros signos de daños. Repare o reemplace como sea necesario 
+                            </strong>
+                      </label>
+                  
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-check ">
+                      <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                        value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                        type="button" value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="paso4check"
+                        (click)="mostrarSiguienteUnidades('paso5')" name="paso4check" id="paso4check"
+                      required>
+                      <label class="form-check-label" for="paso4check">
+                        Hecho
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+
+              <div class="pregunta5Unidades" [hidden]="paso5Unidades">
+                <h3 style="text-align: center;">Paso 5</h3>
+                <div class="row" style="display: flex;  align-items: center;">
+                  <div class="col-md-6">
+                    <div class="form-check">
+                      <label class="form-check-label" for="paso5Unidades">
+                        <strong>Revisar cuchillas de ventilador para equilibrio y crecimiento de partículas.
+                            Limpiar, reparar o reemplazar, como sea necesario, para asegurar operación correcta. 
+                            
+                            </strong>
+                      </label>
+                  
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-check ">
+                      <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                        value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                        type="button" value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="paso5check"
+                        (click)="mostrarSiguienteUnidades('paso6')" name="paso2check" id="paso5check"
+                      required>
+                      <label class="form-check-label" for="paso5check">
+                        Hecho
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+
+              <div class="pregunta6Unidades" [hidden]="paso6Unidades">
+                <h3 style="text-align: center;">Paso 6</h3>
+                <div class="row" style="display: flex;  align-items: center;">
+                  <div class="col-md-6">
+                    <div class="form-check">
+                      <label class="form-check-label" for="paso6Unidades">
+                        <strong>Revisar presión del sistema refrigerante y/o temperatura. Si está fuera de los niveles recomendados, encuentre la causa, repare y ajuste refrigerante para lograr niveles de operación óptimos. 
+                            </strong>
+                      </label>
+                  
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-check ">
+                      <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                        value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                        type="button" value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="paso6check"
+                        (click)="mostrarSiguienteUnidades('paso7')" name="paso6check" id="paso6check"
+                      required>
+                      <label class="form-check-label" for="paso6check">
+                        Hecho
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+
+              <div class="pregunta7Unidades" [hidden]="paso7Unidades">
+                <h3 style="text-align: center;">Paso 7</h3>
+                <div class="row" style="display: flex;  align-items: center;">
+                  <div class="col-md-6">
+                    <div class="form-check">
+                      <label class="form-check-label" for="paso7Unidades">
+                        <strong>Revisar por suciedad, corrosión o degradación. Limpie o repare como sea necesario
+                            </strong>
+                      </label>
+                  
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-check ">
+                      <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                        value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                        type="button" value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="paso7check"
+                        (click)="mostrarSiguienteUnidades('paso8')" name="paso2check" id="paso7check"
+                      required>
+                      <label class="form-check-label" for="paso7check">
+                        Hecho
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+
+              <div class="pregunta8Unidades" [hidden]="paso8Unidades">
+                <h3 style="text-align: center;">Paso 8</h3>
+                <div class="row" style="display: flex;  align-items: center;">
+                  <div class="col-md-6">
+                    <div class="form-check">
+                      <label class="form-check-label" for="paso8Unidades">
+                        <strong>Revisar alineación de mando, uso, asiento y operación. Repare y reemplace, como sea necesario. Para ensamblaje de acoplado directo de ventilador/motor, chequear cojinetes y lubricar o reemplazar. Inspeccionar superficie del condensador enfriado por aire. Repare o limpie como sea necesario.  
+                            </strong>
+                      </label>
+                  
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-check ">
+                      <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                        value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                        type="button" value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="paso8check"
+                        (click)="mostrarSiguienteUnidades('paso9')" name="paso2check" id="paso8check"
+                      required>
+                      <label class="form-check-label" for="paso8check">
+                        Hecho
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+
+              <div class="pregunta9Unidades" [hidden]="paso9Unidades">
+                <h3 style="text-align: center;">Paso 9</h3>
+                <div class="row" style="display: flex;  align-items: center;">
+                  <div class="col-md-6">
+                    <div class="form-check">
+                      <label class="form-check-label" for="paso9Unidades">
+                        <strong>Revisar la secuencia de control de cabeza de presión de bajo ambiente para operación correcta. Repare o reemplace los componentes o modificar el software/algoritmo para asegurar operación correcta. 
+                            </strong>
+                      </label>
+                  
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-check ">
+                      <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                        value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                        type="button" value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="paso9check"
+                        (click)="mostrarSiguienteUnidades('paso10')" name="paso9check" id="paso9check"
+                      required>
+                      <label class="form-check-label" for="paso9check">
+                        Hecho
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+
+              <div class="pregunta10Unidades" [hidden]="paso10Unidades">
+                <h3 style="text-align: center;">Paso 10</h3>
+                <div class="row" style="display: flex;  align-items: center;">
+                  <div class="col-md-6">
+                    <div class="form-check">
+                      <label class="form-check-label" for="paso10Unidades">
+                        <strong>Revisar niveles de aceite refrigerante para los sistemas refrigerantes de controles de presión/nivel de aceite. Reparar, reemplazar o ajustar, como sea necesario, para asegurar operación correcta.  
+                            </strong>
+                      </label>
+                  
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-check ">
+                      <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                        value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning"
+                        (click)="open(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                        type="button" value="archivo">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="paso10check"
+                        (click)="mostrarSiguienteUnidades('fecha_modelo1')" name="paso10check" id="paso10check"
+                      required>
+                      <label class="form-check-label" for="paso2check">
+                        Hecho
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+
+       
+              <div class="fecha_modelo1" [hidden]="fecha_modelo1">
+                <h3 style="text-align: center;">fecha modelo 1</h3>
+                <div class="row" style="display: flex;  align-items: center;">
+                  <div class="col-md-6">
+                    <div class="form-check">
+                      <label class="form-check-label" for="exampleRadio1">
+                        Fecha
+                      </label>
+                      <input style="width: 130px;" id="exampleRadio1" type="date" class="form-control"
+                        formControlName="fecha" required>
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" 
+                        (click)="mostrarSiguienteUnidades('botonMantenimientoUnidad')" name="exampleRadios" id="exampleRadio2"
+                        value="option2" required>
+                      <label class="form-check-label" for="exampleRadio2">
+                        Hecho
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+
+
+            </div>
+
+            <input hidden="true" type="number" [value]="posicionnUnidades" formControlName="posicion">
+
+            <button [hidden]="botonMantenimientoUnidades" type="submit" class="btn btn-warning">Enviar</button>
+          </form>
+
+
+        </div>
+      </div>
+
+ 
+    
+
+
+  <ng-template #contenido let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title">HVAC SYSTEMS SUPPORT</h4>
+      <button class="close btn btn-danger" aria-label="close" type="button" (click)="modal.dismiss()">
+        <span aria-hidden="true">X</span>
+      </button>
+    </div>
+    <div class="modal-body" style="display: flex; justify-content: center;">
+
+      <img src="{{archivo}}" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-success" (click)="modal.close()">Ok!</button>
+    </div>
+  </ng-template>

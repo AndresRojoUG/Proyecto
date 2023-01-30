@@ -45,9 +45,7 @@ export class BitacoraService {
     .collection("bitacora")
     .doc(id)
     .update({
-      paso1:bitacora.paso1,
-      paso2:bitacora.paso2,
-      paso3:bitacora.paso3,
+      
     });
   }
   deletePost(bitacora: any){

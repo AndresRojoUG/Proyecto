@@ -1,9 +1,14 @@
 <div id="menu" class="menuu">
 
 
-  <img src="../../../assets/imagenes/hvac.png" alt="">
-  <div style="border-style: solid; border-width: 1px; margin-top: 15px;"></div>
+
+
   <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../../../assets/imagenes/hvac.png" alt="Bootstrap" width="30" height="24">
+      </a>
+    </div>
     <h4 class="animate__animated animate__bounce"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
         fill="currentColor" class="bi bi-patch-question" viewBox="0 0 16 16">
         <path
@@ -37,164 +42,690 @@
         src="../../../assets/equipos/R-410a_split_system.PNG" alt="">
     </div>
     <div class="mantenimiento__split" [hidden]="mantenimiento">
-      <h3 style="text-align: center; margin-top: 1rem; "><strong>Mantenimiento para R-410a Split</strong> </h3>
-      <!--fORMULARIO PARA EL APARTADO DE MANTENIMIENTO -->
-      <div class="formulario__mantenimiento">
-        <div class="form__posicion">
-          <div class="card" style="width: 57rem; border-radius: 35px; background-color: #1982c4;">
+      <div [hidden]="escoger_modelo_mantenimiento"
+        style="width: 100%; display: flex; justify-content: center; margin-top: 2rem;">
+        <input class="btn btn-warning" (click)="openModelos(contenidoModelo)" type="button" value="Escoge el tipo">
+      </div>
 
-            <div class="card-body">
-              <form id="formulari__mantenimento_principal" [formGroup]="formLogin" (ngSubmit)="agregarNuevaBitacora()"
-                novalidate>
-                <div class="form-inline">
-                  <div class="pregunta1">
-                    <h3 style="text-align: center;">paso1</h3>
+      <div [hidden]="mantenimiento_tipo_mini_split_muro_alto">
+        <h2 style="text-align: center; margin-top: 1rem; "><strong>Mantenimiento para mini split tipo muro alto </strong>
+        </h2>
+       
+        <!--fORMULARIO PARA EL APARTADO DE MANTENIMIENTO -->
+        <div class="formulario__mantenimiento">
+          <div class="form__posicion">
+            <div  class="card" style="width: 57rem; border-radius: 35px; background-color: #1982c4;">
 
-                    <div class="row" style="display: flex;  align-items: center; ">
+              <div class="card-body">
+                <h3 style="text-align: center; margin-top: 1rem; "><strong>SERPENTÍN DE CALEFACCIÓN O ENFRIAMMIENTO: </strong>
+                </h3>
+                
+             
+                <form id="formulari__mantenimento_principal" [formGroup]="formLogin" (ngSubmit)="agregarNuevaBitacora()"
+                  novalidate>
+                  <div class="form-inline">
+                   <label  style="display: flex; justify-content: left;" for="">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="form-check-input" id="NoAplicaSerpentincheck" type="checkbox" formControlName="NoAplicaSerpentincheck"
+                    (click)="noAplicaSerpentin()" name="NoAplicaSerpentincheck"  
+                    required>NO APLICA </label>
+                    <div [hidden]="serpentin">
+                    <div class="pregunta1">
+                      <h3 style="text-align: center;">Paso 1</h3>
 
-                      <div class="col-md-6">
-                        <div class="form-check">
+                      <div class="row" style="display: flex;  align-items: center; ">
 
-                          <label class="form-check-label" for="exampleRadios1">
-                            adsadlkkaskslkklkjsadjklasdjs
-                          </label>
-                          <input style="width: 130px;" id="exampleRadio" type="text" class="form-control"
-                            formControlName="paso1" required="">
+                        <div class="col-md-6">
+                          <div class="form-check">
+
+                            <label class="form-check-label" for="paso1">
+                    <strong>Analizar lámpara UV. Limpie o reemplace, si es necesario para asegurar operación correcta</strong>          
+                            </label>
+                      
+                          </div>
                         </div>
+
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input style="margin-bottom: 0;" class="btn btn-warning"
+                              (click)="paso1('R-410a_split_system.PNG')" type="button" value="archivo">
+
+                          </div>
+
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="paso1('R-410a_split_system.PNG')" type="button"
+                              value="archivo">
+                          </div>
+
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" id="paso1check" type="checkbox" formControlName="paso1check"
+                              (click)="mostrarSiguiente('paso2')" name="paso1"  
+                              required>
+                            <label class="form-check-label" for="paso1check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+
+
                       </div>
 
-                      <div class="col-md-2">
-                        <div class="form-check ">
 
-                          <input style="margin-bottom: 0;" class="btn btn-warning" (click)="paso1('R-410a_split_system.PNG')" type="button"
-                            value="archivo">
 
+
+
+
+
+                    </div>
+
+
+                    <div class="pregunta2" [hidden]="paso2">
+                      <h3 style="text-align: center;">Paso 2</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso2">
+                              <strong>Analizar Trampa P. Preparar como sea necesario para asegurar operación correcta.</strong>
+                            </label>
+                        
+
+                          </div>
                         </div>
 
-                      </div>
-                      <div class="col-md-2">
-                        <div class="form-check ">
-
-                          <input class="btn btn-warning" (click)="paso1('R-410a_split_system.PNG')" type="button"
-                            value="archivo">
+                        <div class="col-md-2">
+                          <div class="form-check ">
+                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                              value="archivo">
+                          </div>
                         </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
 
-                      </div>
-                      <div class="col-md-2">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" formControlName="paso1check"
-                            (click)="mostrarSiguiente('paso2')" name="exampleRadios" id="exampleRadio" value="option2"
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso2check"
+                              (click)="mostrarSiguiente('paso3')" name="paso2check" id="paso2check"
                             required>
-                          <label class="form-check-label" for="exampleRadio">
-                            Hecho
-                          </label>
+                            <label class="form-check-label" for="paso2check">
+                              Hecho
+                            </label>
+                          </div>
                         </div>
                       </div>
 
 
+
+
                     </div>
 
+                    <div class="pregunta3" [hidden]="paso3">
+                      <h3 style="text-align: center;">Paso 3 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso3">
+                              <strong>Verificar para operación correcta del serpentín refrigerante o serpentín de calefacción. Limpie, restaure o reemplace, como sea requerido.</strong>
+                            </label>
+               
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
 
 
-
-
-
-
-                  </div>
-
-
-                  <div class="pregunta2" [hidden]="paso2">
-                    <h3 style="text-align: center;">paso2</h3>
-                    <div class="row" style="display: flex;  align-items: center;">
-                      <div class="col-md-6">
-                        <div class="form-check">
-                          <label class="form-check-label" for="exampleRadios">
-                            adsadlkkaskslkklkjsadjklasdjs
-                          </label>
-                          <input style="width: 130px;" id="exampleRadios" type="text" class="form-control"
-                            formControlName="paso2" required>
-
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso3check"
+                              (click)="mostrarSiguiente('paso4')" name="exampleRadios" id="paso3check"
+                              value="option2" required>
+                            <label class="form-check-label" for="paso3check">
+                              Hecho
+                            </label>
+                          </div>
                         </div>
                       </div>
 
-                      <div class="col-md-2">
-                        <div class="form-check ">
-                          <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
-                          <input class="btn btn-warning" (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')"
-                            type="button" value="archivo">
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <div class="pregunta3" [hidden]="paso4">
+                      <h3 style="text-align: center;">Paso 4 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso4">
+                              <strong>Verificar la presión del sistema refrigerante o temperatura. Si está fuera de los niveles recomendados,
+                                encuentre la causa, repare y ajuste refrigerante para lograr niveles de operación óptimos. 
+                                </strong>
+                            </label>
+               
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso4check"
+                              (click)="mostrarSiguiente('paso5')" name="exampleRadios" id="paso4check"
+                               required>
+                            <label class="form-check-label" for="paso4check">
+                              Hecho
+                            </label>
+                          </div>
                         </div>
                       </div>
-                      <div class="col-md-2">
-                        <div class="form-check ">
 
-                          <input class="btn btn-warning"
-                            (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')" type="button"
-                            value="archivo">
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <div class="pregunta3" [hidden]="paso5">
+                      <h3 style="text-align: center;">Paso 5 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso5">
+                              <strong>Revisar por suciedad, corrosión o degradación. Limpie o repare como sea necesario.  </strong>
+                            </label>
+               
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso5check"
+                              (click)="mostrarSiguiente('paso6')" name="exampleRadios" id="paso5check"
+                               required>
+                            <label class="form-check-label" for="paso5check">
+                              Hecho
+                            </label>
+                          </div>
                         </div>
                       </div>
-                      <div class="col-md-2">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" formControlName="paso2check"
-                            (click)="mostrarSiguiente('paso3')" name="exampleRadios" id="exampleRadios" value="option2"
-                            required>
-                          <label class="form-check-label" for="exampleRadios">
-                            Hecho
-                          </label>
+
+                    </div>
+
+                    <div class="pregunta3" [hidden]="paso6">
+                      <h3 style="text-align: center;">Paso 6 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso6">
+                              <strong>Revisar integridad de todos los paneles del equipo. Reemplace aseguradores como sea necesario,
+                                para asegurar integridad propia y ajuste/acabado del equipo
+                                  </strong>
+                            </label>
+               
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso6check"
+                              (click)="mostrarSiguiente('paso7')" name="exampleRadios" id="paso6check"
+                               required>
+                            <label class="form-check-label" for="paso6check">
+                              Hecho
+                            </label>
+                          </div>
                         </div>
                       </div>
-                    </div>
-
-
-
-
-                  </div>
-
-                  <div class="pregunta3" [hidden]="paso3">
-                    <h3 style="text-align: center;">paso3</h3>
-                    <div class="row" style="display: flex;  align-items: center;">
-<div class="col-md-6">
- <div class="form-check">
-                      <label class="form-check-label" for="exampleRadio1">
-                        adsadlkkaskslkklkjsadjklasdjs
-                      </label>
-                      <input style="width: 130px;" id="exampleRadio1" type="text" class="form-control"
-                        formControlName="paso3" required>
 
                     </div>
-</div>
-<div class="col-md-2">
 
-                    <div class="form-check ">
+                    <div class="pregunta3" [hidden]="paso7">
+                      <h3 style="text-align: center;">Paso 7 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso7">
+                              <strong>Revisar el depósito de desagüe, línea de desagüe y bobinas por crecimiento biológico.
+                                  </strong>
+                            </label>
+               
 
-                      <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')" type="button"
-                        value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso7check"
+                              (click)="mostrarSiguiente('paso8')" name="exampleRadios" id="paso7check"
+                               required>
+                            <label class="form-check-label" for="paso7check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
 
                     </div>
-</div>
-<div class="col-md-2">
-<div class="form-check ">
 
-                      <input class="btn btn-warning" (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')"
-                        type="button" value="lanzar modal XL">
-                   
+                    <div class="pregunta3" [hidden]="paso8">
+                      <h3 style="text-align: center;">Paso 8 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso8">
+                              <strong>Limpie como sea necesario. </strong>
+                            </label>
+               
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso8check"
+                              (click)="mostrarSiguiente('paso9')" name="exampleRadios" id="paso8check"
+                               required>
+                            <label class="form-check-label" for="paso8check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
 
                     </div>
-</div>
-<div class="col-md-2">
-<div class="form-check">
-                      <input class="form-check-input" type="checkbox" formControlName="paso3check"
-                        (click)="mostrarSiguiente('botonMantenimiento')" name="exampleRadios" id="exampleRadio2"
-                        value="option2" required>
-                      <label class="form-check-label" for="exampleRadio2">
-                        Hecho
-                      </label>
+
+                    <div class="pregunta3" [hidden]="paso9">
+                      <h3 style="text-align: center;">Paso 9</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso9">
+                              <strong>Revisar el serpentín del evaporador. Restaure si es posible. Reemplace
+                                el serpentín si es necesario para retornar al funcionamiento apropiado
+                                
+                                 </strong>
+                            </label>
+               
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso9check"
+                              (click)="mostrarSiguiente('paso10')" name="exampleRadios" id="paso9check"
+                               required>
+                            <label class="form-check-label" for="paso9check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
-</div>
+
+                    <div class="pregunta3" [hidden]="paso10">
+                      <h3 style="text-align: center;">Paso 10 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso10">
+                              <strong>Inspeccionar por evidencia de arrastre de humedad más allá de los depósitos de desagüe
+                                del serpentín de enfriamiento. Hacer correcciones o reparaciones, como sea necesario. 
+                              </strong>
+                            </label>
+               
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso10check"
+                              (click)="mostrarSiguiente('paso11')" name="exampleRadios" id="paso10check"
+                               required>
+                            <label class="form-check-label" for="paso10check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
-                   
+
+                    <div class="pregunta3" [hidden]="paso11">
+                      <h3 style="text-align: center;">Paso 11</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso11">
+                              <strong>Visualmente inspeccionar áreas de acumulación de humedad por crecimiento biológico.</strong>
+                            </label>
+               
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso11check"
+                              (click)="mostrarSiguiente('paso12')" name="exampleRadios" id="paso11check"
+                               required>
+                            <label class="form-check-label" for="paso11check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="pregunta3" [hidden]="paso12">
+                      <h3 style="text-align: center;">Paso 12 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso12">
+                              <strong>Si está presente, limpie o desinfecte como sea necesario. </strong>
+                            </label>
+               
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso12check"
+                              (click)="mostrarSiguiente('paso13')" name="exampleRadios" id="paso12check"
+                               required>
+                            <label class="form-check-label" for="paso12check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
                     
+                    <div class="pregunta3" [hidden]="paso13">
+                      <h3 style="text-align: center;">Paso 13 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso13">
+                              <strong>Revisar bombas de condensado. Limpie o reemplace, como sea necesario.  </strong>
+                            </label>
+               
 
-                    
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso13check"
+                              (click)="mostrarSiguiente('fecha_modelo1')" name="exampleRadios" id="paso13check"
+                               required>
+                            <label class="form-check-label" for="paso13check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="fecha_modelo1" [hidden]="fecha_modelo1">
+                      <h3 style="text-align: center;">fecha modelo 1</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="exampleRadio1">
+                              Fecha
+                            </label>
+                            <input style="width: 130px;" id="exampleRadio1" type="date" class="form-control"
+                              formControlName="fecha" required>
+
+                          </div>
+                        </div>
+
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" 
+                              (click)="mostrarSiguiente('botonMantenimiento')" name="exampleRadios" id="exampleRadio2"
+                              value="option2" required>
+                            <label class="form-check-label" for="exampleRadio2">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
 
 
@@ -203,113 +734,99 @@
 
 
 
+
+
+
+
+
+                    </div>
 
 
                   </div>
 
+                  <input hidden="true" type="number" [value]="posicionn" formControlName="posicion">
 
-                </div>
+                  <button [hidden]="botonMantenimiento" type="submit" class="btn btn-enviar">Enviar</button>
+                </form>
 
-                <input hidden="true" type="number" [value]="posicionn" formControlName="posicion">
 
-                <button [hidden]="botonMantenimiento" type="submit" class="btn btn-enviar">Enviar</button>
-              </form>
+              </div>
+            </div>
+
+          </div>
+         <!--
+
+
+           <div class="containe_form">
+            <h2 style="text-align: center;margin-top: 1rem; ">BITACORA</h2>
+            <div s class="tabla__mantenimiento">
+
+              <table class="table table-hover table-primary">
+                <thead>
+
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr *ngFor="let bit of bitacora | slice:start:start+5">
+                    <td>id peroo {{ bit.posicion }}</td>
+  
+                    <td>{{ bit.fecha | date}}</td>
+
+                  </tr>
+
+
+                </tbody>
+              </table>
+
 
 
             </div>
-          </div>
-
-        </div>
-        <div class="containe_form">
-          <h2 style="text-align: center;margin-top: 1rem; ">BITACORA</h2>
-          <div s class="tabla__mantenimiento">
-
-            <table class="table table-hover table-primary">
-              <thead>
-
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                </tr>
-              </thead>
-              <tbody>
-
-                <tr *ngFor="let bit of bitacora | slice:start:start+5">
-                  <td>id peroo {{ bit.posicion }}</td>
-                  <td>{{ bit.paso1 }}</td>
-                  <td>{{ bit.paso2 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.paso3 }}</td>
-                  <td>{{ bit.fecha | date}}</td>
-
-                </tr>
-
-
-              </tbody>
-            </table>
-
-
+            
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" (click)="paginatioNext('regresa')">Previous</a></li>
+                <li class="page-item"><a class="page-link">{{ pagina}}</a></li>
+                <li class="page-item"><a class="page-link" (click)="paginatioNext('siguiente')">Next</a></li>
+              </ul>
+            </nav>
 
           </div>
-          <!--PARA PODER CAMBIAR DE PAGINAS EN LA TABLA-->
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" (click)="paginatioNext('regresa')">Previous</a></li>
-              <li class="page-item"><a class="page-link">{{ pagina}}</a></li>
-              <li class="page-item"><a class="page-link" (click)="paginatioNext('siguiente')">Next</a></li>
-            </ul>
-          </nav>
-
+         -->
         </div>
+        
+        <div class="formulario__mantenimiento" style="margin-top: 3rem;">
+          <div class="form__posicion">
+          <app-formulario-minisplit-muro-alto-unidades></app-formulario-minisplit-muro-alto-unidades>
+
+</div>
+        </div>
+       
+        
       </div>
-
     </div>
 
     <!--PARTE PARA EL APARTADO DE REPARACION-->
 
-    <div class="reparacion__split" [hidden]="reparacion">
-      <h3 style="text-align: center; margin-top: 1rem; "><strong>Reparación para R-410a Split</strong> </h3>
 
 
 
 
-      <!--fORMULARIO PARA EL APARTADO DE MANTENIMIENTO -->
+      <!--fORMULARIO PARA EL APARTADO DE MANTENIMIENTO 
       <div class="formulario__mantenimiento">
         <div class="form__posicion">
           <div class="card" style="width: 57rem; border-radius: 35px; background-color: #1982c4;">
@@ -364,7 +881,7 @@
                       </label>
                     </div>
                     <div class="form-check ">
-                      <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                     
                       <input class="btn btn-warning" (click)="paso1('R-410a_split_system.PNG')" type="button"
                         value="archivo">
                     </div>
@@ -419,22 +936,72 @@
     </div>
 
 
-  </div>
-<!--MODAL QUE SE LANZARA PARA LOS BOTONES-->
+  </div>-->
+  <!--MODAL QUE SE LANZARA PARA LOS BOTONES-->
 
-     <ng-template #contenido let-modal>
-                        <div class="modal-header">
-                          <h4 class="modal-title">HVAC SYSTEMS SUPPORT</h4>
-                          <button class="close btn btn-danger" aria-label="close" type="button"
-                            (click)="modal.dismiss()">
-                            <span aria-hidden="true">X</span>
-                          </button>
-                        </div>
-                        <div class="modal-body" style="display: flex; justify-content: center;">
+  <ng-template #contenido let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title">HVAC SYSTEMS SUPPORT</h4>
+      <button class="close btn btn-danger" aria-label="close" type="button" (click)="modal.dismiss()">
+        <span aria-hidden="true">X</span>
+      </button>
+    </div>
+    <div class="modal-body" style="display: flex; justify-content: center;">
 
-                          <img src="{{archivo}}" alt="">
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-success" (click)="modal.close()">Ok!</button>
-                        </div>
-                      </ng-template>
+      <img src="{{archivo}}" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-success" (click)="modal.close()">Ok!</button>
+    </div>
+  </ng-template>
+
+
+
+  <!--MODELA PARA LANZAR LOS MODELOS DE LOS MINISPLIT-->
+  <ng-template #contenidoModelo let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title">TAREAS DE MANTENIMIENTO PREVENTIVO A AIREACONDICIONADO</h4>
+      <button class="close btn btn-danger" aria-label="close" type="button" (click)="modal.dismiss()">
+        <span aria-hidden="true">X</span>
+      </button>
+    </div>
+    <div class="modal-body" style="display: flex; justify-content: center; overflow-y: auto; max-height: 400px;">
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">TIPO MINI SPLIT</th>
+            <th scope="col"> </th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+
+            <td>MINI SPLIT MURO ALTO</td>
+            <td><button class="btn btn-warning" (click)="modeloMantenimiento('mantenimiento_modelo1')">Escoger</button>
+            </td>
+          </tr>
+          <tr>
+
+            <td>MINI SPLIT DE MURO ALTO EFICIENCIA ESTANDAR</td>
+            <td><button class="btn btn-warning" (click)="modeloMantenimiento('mantenimiento_modelo2')">Escoger</button>
+            </td>
+          </tr>
+          <tr>
+
+            <td>MINI SPLIT DE MURO ALTO ALTA EFICIENCIA </td>
+            <td><button class="btn btn-warning" (click)="modeloMantenimiento('mantenimiento_modelo3')">Escoger</button>
+            </td>
+          </tr>
+     
+
+        </tbody>
+      </table>
+
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-success" (click)="modal.close()">Ok!</button>
+    </div>
+  </ng-template>
