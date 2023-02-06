@@ -183,6 +183,7 @@ z-index: 50;
      
        
       }
+   
   }
 
 
@@ -219,3 +220,63 @@ z-index: 50;
     height: 770px;
   }
  
+
+
+  /* Instalacion*/
+
+
+  .contenedor_instalacion{
+  
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "diagrama diagramaFlujo"
+                           
+                            "contenido_i contenido_i ";
+   
+   
+  }
+
+  .caja{
+   height: auto;
+  
+    background-color: #8ac926;
+  }
+  .diagrama{
+   grid-area:diagrama;
+ height: 25vh;
+ background-image: url('../../../assets/imagenes/diagrama_instalacion.PNG');
+ background-repeat: no-repeat;
+ background-size: cover;
+  }
+  .diagrama .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+  }
+  .diagrama .transparente{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 12, 12, 0.479);
+  }
+  .diagrama .transparente:hover {
+    background-color: rgba(12, 12, 12, 0);
+  
+
+  }
+.diagramaFlujo{
+  grid-area:diagramaFlujo;
+  
+}
+  .contenido_i{
+    grid-area:contenido_i;
+  }
+  

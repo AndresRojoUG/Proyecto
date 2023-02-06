@@ -29,7 +29,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AdminComponent } from './components/admin/admin.component';
 import { CrearPreguntasService } from './services/crear-preguntas.service';
 import { ActualizarPreguntasComponent } from './components/actualizar-preguntas/actualizar-preguntas.component';
-import { FormularioMinisplitMuroAltoUnidadesComponent } from './components/formulario-minisplit-muro-alto-unidades/formulario-minisplit-muro-alto-unidades.component';
 
 
 
@@ -43,7 +42,7 @@ import { FormularioMinisplitMuroAltoUnidadesComponent } from './components/formu
     R410asplitComponent,
     AdminComponent,
     ActualizarPreguntasComponent,
-    FormularioMinisplitMuroAltoUnidadesComponent,
+
    
     
   ],
