@@ -1,0 +1,3351 @@
+<div class="loader"[hidden]="loader">
+    <span class="letter">C</span>
+    <span class="letter">A</span>
+    <span class="letter">R</span>
+    <span class="letter">G</span>
+    <span class="letter">A</span>
+    <span class="letter">N</span>
+    <span class="letter">D</span>
+    <span class="letter">O</span>
+<div class="carga-img">
+    <span class="carga"></span>
+</div>
+</div>
+<div class="contenedor">
+<div class="menu">
+  <div class="nav_responsive  ">
+
+    
+    
+    <nav class="navbar">
+
+      <div class="row">
+        <div class="col-6" style="display:flex; justify-content: center; align-items: center;">
+       
+            <li style="list-style: none;" class="nav-item dropdown liMenu-no"><a class="nav-link dropdown-toggle" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"><img class="menu_hamburguesa" src="../../../assets/imagenes/menu-button.svg" alt=""></a>
+              <ul class="dropdown-menu" style="background-color: rgb(9, 8, 63);">
+                <li><a calss="dropdown-item">   <h4 class="animate__animated animate__bounce"> Tipo de servicio</h4></a></li>
+          <li><a class="dropdown-item" (click)="manuales(contenidoPdf)">Mostrar manuales</a></li>
+          <li class="liMenu dropdown-item"><a (click)="mostrarDiagnostico()">Diagnostic&oacute;n</a></li>
+          <li class="liMenu dropdown-item"><a (click)="mostrarMantenimiento()">Mantenimiento</a></li>
+          <li class="liMenu dropdown-item"><a (click)="mostrarReparacion()">Reparaci&oacute;n</a></li>
+          <li class="liMenu dropdown-item"><a href="#">Servicios</a></li>
+          <li class="liMenu dropdown-item"><a href="../home/#company">Contacto</a></li>
+        
+      
+      
+              </ul>
+            </li>
+     
+        </div>
+        <div class="col-6" style="display:flex; justify-content: center; align-items: center;">
+
+     
+        <a class="navbar-brand" >
+          <img src="../../../assets/imagenes/hvac.png" alt="Bootstrap" width="10" height="17">
+        </a>
+      </div>
+      
+      </div>
+      </nav>
+
+  </div>
+
+  <div class="no_responsive">
+    <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="../../../assets/imagenes/hvac.png" alt="Bootstrap" width="30" height="24">
+          </a>
+        </div>
+        <h4 class="animate__animated animate__bounce"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+            fill="currentColor" class="bi bi-patch-question" viewBox="0 0 16 16">
+            <path
+              d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z" />
+            <path
+              d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z" />
+            <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
+          </svg> Tipo de servicio</h4>
+        <ul class="menuUl">
+          <li class="liMenu"><a (click)="mostrarDiagnostico()">Diagnostic&oacute;n</a></li>
+          <li class="liMenu"><a (click)="mostrarMantenimiento()">Mantenimiento</a></li>
+          <li class="liMenu"><a (click)="mostrarReparacion()">Reparaci&oacute;n</a></li>
+          <li class="liMenu"><a href="#">Servicios</a></li>
+          <li class="liMenu"><a href="../home/#company">Contacto</a></li>
+          <li class="nav-item dropdown liMenu"><a class="nav-link dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Ayuda</a>
+            <ul class="dropdown-menu" style="background-color: rgb(9, 8, 63);">
+        <li><a class="dropdown-item" (click)="manuales(contenidoPdf)">Mostrar manuales</a></li>
+    
+    
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+</div>
+
+<div class="contenido">
+
+    <h1 style="text-align: center; margin-top: 1rem;" class="animate__jello"> HVAC SYSTEMS SUPPORT <svg
+        xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-snow2"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 16a.5.5 0 0 1-.5-.5v-1.293l-.646.647a.5.5 0 0 1-.707-.708L7.5 12.793v-1.086l-.646.647a.5.5 0 0 1-.707-.708L7.5 10.293V8.866l-1.236.713-.495 1.85a.5.5 0 1 1-.966-.26l.237-.882-.94.542-.496 1.85a.5.5 0 1 1-.966-.26l.237-.882-1.12.646a.5.5 0 0 1-.5-.866l1.12-.646-.884-.237a.5.5 0 1 1 .26-.966l1.848.495.94-.542-.882-.237a.5.5 0 1 1 .258-.966l1.85.495L7 8l-1.236-.713-1.849.495a.5.5 0 1 1-.258-.966l.883-.237-.94-.542-1.85.495a.5.5 0 0 1-.258-.966l.883-.237-1.12-.646a.5.5 0 1 1 .5-.866l1.12.646-.237-.883a.5.5 0 0 1 .966-.258l.495 1.849.94.542-.236-.883a.5.5 0 0 1 .966-.258l.495 1.849 1.236.713V5.707L6.147 4.354a.5.5 0 1 1 .707-.708l.646.647V3.207L6.147 1.854a.5.5 0 1 1 .707-.708l.646.647V.5a.5.5 0 0 1 1 0v1.293l.647-.647a.5.5 0 1 1 .707.708L8.5 3.207v1.086l.647-.647a.5.5 0 1 1 .707.708L8.5 5.707v1.427l1.236-.713.495-1.85a.5.5 0 1 1 .966.26l-.236.882.94-.542.495-1.85a.5.5 0 1 1 .966.26l-.236.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.883.237a.5.5 0 1 1-.26.966l-1.848-.495-.94.542.883.237a.5.5 0 1 1-.26.966l-1.848-.495L9 8l1.236.713 1.849-.495a.5.5 0 0 1 .259.966l-.883.237.94.542 1.849-.495a.5.5 0 0 1 .259.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.236.883a.5.5 0 1 1-.966.258l-.495-1.849-.94-.542.236.883a.5.5 0 0 1-.966.258L9.736 9.58 8.5 8.866v1.427l1.354 1.353a.5.5 0 0 1-.707.708l-.647-.647v1.086l1.354 1.353a.5.5 0 0 1-.707.708l-.647-.647V15.5a.5.5 0 0 1-.5.5z" />
+      </svg></h1>
+    <div class="imagen__mantenimiento">
+      <img
+        style=" margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+        src="../../../assets/equipos/R-410a_split_system.PNG" alt="">
+    </div>
+
+
+
+
+
+    <div class="mantenimiento__split" [hidden]="mantenimiento">
+      <div [hidden]="escoger_modelo_mantenimiento"
+        style="width: 100%; display: flex; justify-content: center; margin-top: 2rem;">
+        <input class="btn btn-warning" (click)="openModelos(contenidoModelo)" type="button" value="Escoge el tipo">
+      </div>
+
+      <div [hidden]="mantenimiento_tipo_mini_split_muro_alto">
+        <h2 style="text-align: center; margin-top: 1rem; "><strong>Mantenimiento para mini split tipo muro alto
+          </strong>
+        </h2>
+
+        <!--fORMULARIO PARA EL APARTADO DE MANTENIMIENTO -->
+        <div class="formulario__mantenimiento">
+          <div class="form__posicion">
+            <div class="card" style="width: 57rem; border-radius: 35px; background-color: #1982c4;">
+
+              <div class="card-body">
+                <h3 style="text-align: center; margin-top: 1rem; "><strong>SERPENTÍN DE CALEFACCIÓN O ENFRIAMMIENTO:
+                  </strong>
+                </h3>
+
+
+                <form id="formulari__mantenimento_principal" [formGroup]="formLogin" (ngSubmit)="agregarNuevaBitacora()"
+                  novalidate>
+                  <div class="form-inline">
+
+
+                    <div class="pregunta1">
+                      <h3 style="text-align: center;">Paso 1</h3>
+
+                      <div class="row" style="display: flex;  align-items: center; ">
+
+                        <div class="col-md-6">
+                          <div class="form-check">
+
+                            <label class="form-check-label" for="paso1">
+                              <strong>Analizar lámpara UV. Limpie o reemplace, si es necesario para asegurar operación
+                                correcta</strong>
+                            </label>
+
+                          </div>
+                        </div>
+
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input style="margin-bottom: 0;" class="btn btn-warning"
+                              (click)="paso1('R-410a_split_system.PNG')" type="button" value="archivo">
+
+                          </div>
+
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="paso1('R-410a_split_system.PNG')" type="button"
+                              value="archivo">
+                          </div>
+
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" id="paso1check" type="checkbox" formControlName="paso1check"
+                              (click)="mostrarSiguiente('paso2')" name="paso1" required>
+                            <label class="form-check-label" for="paso1check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+
+
+                      </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+                    <div class="pregunta2" [hidden]="paso2">
+                      <h3 style="text-align: center;">Paso 2</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso2">
+                              <strong>Analizar Trampa P. Preparar como sea necesario para asegurar operación
+                                correcta.</strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+
+                        <div class="col-md-2">
+                          <div class="form-check ">
+                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                              value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso2check"
+                              (click)="mostrarSiguiente('paso3')" name="paso2check" id="paso2check" required>
+                            <label class="form-check-label" for="paso2check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+                    </div>
+
+                    <div class="pregunta3" [hidden]="paso3">
+                      <h3 style="text-align: center;">Paso 3 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso3">
+                              <strong>Verificar para operación correcta del serpentín refrigerante o serpentín de
+                                calefacción. Limpie, restaure o reemplace, como sea requerido.</strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso3check"
+                              (click)="mostrarSiguiente('paso4')" name="exampleRadios" id="paso3check" value="option2"
+                              required>
+                            <label class="form-check-label" for="paso3check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <div class="pregunta3" [hidden]="paso4">
+                      <h3 style="text-align: center;">Paso 4 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso4">
+                              <strong>Verificar la presión del sistema refrigerante o temperatura. Si está fuera de los
+                                niveles recomendados,
+                                encuentre la causa, repare y ajuste refrigerante para lograr niveles de operación
+                                óptimos.
+                              </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso4check"
+                              (click)="mostrarSiguiente('paso5')" name="exampleRadios" id="paso4check" required>
+                            <label class="form-check-label" for="paso4check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <div class="pregunta3" [hidden]="paso5">
+                      <h3 style="text-align: center;">Paso 5 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso5">
+                              <strong>Revisar por suciedad, corrosión o degradación. Limpie o repare como sea necesario.
+                              </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso5check"
+                              (click)="mostrarSiguiente('paso6')" name="exampleRadios" id="paso5check" required>
+                            <label class="form-check-label" for="paso5check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="pregunta3" [hidden]="paso6">
+                      <h3 style="text-align: center;">Paso 6 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso6">
+                              <strong>Revisar integridad de todos los paneles del equipo. Reemplace aseguradores como
+                                sea necesario,
+                                para asegurar integridad propia y ajuste/acabado del equipo
+                              </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso6check"
+                              (click)="mostrarSiguiente('paso7')" name="exampleRadios" id="paso6check" required>
+                            <label class="form-check-label" for="paso6check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="pregunta3" [hidden]="paso7">
+                      <h3 style="text-align: center;">Paso 7 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso7">
+                              <strong>Revisar el depósito de desagüe, línea de desagüe y bobinas por crecimiento
+                                biológico.
+                              </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso7check"
+                              (click)="mostrarSiguiente('paso8')" name="exampleRadios" id="paso7check" required>
+                            <label class="form-check-label" for="paso7check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="pregunta3" [hidden]="paso8">
+                      <h3 style="text-align: center;">Paso 8 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso8">
+                              <strong>Limpie como sea necesario. </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso8check"
+                              (click)="mostrarSiguiente('paso9')" name="exampleRadios" id="paso8check" required>
+                            <label class="form-check-label" for="paso8check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="pregunta3" [hidden]="paso9">
+                      <h3 style="text-align: center;">Paso 9</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso9">
+                              <strong>Revisar el serpentín del evaporador. Restaure si es posible. Reemplace
+                                el serpentín si es necesario para retornar al funcionamiento apropiado
+
+                              </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso9check"
+                              (click)="mostrarSiguiente('paso10')" name="exampleRadios" id="paso9check" required>
+                            <label class="form-check-label" for="paso9check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="pregunta3" [hidden]="paso10">
+                      <h3 style="text-align: center;">Paso 10 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso10">
+                              <strong>Inspeccionar por evidencia de arrastre de humedad más allá de los depósitos de
+                                desagüe
+                                del serpentín de enfriamiento. Hacer correcciones o reparaciones, como sea necesario.
+                              </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso10check"
+                              (click)="mostrarSiguiente('paso11')" name="exampleRadios" id="paso10check" required>
+                            <label class="form-check-label" for="paso10check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="pregunta3" [hidden]="paso11">
+                      <h3 style="text-align: center;">Paso 11</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso11">
+                              <strong>Visualmente inspeccionar áreas de acumulación de humedad por crecimiento
+                                biológico.</strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso11check"
+                              (click)="mostrarSiguiente('paso12')" name="exampleRadios" id="paso11check" required>
+                            <label class="form-check-label" for="paso11check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="pregunta3" [hidden]="paso12">
+                      <h3 style="text-align: center;">Paso 12 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso12">
+                              <strong>Si está presente, limpie o desinfecte como sea necesario. </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso12check"
+                              (click)="mostrarSiguiente('paso13')" name="exampleRadios" id="paso12check" required>
+                            <label class="form-check-label" for="paso12check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="pregunta13" [hidden]="paso13">
+                      <h3 style="text-align: center;">Paso 13 </h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso13">
+                              <strong>Revisar bombas de condensado. Limpie o reemplace, como sea necesario. </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
+                              value="lanzar modal XL">
+
+
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso13check"
+                              (click)="mostrarSiguiente('paso14')" name="exampleRadios" id="paso13check" required>
+                            <label class="form-check-label" for="paso13check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="pregunta14Unidades" [hidden]="paso14">
+                      <h1 style="text-align: center; margin-top: 2rem; margin-bottom: 1.5 rem;">UNIDADES DE CONDENSACIÓN
+                      </h1>
+                      <h3 style="text-align: center;">Paso 14</h3>
+
+                      <div class="row" style="display: flex;  align-items: center; ">
+
+                        <div class="col-md-6">
+                          <div class="form-check">
+
+                            <label class="form-check-label" for="paso14Unidades">
+                              <strong>Revisar el sistema de control y dispositivos para evidencia de operación impropia.
+                                Repare, ajuste o reemplace componentes para asegurar operación correcta.
+                              </strong>
+                            </label>
+
+                          </div>
+                        </div>
+
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input style="margin-bottom: 0;" class="btn btn-warning" type="button" value="archivo">
+
+                          </div>
+
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning" type="button" value="archivo">
+                          </div>
+
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" id="paso1Unidadescheck" type="checkbox"
+                              formControlName="paso14Unidadescheck" (click)="mostrarSiguiente('paso15')"
+                              name="paso14Unidadescheck" required>
+                            <label class="form-check-label" for="paso14Unidadescheck">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+
+
+                      </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+                    <div class="pregunta15Unidades" [hidden]="paso15">
+                      <h3 style="text-align: center;">Paso 15</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso15Unidades">
+                              <strong>Revisar tensión de correa de ventilador. Chequear por uso de correa y alineamiento
+                                propio.
+                                Reemplace si es necesario para asegurar operación correcta.
+                              </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+
+                        <div class="col-md-2">
+                          <div class="form-check ">
+                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                              value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso15check"
+                              (click)="mostrarSiguiente('paso16')" name="paso2check" id="paso15check" required>
+                            <label class="form-check-label" for="paso16check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+                    </div>
+
+                    <div class="pregunta16Unidades" [hidden]="paso16">
+                      <h3 style="text-align: center;">Paso 16</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso16Unidades">
+                              <strong>Revisar la caja de control por suciedad, desechos y/o terminaciones flojas. Limpie
+                                y ajuste como sea necesario.
+                              </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+
+                        <div class="col-md-2">
+                          <div class="form-check ">
+                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                              value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso16check"
+                              (click)="mostrarSiguiente('paso18')" name="paso2check" id="paso16check" required>
+                            <label class="form-check-label" for="paso16check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+                    </div>
+
+                    <div class="pregunta18Unidades" [hidden]="paso18">
+                      <h3 style="text-align: center;">Paso 17</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso18Unidades">
+                              <strong>Revisar contactos del motor por picaduras u otros signos de daños. Repare o
+                                reemplace como sea necesario
+                              </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+
+                        <div class="col-md-2">
+                          <div class="form-check ">
+                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                              value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso18check"
+                              (click)="mostrarSiguiente('paso19')" name="paso4check" id="paso18check" required>
+                            <label class="form-check-label" for="paso18check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+                    </div>
+
+                    <div class="pregunta19Unidades" [hidden]="paso19">
+                      <h3 style="text-align: center;">Paso 18</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso19Unidades">
+                              <strong>Revisar cuchillas de ventilador para equilibrio y crecimiento de partículas.
+                                Limpiar, reparar o reemplazar, como sea necesario, para asegurar operación correcta.
+
+                              </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+
+                        <div class="col-md-2">
+                          <div class="form-check ">
+                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                              value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso19check"
+                              (click)="mostrarSiguiente('paso20')" name="paso19check" id="paso19check" required>
+                            <label class="form-check-label" for="paso19check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+                    </div>
+
+                    <div class="pregunta6Unidades" [hidden]="paso20">
+                      <h3 style="text-align: center;">Paso 19</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso20Unidades">
+                              <strong>Revisar presión del sistema refrigerante y/o temperatura. Si está fuera de los
+                                niveles recomendados, encuentre la causa, repare y ajuste refrigerante para lograr
+                                niveles de operación óptimos.
+                              </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+
+                        <div class="col-md-2">
+                          <div class="form-check ">
+                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                              value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso20check"
+                              (click)="mostrarSiguiente('paso21')" name="paso6check" id="paso20check" required>
+                            <label class="form-check-label" for="paso20check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+                    </div>
+
+                    <div class="pregunta21Unidades" [hidden]="paso21">
+                      <h3 style="text-align: center;">Paso 20</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso21Unidades">
+                              <strong>Revisar por suciedad, corrosión o degradación. Limpie o repare como sea necesario
+                              </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+
+                        <div class="col-md-2">
+                          <div class="form-check ">
+                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                              value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso21check"
+                              (click)="mostrarSiguiente('paso22')" name="paso22check" id="paso21check" required>
+                            <label class="form-check-label" for="paso21check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+                    </div>
+
+                    <div class="pregunta8Unidades" [hidden]="paso22">
+                      <h3 style="text-align: center;">Paso 21</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso22Unidades">
+                              <strong>Revisar alineación de mando, uso, asiento y operación. Repare y reemplace, como
+                                sea necesario. Para ensamblaje de acoplado directo de ventilador/motor, chequear
+                                cojinetes y lubricar o reemplazar. Inspeccionar superficie del condensador enfriado por
+                                aire. Repare o limpie como sea necesario.
+                              </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+
+                        <div class="col-md-2">
+                          <div class="form-check ">
+                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                              value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso22check"
+                              (click)="mostrarSiguiente('paso23')" name="paso22check" id="paso22check" required>
+                            <label class="form-check-label" for="paso22check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+                    </div>
+
+                    <div class="pregunta23Unidades" [hidden]="paso23">
+                      <h3 style="text-align: center;">Paso 22</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso23Unidades">
+                              <strong>Revisar la secuencia de control de cabeza de presión de bajo ambiente para
+                                operación correcta. Repare o reemplace los componentes o modificar el software/algoritmo
+                                para asegurar operación correcta.
+                              </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+
+                        <div class="col-md-2">
+                          <div class="form-check ">
+                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                              value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso23check"
+                              (click)="mostrarSiguiente('paso24')" name="paso23check" id="paso23check" required>
+                            <label class="form-check-label" for="paso23check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+                    </div>
+
+                    <div class="pregunta10Unidades" [hidden]="paso24">
+                      <h3 style="text-align: center;">Paso 23</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="paso24Unidades">
+                              <strong>Revisar niveles de aceite refrigerante para los sistemas refrigerantes de
+                                controles de presión/nivel de aceite. Reparar, reemplazar o ajustar, como sea necesario,
+                                para asegurar operación correcta.
+                              </strong>
+                            </label>
+
+
+                          </div>
+                        </div>
+
+                        <div class="col-md-2">
+                          <div class="form-check ">
+                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
+                              value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check ">
+
+                            <input class="btn btn-warning"
+                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
+                              type="button" value="archivo">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" formControlName="paso24check"
+                              (click)="mostrarSiguiente('fecha_modelo1')" name="paso24check" id="paso24check" required>
+                            <label class="form-check-label" for="paso24check">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+                    </div>
+
+
+                    <div class="fecha_modelo1" [hidden]="fecha_modelo1">
+                      <h3 style="text-align: center;">fecha modelo 1</h3>
+                      <div class="row" style="display: flex;  align-items: center;">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <label class="form-check-label" for="exampleRadio1">
+                              Fecha
+                            </label>
+                            <input style="width: 130px;" id="exampleRadio1" type="date" class="form-control"
+                              formControlName="fecha" required>
+
+                          </div>
+                        </div>
+
+                        <div class="col-md-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                              (click)="mostrarSiguiente('botonMantenimiento')" name="exampleRadios" id="exampleRadio2"
+                              value="option2" required>
+                            <label class="form-check-label" for="exampleRadio2">
+                              Hecho
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  </div>
+
+                  <input hidden="true" type="number" [value]="posicionn" formControlName="posicion">
+
+                  <button [hidden]="botonMantenimiento" type="submit" class="btn btn-enviar">Enviar</button>
+                </form>
+
+
+              </div>
+            </div>
+
+          </div>
+          <!--
+
+
+           <div class="containe_form">
+            <h2 style="text-align: center;margin-top: 1rem; ">BITACORA</h2>
+            <div s class="tabla__mantenimiento">
+
+              <table class="table table-hover table-primary">
+                <thead>
+
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr *ngFor="let bit of bitacora | slice:start:start+5">
+                    <td>id peroo {{ bit.posicion }}</td>
+  
+                    <td>{{ bit.fecha | date}}</td>
+
+                  </tr>
+
+
+                </tbody>
+              </table>
+
+
+
+            </div>
+            
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" (click)="paginatioNext('regresa')">Previous</a></li>
+                <li class="page-item"><a class="page-link">{{ pagina}}</a></li>
+                <li class="page-item"><a class="page-link" (click)="paginatioNext('siguiente')">Next</a></li>
+              </ul>
+            </nav>
+
+          </div>
+         -->
+        </div>
+
+      </div>
+    </div>
+
+    <!--PARTE PARA EL APARTADO DE REPARACION-->
+
+
+
+
+
+    <!--fORMULARIO PARA EL APARTADO DE MANTENIMIENTO 
+      <div class="formulario__mantenimiento">
+        <div class="form__posicion">
+          <div class="card" style="width: 57rem; border-radius: 35px; background-color: #1982c4;">
+
+            <div class="card-body">
+              <form id="formulari__mantenimento_principal" [formGroup]="formLogin" (ngSubmit)="agregarNuevaBitacora()"
+                novalidate>
+                <div class="form-inline">
+                  <div class="pregunta1">
+                    <h3 style="text-align: center;">paso1</h3>
+                    <div class="form-check">
+                      <label class="form-check-label" for="exampleRadios1">
+                        adsadlkkaskslkklkjsadjklasdjs
+                      </label>
+                      <input style="width: 130px;" id="exampleRadio" type="text" class="form-control"
+                        formControlName="paso1" required="">
+
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="paso1check"
+                        (click)="mostrarSiguiente('paso2')" name="exampleRadios" id="exampleRadio" value="option2"
+                        required>
+                      <label class="form-check-label" for="exampleRadio">
+                        Hecho
+                      </label>
+                    </div>
+
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning" (click)="paso1('R-410a_split_system.PNG')" type="button"
+                        value="archivo">
+                    </div>
+                  </div>
+
+
+                  <div class="pregunta2" [hidden]="paso2">
+                    <h3 style="text-align: center;">paso2</h3>
+                    <div class="form-check">
+                      <label class="form-check-label" for="exampleRadios">
+                        adsadlkkaskslkklkjsadjklasdjs
+                      </label>
+                      <input style="width: 130px;" id="exampleRadios" type="text" class="form-control"
+                        formControlName="paso2" required>
+
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="paso2check"
+                        (click)="mostrarSiguiente('paso3')" name="exampleRadios" id="exampleRadios" value="option2"
+                        required>
+                      <label class="form-check-label" for="exampleRadios">
+                        Hecho
+                      </label>
+                    </div>
+                    <div class="form-check ">
+                     
+                      <input class="btn btn-warning" (click)="paso1('R-410a_split_system.PNG')" type="button"
+                        value="archivo">
+                    </div>
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning" (click)="paso1('R-410a_split_system.PNG')" type="button"
+                        value="archivo">
+                    </div>
+                  </div>
+
+                  <div class="pregunta3" [hidden]="paso3">
+                    <h3 style="text-align: center;">paso3</h3>
+                    <div class="form-check">
+                      <label class="form-check-label" for="exampleRadio1">
+                        adsadlkkaskslkklkjsadjklasdjs
+                      </label>
+                      <input style="width: 130px;" id="exampleRadio1" type="text" class="form-control"
+                        formControlName="paso3" required>
+
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="paso3check"
+                        (click)="mostrarSiguiente('botonMantenimiento')" name="exampleRadios" id="exampleRadio2"
+                        value="option2" required>
+                      <label class="form-check-label" for="exampleRadio2">
+                        Hecho
+                      </label>
+                    </div>
+
+                    <div class="form-check ">
+
+                      <input class="btn btn-warning" (click)="paso1('R-410a_split_system.PNG')" type="button"
+                        value="archivo">
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <input hidden="true" type="number" [value]="posicionn" formControlName="posicion">
+
+                <button [hidden]="botonMantenimiento" type="submit" class="btn btn-enviar">Enviar</button>
+              </form>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>-->
+
+
+
+
+    <!---->
+
+    <!-- APARTADO PARA LA INSTALACION-->
+
+    <div class="contenedor_diagnostico" [hidden]="diagnostico">
+      <h1 style="justify-content: center; text-align: center; margin-top: 2rem;">DIAGNOSTICO</h1>
+      <h2 class="h2">LED parpadeante de la unidad interior/exterior y juicio principal</h2>
+
+      <h2 class="h2">Inserte el codigo de error que se le muestra</h2>
+      <div class="form_codigo" style="margin-top: 2rem;">
+        <form [formGroup]="formCodigo">
+          <div class="mb-3">
+            <label for="codigoError" class="form-label" style="font-weight: bold; text-align: center;">Codigo</label>
+            <input autocomplete="off" type="text" class="form-control" id="codigoError"
+              onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"
+              aria-describedby="codigoError" formControlName="codigo">
+
+          </div>
+          <button (click)="buscarError()" type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+      </div>
+
+      <div class="erroresF1" style="margin-top: 3rem;" [hidden]="errorF1">
+        <div class="herramientas">
+          <button (click)="openXL(contenido,'../../../assets/imagenes/herramientasF.PNG')"
+            class="btn btn-success">Herramientas necesarias</button>
+        </div>
+
+        <div class="card ">
+          <div class="pasoserrF1">
+            <h1><span style="font-weight: bold; color: rgb(218, 32, 32);">Motivo:</span></h1>
+            <h3 style="text-decoration: underline;">Sensor de temperatura Interior
+              Mal funcionando</h3>
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">F1 </span>Sensor de temperatura interior</h1>
+
+            <h2>Revisar</h2>
+            <h4>1.-Sensor abierto o en corto circuito.</h4>
+            <h4>2.-Sensor no esta conectado.</h4>
+            <h4>3.-Favor de referirse a la tabla de valores de resistencia. ====></h4>
+          </div>
+          <div class="imagf1">
+            <img width="400px" height="300px" src="../../../assets/imagenes/sENSOR_TEMP_INTERIOR.PNG" alt="">
+
+            <button (click)="openXL(contenido,'../../../assets/imagenes/tablaF1.PNG')" class="btn btn-success"
+              class="btn btn-success">valores de resistencia</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="erroresF2" style="margin-top: 3rem;" [hidden]="errorF2">
+        <div class="herramientas">
+          <button (click)="openXL(contenido,'../../../assets/imagenes/herramientasF.PNG')"
+            class="btn btn-success">Herramientas necesarias</button>
+        </div>
+
+        <div class="card ">
+          <div class="pasoserrF1">
+            <h1><span style="font-weight: bold; color: rgb(218, 32, 32);">Motivo:</span></h1>
+            <h3 style="text-decoration: underline;">Sensor de temperatura de tubo
+              interior mal funcionando</h3>
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">F2 </span>Sensor de temperatura
+              del tubo interior</h1>
+
+            <h2>Revisar</h2>
+            <h4>1.-Sensor abierto o en corto circuito.</h4>
+            <h4>2.-Sensor no esta conectado.</h4>
+            <h4>3.-Favor de referirse a la tabla de valores de resistencia. ====></h4>
+          </div>
+          <div class="imagf1">
+            <img width="400px" height="300px" src="../../../assets/imagenes/errorF2.PNG" alt="">
+
+            <button (click)="openXL(contenido,'../../../assets/imagenes/tablaF2.PNG')" class="btn btn-success"
+              class="btn btn-success">valores de resistencia</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="erroresE1" style="margin-top: 3rem;" [hidden]="errorE1">
+
+
+        <div class="card ">
+          <div class="pasoserrF1">
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">E1 </span>Protección por alta
+              presión del sistema</h1>
+            <h1><span>Bscar que nos esta ocacionando la alta presi&oacute;n y corregirlo.</span></h1>
+            <h2 style="font-weight: bold; color: rgb(218, 32, 32);">1.- Demasiada carga de refrigerante.</h2>
+            <h2 style="font-weight: bold; color: rgb(218, 32, 32);">2.- Serpentín sucio. </h2>
+            <h2 style="font-weight: bold; color: rgb(218, 32, 32);">3.- Ventilador del condensador no funciona.</h2>
+            <h2 style="font-weight: bold; color: rgb(218, 32, 32);">4.- No condensables.</h2>
+            <h2 style="font-weight: bold; color: rgb(218, 32, 32);">5.- Temperatura exterior muy alta.</h2>
+            <h2 style="font-weight: bold; color: rgb(218, 32, 32);">6.- Remplazar el PCB.</h2>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+
+
+
+          </div>
+          <div class="imagf1">
+            <img width="400px" height="300px" src="../../../assets/imagenes/ErrorE1.PNG" alt="">
+
+          
+          </div>
+
+
+          <div class="diagramascontenido">
+            <h1 style="text-align: center; font-weight: bold; margin-bottom: 2rem;">E1: Protección por Alta Presión</h1>
+            <h1 style="text-align: center; font-weight: bold;">Verificar lo siguiente:</h1>
+            <form [formGroup]="formDiagrama">
+              <div class="form-inline">
+                <div class="paso1E1">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso1E1">
+                          <strong>Si el display de la unidad y la tarjeta
+                            principal están apretadas correctamente</strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso1E1sicheck" type="checkbox"
+                          formControlName="paso1E1sicheck" (click)="mostrarPasoSiguiuente('paso2E1si')" name="paso1E1si"
+                          required>
+                        <label class="form-check-label" for="paso1E1sicheck">
+                          SI
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso1E1nocheck" type="checkbox"
+                          formControlName="paso1E1nocheck" (click)="mostrarPasoSiguiuente('paso2E1no')" name="paso1E1no"
+                          required>
+                        <label class="form-check-label" for="paso1E1nocheck">
+                          NO
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="paso2E1si" [hidden]="paso2E1si">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso2E1si">
+                          <strong>Si la terminal OVC de la tarjeta principal
+                            esta conectada correctamente con el
+                            switch de alta presión
+                          </strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+                          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('paso3E1si')" name="paso2E1si"
+                          required>
+                        <label class="form-check-label" for="paso2E1sicheck">
+                          SI
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+                          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso3E1no')" name="paso2E1no"
+                          required>
+                        <label class="form-check-label" for="paso2E1nocheck">
+                          NO
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="paso2E1no" [hidden]="paso2E1no">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso2E1no">
+                          <strong>Conecte el display de la unidad
+                            con la tarjeta principal
+                            correctamente
+                          </strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+                          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('resuelto')" name="paso2E1si"
+                          required>
+                        <label class="form-check-label" for="paso2E1sicheck">
+                          Se resolvio el problema
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+                          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso2E1si')" name="paso2E1no"
+                          required>
+                        <label class="form-check-label" for="paso2E1nocheck">
+                          No se resolvio
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="paso2E1si" [hidden]="paso3E1si">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso2E1si">
+                          <strong>Si el alambrado, del switch de alta
+                            presión se encuentran flojos o si este
+                            esta dañado.
+                          </strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+                          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('paso4E1si')" name="paso2E1si"
+                          required>
+                        <label class="form-check-label" for="paso2E1sicheck">
+                          SI
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+                          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso4E1no')" name="paso2E1no"
+                          required>
+                        <label class="form-check-label" for="paso2E1nocheck">
+                          NO
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="paso2E1no" [hidden]="paso3E1no">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso2E1no">
+                          <strong>Conecte la terminal OVC de la
+                            tarjeta principal correctamente
+                            con el switch de alta presión
+                          </strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+                          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('resuelto')" name="paso2E1si"
+                          required>
+                        <label class="form-check-label" for="paso2E1sicheck">
+                          Se resolvio el problema
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+                          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso3E1si')" name="paso2E1no"
+                          required>
+                        <label class="form-check-label" for="paso2E1nocheck">
+                          No se resolvio
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!------jsdhkasjdhkashdksahdka-->
+                <div class="paso2E1si" [hidden]="paso4E1no">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso2E1si">
+                          <strong>Exceso de refrigerante
+                          </strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+                          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('paso5E1si')" name="paso2E1si"
+                          required>
+                        <label class="form-check-label" for="paso2E1sicheck">
+                          SI
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+                          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso5E1no')" name="paso2E1no"
+                          required>
+                        <label class="form-check-label" for="paso2E1nocheck">
+                          NO
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="paso2E1no" [hidden]="paso4E1si">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso2E1no">
+                          <strong>Conecte apropiadamente el
+                            alambrado o remplace el switch
+                            de alta presión                            
+                          </strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+                          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('resuelto')" name="paso2E1si"
+                          required>
+                        <label class="form-check-label" for="paso2E1sicheck">
+                          Se resolvio el problema
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+                          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso4E1no')" name="paso2E1no"
+                          required>
+                        <label class="form-check-label" for="paso2E1nocheck">
+                          No se resolvio
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-----alksdjadajkhduiaerheiu-->
+
+                <div class="paso2E1si" [hidden]="paso5E1no">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso2E1si">
+                          <strong>Pobre intercambio de calor (incluyendo
+                            suciedad bloqueo de intercambiador de calor
+                            y mal ambiente de radiación);
+                          </strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+                          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('paso6E1si')" name="paso2E1si"
+                          required>
+                        <label class="form-check-label" for="paso2E1sicheck">
+                          SI
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+                          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso6E1no')" name="paso2E1no"
+                          required>
+                        <label class="form-check-label" for="paso2E1nocheck">
+                          NO
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="paso2E1no" [hidden]="paso5E1si">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso2E1no">
+                          <strong>Ajuste la carga de refrigerante                          
+                          </strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+                          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('resuelto')" name="paso2E1si"
+                          required>
+                        <label class="form-check-label" for="paso2E1sicheck">
+                          Se resolvio el problema
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+                          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso5E1no')" name="paso2E1no"
+                          required>
+                        <label class="form-check-label" for="paso2E1nocheck">
+                          No se resolvio
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-------------------------------------------------------->
+
+                <div class="paso2E1si" [hidden]="paso6E1no">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso2E1si">
+                          <strong>La temperatura ambiente es demasiado alta;
+                            (la protección de alta presión puede ser
+                            causada por la protección de sobrecorriente
+                            debido a esta razón)
+                          </strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+                          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('paso7E1si')" name="paso2E1si"
+                          required>
+                        <label class="form-check-label" for="paso2E1sicheck">
+                          SI
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+                          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso7E1no')" name="paso2E1no"
+                          required>
+                        <label class="form-check-label" for="paso2E1nocheck">
+                          NO
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="paso2E1no" [hidden]="paso6E1si">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso2E1no">
+                          <strong>Ajuste la unidad para mejorar el
+                            intercambio de calor                         
+                          </strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+                          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('resuelto')" name="paso2E1si"
+                          required>
+                        <label class="form-check-label" for="paso2E1sicheck">
+                          Se resolvio el problema
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+                          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso6E1no')" name="paso2E1no"
+                          required>
+                        <label class="form-check-label" for="paso2E1nocheck">
+                          No se resolvio
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------->
+                <div class="paso2E1si" [hidden]="paso7E1no">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso2E1si">
+                          <strong>Cheque si el voltaje de alimentación es
+                            normal (la protección de alta presión puede
+                            ser causada por la protección de
+                            sobrecorriente debido a esta razón)
+                          </strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+                          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('paso8E1si')" name="paso2E1si"
+                          required>
+                        <label class="form-check-label" for="paso2E1sicheck">
+                          SI
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+                          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso8E1no')" name="paso2E1no"
+                          required>
+                        <label class="form-check-label" for="paso2E1nocheck">
+                          NO
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="paso2E1no" [hidden]="paso7E1si">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso2E1no">
+                          <strong>La temperatura Ambiente
+                            decrece                        
+                          </strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+                          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('resuelto')" name="paso2E1si"
+                          required>
+                        <label class="form-check-label" for="paso2E1sicheck">
+                          Se resolvio el problema
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+                          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso7E1no')" name="paso2E1no"
+                          required>
+                        <label class="form-check-label" for="paso2E1nocheck">
+                          No se resolvio
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-------------------------------->
+                <div class="paso2E1si" [hidden]="paso8E1si">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso2E1si">
+                          <strong>Compruebe que la toma de aire y de
+                            descarga de aire en el intercambiador de
+                            calor interior / exterior es suave? Si el ciclo
+                            de aire está cortocircuitado?                            
+                          </strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+                          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('paso9E1si')" name="paso2E1si"
+                          required>
+                        <label class="form-check-label" for="paso2E1sicheck">
+                          SI
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+                          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso9E1no')" name="paso2E1no"
+                          required>
+                        <label class="form-check-label" for="paso2E1nocheck">
+                          NO
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="paso2E1no" [hidden]="paso8E1no">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso2E1no">
+                          <strong>Voltaje dentro del rango del
+                            +/- 10% del voltaje de placa                       
+                          </strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+                          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('resuelto')" name="paso2E1si"
+                          required>
+                        <label class="form-check-label" for="paso2E1sicheck">
+                          Se resolvio el problema
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+                          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso8E1si')" name="paso2E1no"
+                          required>
+                        <label class="form-check-label" for="paso2E1nocheck">
+                          No se resolvio
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!------------------------------->
+                <div class="paso2E1si" [hidden]="paso9E1si">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso2E1si">
+                          <strong>Compruebe si hay obstrucción suciedad del
+                            filtro y el intercambio de calor de aletas de la
+                            unidad interior / exterior?                            
+                          </strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+                          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('paso10E1si')" name="paso2E1si"
+                          required>
+                        <label class="form-check-label" for="paso2E1sicheck">
+                          SI
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+                          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso10E1no')" name="paso2E1no"
+                          required>
+                        <label class="form-check-label" for="paso2E1nocheck">
+                          NO
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="paso2E1no" [hidden]="paso9E1no">
+                  <div class="row" style="display: flex;  align-items: center; ">
+
+                    <div class="col-md-6">
+                      <div class="form-check">
+
+                        <label class="form-check-label" for="paso2E1no">
+                          <strong>Ajuste el sistema para mejorar
+                            la toma de aire y de descarga
+                            de aire en el intercambiador
+                            de calor interior / exterior sea
+                            suave?                       
+                          </strong>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+                          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('resuelto')" name="paso2E1si"
+                          required>
+                        <label class="form-check-label" for="paso2E1sicheck">
+                          Se resolvio el problema
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+                          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso9E1si')" name="paso2E1no"
+                          required>
+                        <label class="form-check-label" for="paso2E1nocheck">
+                          No se resolvio
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<!------------------------------->
+<div class="paso2E1si" [hidden]="paso10E1no">
+  <div class="row" style="display: flex;  align-items: center; ">
+
+    <div class="col-md-6">
+      <div class="form-check">
+
+        <label class="form-check-label" for="paso2E1si">
+          <strong>El sistema de tubería está bloqueado.                        
+          </strong>
+        </label>
+
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="form-check">
+        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('paso11E1si')" name="paso2E1si"
+          required>
+        <label class="form-check-label" for="paso2E1sicheck">
+          SI
+        </label>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-check">
+        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso11E1no')" name="paso2E1no"
+          required>
+        <label class="form-check-label" for="paso2E1nocheck">
+          NO
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="paso2E1no" [hidden]="paso10E1si">
+  <div class="row" style="display: flex;  align-items: center; ">
+
+    <div class="col-md-6">
+      <div class="form-check">
+
+        <label class="form-check-label" for="paso2E1no">
+          <strong>Elimine la suciedad que
+            ocasione la obstrucción                 
+          </strong>
+        </label>
+
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="form-check">
+        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('resuelto')" name="paso2E1si"
+          required>
+        <label class="form-check-label" for="paso2E1sicheck">
+          Se resolvio el problema
+        </label>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-check">
+        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso10E1no')" name="paso2E1no"
+          required>
+        <label class="form-check-label" for="paso2E1nocheck">
+          No se resolvio
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!------------------------------->
+<div class="paso2E1si" [hidden]="paso11E1no">
+  <div class="row" style="display: flex;  align-items: center; ">
+
+    <div class="col-md-6">
+      <div class="form-check">
+
+        <label class="form-check-label" for="paso2E1si">
+          <strong>Verifique si la válvula de gas y la válvula de
+            líquido de la unidad exterior se abren por
+            completo?
+                                    
+          </strong>
+        </label>
+
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="form-check">
+        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('paso12E1si')" name="paso2E1si"
+          required>
+        <label class="form-check-label" for="paso2E1sicheck">
+          SI
+        </label>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-check">
+        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso12E1no')" name="paso2E1no"
+          required>
+        <label class="form-check-label" for="paso2E1nocheck">
+          NO
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="paso2E1no" [hidden]="paso11E1si">
+  <div class="row" style="display: flex;  align-items: center; ">
+
+    <div class="col-md-6">
+      <div class="form-check">
+
+        <label class="form-check-label" for="paso2E1no">
+          <strong>Deshágase de la obstrucción
+            de la tubería                             
+          </strong>
+        </label>
+
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="form-check">
+        <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+          formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('resuelto')" name="paso2E1si"
+          required>
+        <label class="form-check-label" for="paso2E1sicheck">
+          Se resolvio el problema
+        </label>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-check">
+        <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+          formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso11E1no')" name="paso2E1no"
+          required>
+        <label class="form-check-label" for="paso2E1nocheck">
+          No se resolvio
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!------------------------------->
+  <div class="paso2E1si" [hidden]="paso12E1si">
+    <div class="row" style="display: flex;  align-items: center; ">
+  
+      <div class="col-md-6">
+        <div class="form-check">
+  
+          <label class="form-check-label" for="paso2E1si">
+            <strong>Compruebe si la señal de alta presión es de
+              alto nivel?                
+            </strong>
+          </label>
+  
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="form-check">
+          <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+            formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('paso13E1si')" name="paso2E1si"
+            required>
+          <label class="form-check-label" for="paso2E1sicheck">
+            SI
+          </label>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-check">
+          <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+            formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso13E1no')" name="paso2E1no"
+            required>
+          <label class="form-check-label" for="paso2E1nocheck">
+            NO
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="paso2E1no" [hidden]="paso12E1no">
+    <div class="row" style="display: flex;  align-items: center; ">
+  
+      <div class="col-md-6">
+        <div class="form-check">
+  
+          <label class="form-check-label" for="paso2E1no">
+            <strong>Abra la válvula de gas y la
+              válvula de líquido de la unidad
+              completamente?                            
+            </strong>
+          </label>
+  
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="form-check">
+          <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+            formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('resuelto')" name="paso2E1si"
+            required>
+          <label class="form-check-label" for="paso2E1sicheck">
+            Se resolvio el problema
+          </label>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-check">
+          <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+            formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso12E1si')" name="paso2E1no"
+            required>
+          <label class="form-check-label" for="paso2E1nocheck">
+            No se resolvio
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------->
+  <div class="paso2E1si" [hidden]="paso13E1si">
+    <div class="row" style="display: flex;  align-items: center; ">
+  
+      <div style="text-align: center;" class="col-md-12">
+        <div class="form-check">
+  
+          <label style="font-size: 30px;"class="form-check-label" for="paso2E1si">
+            <strong><span style="color: red;">Remplace el
+              Controlador</span>             
+            </strong>
+          </label>
+  
+        </div>
+      </div>
+  
+      
+    </div>
+  </div>
+  <div class="paso2E1no" [hidden]="paso13E1no">
+    <div class="row" style="display: flex;  align-items: center; ">
+  
+      <div class="col-md-6">
+        <div class="form-check">
+  
+          <label class="form-check-label" for="paso2E1no">
+            <strong>Comprobar el sistema mas
+              adelante
+                                         
+            </strong>
+          </label>
+  
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="form-check">
+          <input class="form-check-input" id="paso2E1sicheck" type="checkbox"
+            formControlName="paso2E1sicheck" (click)="mostrarPasoSiguiuente('resuelto')" name="paso2E1si"
+            required>
+          <label class="form-check-label" for="paso2E1sicheck">
+            Se resolvio el problema
+          </label>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-check">
+          <input class="form-check-input" id="paso2E1nocheck" type="checkbox"
+            formControlName="paso2E1nocheck" (click)="mostrarPasoSiguiuente('paso13E1si')" name="paso2E1no"
+            required>
+          <label  class="form-check-label" for="paso2E1nocheck">
+            No se resolvio
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+                <div class="paso2E1no" [hidden]="resuelto">
+                  <div class="row" style="display: flex; text-align: center; align-items: center; ">
+
+                    <H1>PROBLEMA RESUELTO</H1>
+                  </div>
+                </div>
+
+
+              </div>
+            </form>
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorF3">
+        <div class="herramientas">
+          <button (click)="openXL(contenido,'../../../assets/imagenes/herramientasF.PNG')"
+            class="btn btn-success">Herramientas necesarias</button>
+        </div>
+
+        <div class="card ">
+          <div class="pasoserrF1">
+            <h1><span style="font-weight: bold; color: rgb(218, 32, 32);">Motivo:</span></h1>
+            <h3 style="text-decoration: underline;">Sensor de temperatura de tubo
+              exterior dañado</h3>
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">F3 </span>Sensor de temperatura
+              exterior</h1>
+
+            <h2>Revisar</h2>
+            <h4>1.-Sensor abierto o en corto circuito.</h4>
+            <h4>2.-Sensor no esta conectado.</h4>
+            <h4>3.-Favor de referirse a la tabla de valores de resistencia. ====></h4>
+          </div>
+          <div class="imagf1">
+            <img width="400px" height="300px" src="../../../assets/imagenes/errorF3.PNG" alt="">
+
+            <button (click)="openXL(contenido,'../../../assets/imagenes/tablaF3.PNG')" class="btn btn-success"
+              class="btn btn-success">valores de resistencia</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorF4">
+        <div class="herramientas">
+          <button (click)="openXL(contenido,'../../../assets/imagenes/herramientasF.PNG')"
+            class="btn btn-success">Herramientas necesarias</button>
+        </div>
+
+        <div class="card ">
+          <div class="pasoserrF1">
+            <h1><span style="font-weight: bold; color: rgb(218, 32, 32);">Motivo:</span></h1>
+            <h3 style="text-decoration: underline;">Sensor de temperatura de salida
+              de aire exterior dañado</h3>
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">F4 </span>Sensor de temperatura
+              del tubo exteriorr</h1>
+
+            <h2>Revisar</h2>
+            <h4>1.-Sensor abierto o en corto circuito.</h4>
+            <h4>2.-Sensor no esta conectado.</h4>
+            <h4>3.-Favor de referirse a la tabla de valores de resistencia. ====></h4>
+          </div>
+          <div class="imagf1">
+            <img width="400px" height="300px" src="../../../assets/imagenes/errorF4.PNG" alt="">
+
+            <button (click)="openXL(contenido,'../../../assets/imagenes/tablaF4.PNG')" class="btn btn-success"
+              class="btn btn-success">valores de resistencia</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorF5">
+        <div class="herramientas">
+          <button (click)="openXL(contenido,'../../../assets/imagenes/herramientasF.PNG')"
+            class="btn btn-success">Herramientas necesarias</button>
+        </div>
+
+        <div class="card ">
+          <div class="pasoserrF1">
+            <h1><span style="font-weight: bold; color: rgb(218, 32, 32);">Motivo:</span></h1>
+            <h3 style="text-decoration: underline;">Sensor de temperatura de salida
+              de aire exterior dañado</h3>
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">F5 </span>Sensor de temperatura
+              de Descarga</h1>
+
+            <h2>Revisar</h2>
+            <h4>1.-Sensor abierto o en corto circuito.</h4>
+            <h4>2.-Sensor no esta conectado.</h4>
+            <h4>3.-Favor de referirse a la tabla de valores de resistencia. ====></h4>
+          </div>
+          <div class="imagf1">
+            <img width="400px" height="300px" src="../../../assets/imagenes/errorF5.PNG" alt="">
+
+            <button (click)="openXL(contenido,'../../../assets/imagenes/tablaF5.PNG')" class="btn btn-success"
+              class="btn btn-success">valores de resistencia</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorE2">
+       
+
+        <div class="card ">
+          <div class="pasoserrF1">
+  
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">E2 </span>Protección por
+              Congelamiento</h1>
+
+             <h2 style="margin-top: 1.5rem;">La unidad se restablecerá después, no es necesaria
+              la corrección.
+              Buscar que nos esta ocasionando el congelamiento
+              y corregirlo</h2>
+
+            <h2>Revisar</h2>
+            <h4>1.-Poco aire de retorno o filtro de aire sucio.</h4>
+            <h4>2.-Serpentín evaporador sucio.</h4>
+            <h4>3.-Ventilador del evaporador con velocidad
+              anormal o el motor no funciona.</h4>
+          </div>
+          <div class="imagf1">
+            <img width="400px" height="300px" src="../../../assets/imagenes/ErrorE2.PNG" alt="">
+
+          
+          </div>
+
+          <div class="diagramascontenido" style='display: flex; flex-direction: column; justify-content: center; align-items: center;'>
+            <h1 style="text-align: center; font-weight: bold; margin-bottom: 2rem;">E2: Protección Anti Congelamiento            </h1>
+            <h1 style="text-align: center; font-weight: bold;">Verificar el siguiente diagrama:</h1>
+
+           <button class="btn btn-warning" (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/diagramas_errores/errorE2.docx.pdf')">Ver diagrama</button>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorE3 ">
+       
+
+        <div class="card ">
+          <div class="pasoserrF1">
+  
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">E3 </span>Protección por Baja Presión</h1>
+
+             
+          </div>
+          <div class="imagf1">
+            <img width="400px" height="300px" src="../../../assets/imagenes/errorE3.PNG" alt="">
+
+          
+          </div>
+
+          <div class="diagramascontenido" style='display: flex; flex-direction: column; justify-content: center; align-items: center;'>
+            <h1 style="text-align: center; font-weight: bold; margin-bottom: 2rem;">E3:Protección por Baja Presión</h1>
+            <h1 style="text-align: center; font-weight: bold;">Verificar el siguiente diagrama:</h1>
+
+           <button class="btn btn-warning" (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/diagramas_errores/errorE3.pdf')">Ver diagrama</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorE4 ">
+       
+
+        <div class="card ">
+          <div class="pasoserrF1">
+<div class="container">
+            <h1>Estado de
+              Funcionamiento</h1>
+
+              <h2 style="text-decoration: underline; font-weight: bold;">Protección del ventilador
+                del condensador</h2>
+  
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">E4 </span>Protección de
+              descarga del compresor</h1>
+  
+              <h2 style="text-decoration: underline; font-weight: bold;">Descripcion:</h2>
+              <h3>Cuando detecta que la temperatura de descarga del compresor
+                es alta el compresor parara después de 3 minutos.</h3>
+  
+                <h2>Posibles casos.</h2>
+                <h4>1.- Sensor de temperatura exterior con funcionamiento incorrecto.</h4>
+                <h4>2.- Fugas de refrigerante.</h4>
+                <h4>3.- Sistema obstruido.</h4>
+                <h4>4.- Mal funcionamiento eléctrico.</h4>
+                <h4>5.- Aire en el sistema de refrigeración.</h4>
+                <h4>6.- Ventilador exterior con mal funcionamiento.</h4>
+                <h4>7.- Mal funcionamiento del compresor.</h4>
+  
+              </div>
+          </div>
+          <div class="imagf1">
+            <img width="400px" height="300px" src="../../../assets/imagenes/errorE4.PNG" alt="">
+  
+          
+          </div>
+  
+          <div class="diagramascontenido" style='display: flex; flex-direction: column; justify-content: center; align-items: center;'>
+            <h1 style="text-align: center; font-weight: bold; margin-bottom: 2rem;">E4: Protección de Alta Temperatura
+              de Descarga del Compresor</h1>
+            <h1 style="text-align: center; font-weight: bold;">Verificar el siguiente diagrama:</h1>
+  
+           <button class="btn btn-warning" (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/diagramas_errores/errorE4.pdf')">Ver diagrama</button>
+  
+          </div>
+        </div>
+      </div>
+
+
+      <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorE5 ">
+       
+
+        <div class="card ">
+          <div class="pasoserrF1">
+<div class="container">
+            <h1>Estado de
+              Funcionamiento</h1>
+
+              <h2 style="text-decoration: underline; font-weight: bold;">Protección de bajo
+voltaje</h2>
+  
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">E5 </span>Protección de bajo
+              voltaje</h1>
+  
+              <h2 style="text-decoration: underline; font-weight: bold;">Causa:</h2>
+              <h3>caída repentina o fluctuación de voltaje de
+                alimentación.</h3>
+  
+               
+  
+              </div>
+          </div>
+          <div class="imagf1">
+            <img width="400px" height="300px" src="../../../assets/imagenes/errorE5.PNG" alt="">
+  
+          
+          </div>
+  
+          <div class="diagramascontenido" style='display: flex; flex-direction: column; justify-content: center; align-items: center;'>
+            <h1 style="text-align: center; font-weight: bold; margin-bottom: 2rem;">E5: Protección por Sobre Corriente</h1>
+            <h1 style="text-align: center; font-weight: bold;">Verificar el siguiente diagrama:</h1>
+  
+           <button class="btn btn-warning" (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/diagramas_errores/errorE5.pdf')">Ver diagrama</button>
+  
+          </div>
+        </div>
+      </div>
+
+      <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorE6 ">
+       
+
+        <div class="card ">
+          <div class="pasoserrF1">
+<div class="container">
+            <h1>Estado de
+              Funcionamiento</h1>
+
+              <h2 style="text-decoration: underline; font-weight: bold;">Unidad Interior y
+                Exterior sin
+                Comunicación</h2>
+  
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">E6 </span>Protección de
+              comunicación
+              </h1>
+  
+              <h2 style="text-decoration: underline; font-weight: bold;">Descripcion:</h2>
+              <h3>Cuando no recibe una señal correcta durante 3
+                minutos, la unidad no detecta comunicación y
+                toda la unidad deja de funcionar y muestra E6.</h3>
+  
+                <h2>Posibles casos.</h2>
+                <h4>1.- Bajo voltaje de suministro.</h4>
+                <h4>2.- Unidades interior y exterior no compatibles.</h4>
+                <h4>3.- El cable de alimentación entre las unidades interiores y
+                  exteriores no es correcto.</h4>
+                <h4>4.- Controlador con mal funcionamiento de la unidad interior o
+                  exterior.</h4>
+              
+  
+              </div>
+          </div>
+          <div class="imagf1">
+            <img width="400px" height="300px" src="../../../assets/imagenes/errorE6.PNG" alt="">
+  
+          
+          </div>
+  
+          <div class="diagramascontenido" style='display: flex; flex-direction: column; justify-content: center; align-items: center;'>
+            <h1 style="text-align: center; font-weight: bold; margin-bottom: 2rem;">E4: Protección de Alta Temperatura
+              de Descarga del Compresor</h1>
+            <h1 style="text-align: center; font-weight: bold;">Verificar el siguiente diagrama:</h1>
+  
+           <button class="btn btn-warning" (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/diagramas_errores/errorE6.pdf')">Ver diagrama</button>
+  
+          </div>
+        </div>
+      </div>
+
+
+      <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorH6 ">
+       
+
+        <div class="card ">
+          <div class="pasoserrF1">
+<div class="container">
+            <h1>Estado de
+              Funcionamiento</h1>
+
+              <h2 style="text-decoration: underline; font-weight: bold;">Unidad Interior motor no funciona</h2>
+  
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">H6 </span>Protección de motor
+              amarrado
+             </h1>
+             <span><img width="150px" height="150px" src="../../../assets/imagenes/errorH6.PNG" alt=""></span> 
+  
+              <h2 style="text-decoration: underline; font-weight: bold;">Descripcion:</h2>
+              <h3>Cuando detecta que la velocidad del motor es
+                demasiado baja por un minuto.</h3>
+  
+                <h2>Posibles casos.</h2>
+                <h4>1.- La conexión motor interior no esta bien conectado a la placa
+                  principal o el motor, o el PCB no funcionan.</h4>
+                <h4>2.- Motor se instala incorrectamente, la terminal está floja, Turbina
+                  atorada, Cojinete de deslizamiento de motor está descentrada.</h4>
+                <h4>3.- Velocidad del ventilador es demasiado bajo o porque la salida
+                  del aire esta bloqueada.</h4>
+                <h4>4.- Ventilador del condensador está dañado.</h4>
+                <h4>5.- El circuito de control del motor tiene señal de salida anormal o
+                  señal de retroalimentación.</h4>
+                <h4>6.- El motor se dañado o amarrado.</h4>
+              
+  
+              </div>
+          </div>
+          <div class="imagf1">
+           
+            <img width="400px" height="300px" src="../../../assets/imagenes/errorH6i.PNG" alt="">
+  
+          
+          </div>
+  
+          <div class="diagramascontenido" style='display: flex; flex-direction: column; justify-content: center; align-items: center;'>
+           
+            <h1 style="text-align: center; font-weight: bold;">Verificar el siguiente diagrama:</h1>
+  
+           <button class="btn btn-warning" (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/diagramas_errores/errorH6.pdf')">Ver diagrama</button>
+  
+          </div>
+        </div>
+      </div>
+
+        <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorC5 ">
+       
+
+        <div class="card ">
+          <div class="pasoserrF1">
+<div class="container">
+           
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">C5 </span>Tapa del puente
+             </h1>
+             <span><img width="150px" height="150px" src="../../../assets/imagenes/errorC5.PNG" alt=""></span> 
+  
+              <h2 style="text-decoration: underline; font-weight: bold;">Descripcion:</h2>
+              <h3>C5 tapa del puente, generalmente es causada por falta montaje
+                de puente anterior al sustituir el PCB.</h3>
+  
+                <h2>Posibles casos.</h2>
+                <h4>1.- Falta puente (al sustituir PCB).</h4>
+                <h4>2.- Puente está suelto.</h4>
+                <h4>3.- Puente esta en corto circuito.</h4>
+                <h4>4.- El circuito del puente en el PCB tiene un mal funcionamiento.</h4>
+        
+              
+  
+              </div>
+          </div>
+          <div class="imagf1">
+           
+            <img width="400px" height="300px" src="../../../assets/imagenes/errorC5i.PNG" alt="">
+  
+          
+          </div>
+  
+          <div class="diagramascontenido" style='display: flex; flex-direction: column; justify-content: center; align-items: center;'>
+           
+           
+          </div>
+        </div>
+      </div>
+
+      
+        <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorC5 ">
+       
+
+        <div class="card ">
+          <div class="pasoserrF1">
+<div class="container">
+           
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">C5 </span>Tapa del puente
+              continuación
+             </h1>
+             <span><img width="150px" height="150px" src="../../../assets/imagenes/errorC5.PNG" alt=""></span> 
+  
+             
+  
+                <h2>Posibles casos.</h2>
+                <h4>1.- Compruebe si la tapa del puente es la correcta,
+                  que coincide con la unidad.</h4>
+                <h4>2.- Asegúrese de insertar la tapa del puente en la
+                  posición correcta.</h4>
+                <h4>3.- Verificar si el puente se ha roto.</h4>
+                <h4>4.- Remplace por un nuevo puente.</h4>
+                <h4>5.- Remplace por una nueva tarjeta madre.</h4>
+        
+              
+  
+              </div>
+          </div>
+          <div class="imagf1">
+           
+            <img width="400px" height="300px" src="../../../assets/imagenes/errorC5ii.PNG" alt="">
+  
+          
+          </div>
+  
+          <div class="diagramascontenido" style='display: flex; flex-direction: column; justify-content: center; align-items: center;'>
+           
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorH3 ">
+       
+
+        <div class="card ">
+          <div class="pasoserrF1">
+<div class="container">
+           
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">H3 </span>Protección de sobrecarga
+              del compresor
+             </h1>
+             <span><img width="150px" height="150px" src="../../../assets/imagenes/errorH3.PNG" alt=""></span> 
+             <h2 style="text-decoration: underline; font-weight: bold;">Descripcion:</h2>
+             <h3>Cuando el controlador de la unidad exterior
+              detecta que la temperatura de la superficie del
+              compresor es demasiado alto, la unidad dejará
+              de funcionar y el código correspondiente se
+              muestra en la unidad interior.</h3>
+             
+  
+                <h2>Posibles casos.</h2>
+                <h4>1.- Cablado de la protección de sobrecarga floja.</h4>
+                <h4>2.- Sensor de temperatura de sobrecarga con falla.</h4>
+                <h4>3.- Insuficiente o excesiva, carga de refrigerante.</h4>
+                <h4>4.- Obstrucción de capilares.</h4>
+                <h4>5.- intercambiadores de calor sucios u obstruidos.</h4>
+                <h4>6.- Funcionamiento inadecuado del compresor.</h4>
+                <h4>7.- Mal funcionamiento del controlador del circuito del exterior.</h4>
+                <h4>8.- Bajo voltaje.</h4>
+        
+              
+  
+              </div>
+          </div>
+          <div class="imagf1">
+           
+            <img width="400px" height="300px" src="../../../assets/imagenes/errorH3.PNG" alt="">
+  
+          
+          </div>
+  
+          <div class="diagramascontenido" style='display: flex; flex-direction: column; justify-content: center; align-items: center;'>
+           
+           
+          </div>
+        </div>
+      </div>
+
+
+      <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorH4 ">
+       
+
+        <div class="card ">
+          <div class="pasoserrF1">
+<div class="container">
+           
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">H4 </span>Protección contra
+              sobrecarga</h1>
+             
+             <h2 style="text-decoration: underline; font-weight: bold;">Descripcion:</h2>
+             <h3>Cuando el sensor de temperatura (Verifique la temperatura del
+              intercambiador de calor exterior cuando esta en enfriamiento y
+              comprobar la temperatura del intercambiador de calor interior
+              cuando esta calefacción) es demasiado alto, la protección será
+              activado.
+              </h3>
+             
+  
+                <h2>Posibles casos.</h2>
+                <h4>1.- La temperatura exterior es muy alta cuando esta en
+                  enfriamiento.</h4>
+                <h4>2.- -Circulación insuficiente de aire exterior.</h4>
+                <h4>3.- -Mal funcionamiento del flujo de refrigerante.
+                  Por favor refiérase a la análisis de fallos en la sección anterior
+                  para la manipulación del método.</h4>
+               
+        
+              
+  
+              </div>
+          </div>
+          <div class="imagf1">
+           
+          
+  
+          
+          </div>
+  
+          <div class="diagramascontenido" style='display: flex; flex-direction: column; justify-content: center; align-items: center;'>
+           
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorH5 ">
+       
+
+        <div class="card ">
+          <div class="pasoserrF1">
+<div class="container">
+           
+            <h1><span style="font-weight: bold; color: rgb(218, 122, 32);">H5 </span>Protección del Modulo IPM
+             </h1>
+             <span><img width="150px" height="150px" src="../../../assets/imagenes/errorH5.PNG" alt=""></span> 
+             <h2 style="text-decoration: underline; font-weight: bold;">Descripcion:</h2>
+             <h3>Protección IPM (incluye sobre corriente,
+              presión de la falta de sobrecalentamiento de
+              protecciones del módulo IPM.</h3>
+             
+  
+                <h2>Posibles casos.</h2>
+                <h4>1.- Error en el cableado del compresor o no coincide entre la caja
+                  eléctrica y el compresor.</h4>
+                <h4>2.- ODU controlador con mal funcionamiento.</h4>
+                <h4>3.- Bajo voltaje o cambio de voltaje de suministro repentino.</h4>
+                <h4>4.- Sistema con funcionamiento anormal.</h4>
+                <h4>5.- Arranque de la unidad antes de que las presiones se estabilicen.</h4>
+                <h4>6.- Malfuncionamiento del compresor.</h4>
+                <h4>7.- Proteccion normal bajo carga alta.</h4>
+          
+        
+              
+  
+              </div>
+          </div>
+          <div class="imagf1">
+           
+            <img width="400px" height="300px" src="../../../assets/imagenes/errorH5i.PNG" alt="">
+  
+          
+          </div>
+  
+          <div class="diagramascontenido" style='display: flex; flex-direction: column; justify-content: center; align-items: center;'>
+           
+           
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <!--MODAL QUE SE LANZARA PARA LOS BOTONES-->
+    <ng-template #contenido let-modal>
+      <div class="modal-header">
+        <h4 class="modal-title">HVAC SYSTEMS SUPPORT</h4>
+        <button class="close btn btn-danger" aria-label="close" type="button" (click)="modal.dismiss()">
+          <span aria-hidden="true">X</span>
+        </button>
+      </div>
+      <div class="modal-body" style="display: flex; justify-content: center;">
+
+        <img [ngStyle]="{'transform': transform}" (click)="toggleZoom()" src="{{archivo}}" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" (click)="modal.close()">Ok!</button>
+      </div>
+    </ng-template>
+
+
+
+    <!--MODELA PARA LANZAR LOS MODELOS DE LOS MINISPLIT-->
+    <ng-template #contenidoModelo let-modal>
+      <div class="modal-header">
+        <h4 class="modal-title">TAREAS DE MANTENIMIENTO PREVENTIVO A AIREACONDICIONADO</h4>
+        <button class="close btn btn-danger" aria-label="close" type="button" (click)="modal.dismiss()">
+          <span aria-hidden="true">X</span>
+        </button>
+      </div>
+      <div class="modal-body" style="display: flex; justify-content: center; overflow-y: auto; max-height: 400px;">
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">TIPO MINI SPLIT</th>
+              <th scope="col"> </th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+
+              <td>MINI SPLIT MURO ALTO</td>
+              <td><button class="btn btn-warning"
+                  (click)="modeloMantenimiento('mantenimiento_modelo1')">Escoger</button>
+              </td>
+            </tr>
+            <tr>
+
+              <td>MINI SPLIT DE MURO ALTO EFICIENCIA ESTANDAR</td>
+              <td><button class="btn btn-warning"
+                  (click)="modeloMantenimiento('mantenimiento_modelo2')">Escoger</button>
+              </td>
+            </tr>
+            <tr>
+
+              <td>MINI SPLIT DE MURO ALTO ALTA EFICIENCIA </td>
+              <td><button class="btn btn-warning"
+                  (click)="modeloMantenimiento('mantenimiento_modelo3')">Escoger</button>
+              </td>
+            </tr>
+
+
+          </tbody>
+        </table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" (click)="modal.close()">Ok!</button>
+      </div>
+    </ng-template>
+
+  <!--MODELA PARA LANZAR LOS PDF-->
+    <ng-template #contenidoPdf let-modal>
+      <div class="modal-header">
+        <h4 class="modal-title">HVAC SYSTEMS SUPPORT</h4>
+        <button class="close btn btn-danger" aria-label="close" type="button" (click)="modal.dismiss()">
+          <span aria-hidden="true">X</span>
+        </button>
+      </div>
+      <div class="modal-body" style="display: flex; justify-content: center; overflow-y: auto; max-height: 400px;">
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Manuales</th>
+              <th scope="col"> </th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+
+              <td>4MXW16 4TXK16 - Instalación</td>
+              <td><button class="btn btn-warning"
+                  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/manuales/4MXW16 4TXK16 - Instalación.pdf')">Escoger</button>
+              </td>
+            </tr>
+            <tr>
+
+              <td>4MXW45 Service Manual 9,000 and 12,000 Btuh</td>
+              <td><button class="btn btn-warning"
+                  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/manuales/4MXW45 Service Manual 9,000 and 12,000 Btuh.pdf')">Escoger</button>
+              </td>
+            </tr>
+            <tr>
+
+              <td>4MXW45 Service Manual 18,000 and 24,000 Btuh </td>
+              <td><button class="btn btn-warning"
+                  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/manuales/4MXW45 Service Manual 18,000 and 24,000 Btuh.pdf')">Escoger</button>
+              </td>
+            </tr>
+
+             <tr>
+
+              <td>15SEER Service manual </td>
+              <td><button class="btn btn-warning"
+                  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/manuales/15SEER Service manual.pdf')">Escoger</button>
+              </td>
+            </tr>
+
+            <tr>
+
+              <td>18SEER Service manual</td>
+              <td><button class="btn btn-warning"
+                  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/manuales/18SEER Service manual.pdf')">Escoger</button>
+              </td>
+            </tr>
+
+            <tr>
+
+              <td>CODIGOS</td>
+              <td><button class="btn btn-warning"
+                  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/manuales/CODIGOS.pdf')">Escoger</button>
+              </td>
+            </tr>
+
+            <tr>
+
+              <td>E6</td>
+              <td><button class="btn btn-warning"
+                  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/manuales/E6.pdf')">Escoger</button>
+              </td>
+            </tr>
+            <tr>
+
+              <td>Errores en inst minisplit</td>
+              <td><button class="btn btn-warning"
+                  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/manuales/Errores en inst minisplit.pdf')">Escoger</button>
+              </td>
+            </tr>
+
+            <tr>
+
+              <td>MS-SVN052B-EM</td>
+              <td><button class="btn btn-warning"
+                  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/manuales/MS-SVN052B-EM.pdf')">Escoger</button>
+              </td>
+            </tr>
+            <tr>
+
+              <td>Sensor and Temperature table</td>
+              <td><button class="btn btn-warning"
+                  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/manuales/Sensor and Temperature table.pdf')">Escoger</button>
+              </td>
+            </tr>
+
+            <tr>
+
+              <td>Sensor error trouble shooting flow chart</td>
+              <td><button class="btn btn-warning"
+                  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/manuales/Sensor error trouble shooting flow chart.pdf')">Escoger</button>
+              </td>
+            </tr>
+            <tr>
+
+              <td>Technical Manual 27 SEER Inverter low res</td>
+              <td><button class="btn btn-warning"
+                  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/manuales/Technical Manual 27 SEER Inverter low res.pdf')">Escoger</button>
+              </td>
+            </tr>
+
+
+          </tbody>
+        </table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" (click)="modal.close()">Ok!</button>
+      </div>
+    </ng-template>
+
+
+     <!--MODAL QUE SE LANZARA PARApdf seleccionado-->
+    <ng-template #contenidoPdfSeleccionado let-modal>
+      <div class="modal-header">
+        <h4 class="modal-title">HVAC SYSTEMS SUPPORT</h4>
+        <button class="close btn btn-danger" aria-label="close" type="button" (click)="modal.dismiss()">
+          <span aria-hidden="true">X</span>
+        </button>
+      </div>
+      <div class="modal-body" style="display: flex; justify-content: center;">
+        <pdf-viewer
+        [src]="archivoPdfS"
+        [rotation]="0"
+        [original-size]="true"
+        [show-all]="true"
+        [fit-to-page]="true"
+        [zoom]="1"
+        [zoom-scale]="'page-width'"
+        [stick-to-page]="false"
+        [render-text]="true"
+        [external-link-target]="'blank'"
+        [autoresize]="true"
+        [show-borders]="false"
+        
+        style="width: 100%; height: 600px;"
+      ></pdf-viewer>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" (click)="modal.close()">Ok!</button>
+      </div>
+    </ng-template>
+
+
+</div>
+
+</div>

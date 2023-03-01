@@ -1,0 +1,590 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: repeat(auto,1fr);
+    grid-template-areas: "menu contenido";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    
+                     
+}
+
+.contenido{
+    grid-area: contenido;
+    height: 100%;
+    width: 100%;
+}
+
+.menu{
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;background-color: #154d96;
+   
+    box-shadow: 52px 120px 182px rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    position: sticky;
+    top:0px;
+}
+
+.menu nav {
+  
+    
+    color: #fff;
+    padding: 20px;
+    
+  }
+  
+  .menu nav .liMenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+  }
+  .menu nav .liMenu {
+    margin-top: 7px;
+    margin-left: 10px;
+    
+    
+  }
+  .page-item{
+    cursor: pointer;
+  }
+  
+ .menu nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  .menu .menuUl :hover{
+    background-color: rgb(92, 230, 172);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    
+    
+    
+  }
+
+  
+  .menu img{
+    margin-top: 15px;
+    margin-left: 65px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    width: 95px;
+    height: 95px;
+    border-radius: 25px;
+   
+  }
+  .btn-enviar{
+    background-color: #8ac926;
+  }
+  .pagination{
+    padding-top: 1rem;
+  }
+
+  .containe_form{
+   
+    margin: 0 5rem;
+
+
+  }
+  .tabla__mantenimiento{
+    margin-top: 1rem;
+  max-width:100%;  
+  overflow-x:scroll;
+  overflow-wrap: break-word;
+  
+   }
+   tr,th,td{
+    border: solid 0.5px;
+   }
+  .contenedor{
+    
+    background-image: url("../../../assets/imagenes/viento.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    
+   
+    overflow: auto;
+  }
+
+  .formulario__mantenimiento{
+  
+    position: relative;
+  }
+  .form__posicion{
+    display: flex;
+  text-align: center;
+   
+    width: 100%;
+    justify-content: space-around;
+  }
+  .form__posicion form{
+    justify-content:center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+  .form__posicion form label{
+    margin-right: 1rem;
+  }
+  .form__posicion form button{
+   margin-top: 1rem;
+  }
+ .form-check{
+  display: inline-block;
+ }
+ .imagen__mantenimiento{
+  border-bottom: solid;
+ }
+ 
+ .page-link{
+  background-color: rgb(22, 79, 165);
+  color: white;
+ }
+ .nav_responsive{
+  display: none;
+ }
+  @media only screen and (max-width: 768px) {
+    .nav_responsive{
+      display: flex;
+      justify-content: space-between;
+      width: -webkit-fill-available;
+     }
+     .no_responsive{
+      display: none;
+     }
+   
+    /* For mobile phones: */
+    
+    .menu{
+      flex-direction: row;
+      box-shadow: none;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    
+    .imagen__mantenimiento img{
+      height: 120px;
+    }
+    .menu nav{
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .imagf1 img{
+        width: 340px;
+        height: 300px;
+    }
+    
+     .contenedor{
+      grid-template-rows: 15% 85%;
+        grid-template-areas: "menu menu"
+                            "contenido contenido";
+     }
+
+     .erroresF1 .card, .erroresF2 .card , .erroresF3 .card,.erroresE1 .card{
+      grid-template-rows: auto auto auto;
+        grid-template-areas: "pasoserr pasoserr"
+                            "imagf1 imagf1"
+                            "diagramas diagramas" !important; 
+     }
+
+
+
+     .loader .letter {
+     
+      font-size: 20px  !important;
+    
+    }
+   
+  
+ 
+   .carga-img .carga {
+      width: 38px  !important;
+      height: 38px  !important;
+   
+    }
+    .carga-img .carga::after {
+      content: '';  
+
+    width: 14px !important;
+      height: 14px  !important;
+ 
+    }
+    .pasoserrF1{
+      padding: 0 !important;
+      
+    }
+    
+    .imagf1{
+     
+   
+      justify-content: center !important;
+    align-items: center !important;
+    }
+ .menu_hamburguesa{
+  width: 35px !important;
+  height: 25px !important;
+ }
+ 
+  }
+
+
+
+
+
+
+  /*TOOOLTIP PERROROROOR*/
+  .diagramas{
+    width: 20px;
+    height: 30px;
+  }
+  .diagramas img{
+    width: 80px;
+    height: 70px;
+  }
+  .diagramas img{
+    width: 80px;
+    height: 70px;
+  }
+  
+
+  .diagramas:hover{
+    position: absolute;
+    width:680px;
+    height: 870px;
+    top: 20vmin;
+    left: 20vmin;
+    background-color: rgba(41, 40, 39, 0.562);
+    border-radius: 35px;
+  }
+  .diagramas img:hover{
+    position: absolute;
+    width: 580px;
+    top: 7vmin;
+    left: 7vmin;
+    height: 770px;
+  }
+ 
+
+
+  /* Instalacion*/
+@media only screen and (max-width: 768px) {
+
+
+
+  .contenedor_instalacion{
+    grid-template-areas: "diagramaFlujo diagramaFlujo"
+                           "diagrama diagrama"
+                        "Requerimiento_tub Requerimiento_tub  ";
+
+  }
+}
+
+  .contenedor_instalacion{
+  
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    
+    
+    grid-template-areas: "diagramaFlujo diagrama "
+                           
+                            "Requerimiento_tub diagrama  ";
+   
+   
+  }
+
+  .caja{
+   height: auto;
+  
+    background-color: #8ac926;
+  }
+  .diagrama{
+    border-radius: 45px;
+   grid-area:diagrama;
+
+ background-image: url('../../../assets/imagenes/diagrama_instalacion.PNG');
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+
+  }
+
+  .diagramaFlujo{
+    border-radius: 45px;
+  height: 25vh;
+  background-image: url('../../../assets/imagenes/lib_requeridos.PNG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+ 
+   }
+
+  
+  .diagrama .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+  }
+  .diagrama .transparente{
+    border-radius: 45px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 12, 12, 0.479);
+  }
+  .diagramaFlujo .texto{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+  }
+  .diagramaFlujo .transparente{
+    border-radius: 45px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 12, 12, 0.479);
+  }
+.diagramaFlujo{
+  grid-area:diagramaFlujo;
+  
+}
+  .Requerimiento_tub{
+    border-radius: 45px;
+    grid-area:Requerimiento_tub;
+    height: 25vh;
+    background-image: url('../../../assets/imagenes/req_tub.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Requerimiento_tub .texto{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+  }
+  .Requerimiento_tub .transparente{
+    border-radius: 45px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 12, 12, 0.479);
+  }
+  
+
+  .form_codigo{
+    
+    width: 80%;
+   
+    display: flex;
+    
+    margin: 0 auto;
+    justify-content:center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+.form_codigo  form{
+    width: 250px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+  
+}
+.form_codigo  button{
+   margin-top: 1rem;
+    
+  
+}
+.h2{
+    font-weight: bold;
+    text-align: center;
+}
+.erroresF1, .erroresF2, .erroresF3,.erroresE1{
+    
+    width: 100%;
+   flex-direction: column;
+   flex-wrap: wrap;
+  
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.erroresF1 .card, .erroresF2 .card , .erroresF3 .card,.erroresE1 .card{
+    display: grid;
+    margin-top: 2rem;
+    background-color:  #154d96ab;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(auto,1fr);
+    border-radius: 35px;
+    grid-template-areas: "pasoserr imagf1"
+                          "diagramas diagramas";
+    width: 95%;
+
+
+
+    
+  
+ 
+}
+
+.pasoserrF1{
+    grid-area: pasoserr;
+ padding: 3rem;
+
+
+}
+.diagramascontenido{
+  grid-area: diagramas;
+  padding: 3rem;
+}
+.diagramascontenido label{
+ font-size: 20px;
+ margin-bottom: 3rem;
+}
+
+.imagf1{
+    grid-area: imagf1;
+    padding: 3rem;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.loader{
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    z-index: 100;
+
+    animation: desvanecer 7s infinite both ;
+}
+.loader .letter {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce 1s infinite alternate;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-1rem);
+    }
+  }
+
+  .carga-img{
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+ .carga-img .carga {
+    width: 58px;
+    height: 58px;
+    border: 3px dotted #FFF;
+    border-style: solid solid dotted dotted;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+  }
+  .carga-img .carga::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px dotted #FF3D00;
+    border-style: solid solid dotted;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    animation: rotationBack 1s linear infinite;
+    transform-origin: center center;
+  }
+      
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  } 
+  
+
+@keyframes desvanecer {
+
+    25%{
+        background-color: black;
+    }
+    50%{
+        background-color: rgb(0, 0, 0);
+    }
+
+    75%{
+        background-color: rgb(0, 0, 0);
+    }
+    85%{
+        background-color: rgba(0, 0, 0, 0.548);
+    }
+    95%{
+        background-color: rgba(0, 0, 0, 0.534);
+    }
+    100%{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+}

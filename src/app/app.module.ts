@@ -23,31 +23,29 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { HomeComponent } from './components/home/home.component';
-import { R410asplitComponent } from './components/r410asplit/r410asplit.component';
+
 import { BitacoraService } from './services/bitacora.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AdminComponent } from './components/admin/admin.component';
+
 import { CrearPreguntasService } from './services/crear-preguntas.service';
-import { ActualizarPreguntasComponent } from './components/actualizar-preguntas/actualizar-preguntas.component';
 
-
-
-
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { MiniSplitComponent } from './components/mini-split/mini-split.component'; // <- import PdfViewerModule
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
  
     HomeComponent,
-    R410asplitComponent,
-    AdminComponent,
-    ActualizarPreguntasComponent,
+
+    MiniSplitComponent,
 
    
     
   ],
   imports: [
-   
+
     BrowserModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot({}),
@@ -60,6 +58,8 @@ import { ActualizarPreguntasComponent } from './components/actualizar-preguntas/
     FormsModule,
     ReactiveFormsModule,
     NgbModule,
+    PdfViewerModule
+    
    
     
   ],

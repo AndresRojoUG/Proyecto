@@ -2,18 +2,31 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Bitacora } from '../../models/bitacora.model';
+import { Route } from '@angular/router';
+import { Observable, map, of } from 'rxjs';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class BitacoraService {
+  
 
   constructor(private angularFirestore:AngularFirestore) { }
 
   //metodos para el CRUD
   
+  preload(route: Route, load: Function): Observable<any> {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'block';
 
+    return load().pipe(
+      map((component) => {
+        preloader.style.display = 'none';
+        return component;
+      })
+    );
+  }
   getBitacora(){
     return this.angularFirestore
     .collection("bitacora")

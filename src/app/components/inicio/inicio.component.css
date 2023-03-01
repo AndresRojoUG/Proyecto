@@ -104,12 +104,50 @@
                       2. Home Styles
 
 -------------------------------------------------------------------*/
-
+@media only screen and (max-width: 768px) {
+  .mantenimiento_img{
+    display:none;
+  
+   right: 180px;
+   bottom: 0;
+    margin: auto; 
+  }
+  .tarjetas_presentacion .card{
+    width: 8rem !important;
+  }
+  .texto_principal{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    height: 380px;
+    width: 100%;
+  }
+  .contenido-texto{
+    position: relative !important;
+    /* font-size: 20px; */
+    bottom: 0;
+  }
+  .contenido-texto h1{
+   
+   font-size: 30px !important;
+  }
+  .tarjetas_presentacion{
+    margin-top: 0 !important;
+        /* justify-content: center; */
+        
+        /* display: flex; */
+        align-items: center;
+        justify-items: center;
+        align-items: center;
+        padding-left: 2rem;
+  }
+}
 .home {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: fixed;
-  overflow: hidden;
+  overflow: visible;
   background-size: cover;
   z-index: 0
 }
@@ -120,12 +158,12 @@
 }
 
 .home .bgScroll {
-  animation: 40s linear 0s normal none infinite running bgScroll;
+  
   background: black url('../../../assets/imagenes/hvac.png') repeat scroll center top;
 }
 
 .bgScroll {
-  height: 400%;
+  height: 130%;
   position: absolute;
   width: 100%;
   z-index: -1;
