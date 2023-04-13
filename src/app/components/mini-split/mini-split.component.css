@@ -9,6 +9,21 @@
     
                      
 }
+.no_responsive{
+  position: sticky;
+  top: 1px;
+}
+.introduccion .row .col-md-6 img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 
 .contenido{
     grid-area: contenido;
@@ -47,6 +62,7 @@
   .menu nav .liMenu {
     margin-top: 7px;
     margin-left: 10px;
+     border-bottom: solid;
     
     
   }
@@ -71,7 +87,12 @@
     
   }
 
-  
+  #formulari__mantenimento_principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   .menu img{
     margin-top: 15px;
     margin-left: 65px;
@@ -163,7 +184,11 @@
      }
    
     /* For mobile phones: */
-    
+    .seleccioncod{
+      width: 100%;
+
+      
+    }
     .menu{
       flex-direction: row;
       box-shadow: none;
@@ -240,7 +265,26 @@
  
   }
 
-
+ .seleccioncod{
+      width: 100%;
+      
+      
+    }
+    .seleccioncod .row{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+    .seleccioncod h1{
+     text-align: center;
+    }
+    .destelloEscogido form{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
 
 
@@ -587,4 +631,46 @@
         background-color: rgba(0, 0, 0, 0);
     }
     
+}
+
+.css-button-sliding-to-left--sky {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #4433ff;
+  color: #4433ff;
+}
+.css-button-sliding-to-left--sky:hover {
+  color: #fff;
+}
+.css-button-sliding-to-left--sky:hover:after {
+  width: 100%;
+}
+.css-button-sliding-to-left--sky:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #4433ff;
+}
+.zoomPdf{
+  border-radius: 50%;
+  font-size: 25px;
+  border-color: black;
+  border-style: solid;
 }

@@ -1,0 +1,1953 @@
+<div class="loader"[hidden]="loader">
+    <span class="letter">C</span>
+    <span class="letter">A</span>
+    <span class="letter">R</span>
+    <span class="letter">G</span>
+    <span class="letter">A</span>
+    <span class="letter">N</span>
+    <span class="letter">D</span>
+    <span class="letter">O</span>
+<div class="carga-img">
+    <span class="carga"></span>
+</div>
+</div>
+<div class="contenedor">
+    <div class="menu">
+      
+
+      <div class="nav_responsive">
+    <div class="row">
+    <div class="col-4 col-md-4"  style="display: flex;
+    justify-content: center;
+    align-items: center;">
+      <button routerLink="/home" class="css-button css-button-sliding-to-right css-button-sliding-to-left--sky">Regresar</button>
+          
+    </div>
+    <div class="col-4 col-md-4" >
+      <nav class="navbar">
+
+        <li style="list-style: none;" class="nav-item dropdown liMenu-no"><a class="nav-link dropdown-toggle" href="#" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false"><img class="menu_hamburguesa" src="../../../assets/imagenes/menu-button.svg" alt=""></a>
+        <ul  class="dropdown-menu" style="background-color: rgb(9, 8, 63); overflow: scroll; height: 250px;">
+          <li class="liMenu"><a (click)="mostrarSeccion('fundamentos')">Fundamentos Mecanicos para Procedent y Voyager</a></li>
+          <li style="border-bottom: 3px; border-style: solid;" class="liMenu"><a (click)="mostrarSeccion('seleccio_voyager')">Selecci&oacute;n para equipos tipo paquetes Precedent y voyager</a></li>
+          <li class="liMenu"><a (click)="mostrarSeccion('diagnostico_compresor')">Diagnosticos y Solucion al Compresor Scroll</a></li>
+          <li class="liMenu"><a (click)="mostrarSeccion('manten_precedent')">Mantenimiento precedent</a></li>
+          <li class="liMenu"><a routerLink="/home" routerLinkActive="router-link-active"  >Servicios</a></li>
+
+        </ul>
+      </li>
+       
+         
+         
+  
+       
+     
+        
+        </nav>
+  
+
+    </div>
+    <div class="col-4 col-md-4" style="display: flex;
+    justify-content: center;
+    align-items: center;">
+          
+      <img src="../../../assets/imagenes/hvac.png" alt="Bootstrap" width="10" height="17">
+     
+      
+    </div>
+  </div>
+   
+  </div>
+    
+        
+          <div class="no_responsive">
+            <nav class="navbar">
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img src="../../../assets/imagenes/hvac.png" alt="Bootstrap" width="30" height="24">
+                  </a>
+                </div>
+                <h4 class="animate__animated animate__bounce"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    fill="currentColor" class="bi bi-patch-question" viewBox="0 0 16 16">
+                    <path
+                      d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z" />
+                    <path
+                      d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z" />
+                    <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
+                  </svg> Menu</h4>
+                <ul class="menuUl">
+                  <li class="liMenu"><a (click)="mostrarSeccion('fundamentos')">Fundamentos Mecanicos para Procedent y Voyager</a></li>
+                  <li class="liMenu"><a (click)="mostrarSeccion('seleccio_voyager')">Selecci&oacute;n para equipos voyager</a></li>
+                  <li class="liMenu"><a (click)="mostrarSeccion('diagnostico_compresor')">Diagnosticos y Solucion al Compresor Scroll</a></li>
+                  <li class="liMenu"><a (click)="mostrarSeccion('manten_precedent')">Mantenimiento precedent</a></li>
+                  <li class="liMenu"><a routerLink="/home" routerLinkActive="router-link-active"  >Servicios</a></li>
+                </ul>
+              </nav>
+            </div>
+        
+        </div>
+   
+  
+        <div class="contenido">
+            <h1 style="text-align: center; margin-top: 1rem;" class="animate__jello"> HVAC SYSTEMS SUPPORT <svg
+                xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-snow2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 16a.5.5 0 0 1-.5-.5v-1.293l-.646.647a.5.5 0 0 1-.707-.708L7.5 12.793v-1.086l-.646.647a.5.5 0 0 1-.707-.708L7.5 10.293V8.866l-1.236.713-.495 1.85a.5.5 0 1 1-.966-.26l.237-.882-.94.542-.496 1.85a.5.5 0 1 1-.966-.26l.237-.882-1.12.646a.5.5 0 0 1-.5-.866l1.12-.646-.884-.237a.5.5 0 1 1 .26-.966l1.848.495.94-.542-.882-.237a.5.5 0 1 1 .258-.966l1.85.495L7 8l-1.236-.713-1.849.495a.5.5 0 1 1-.258-.966l.883-.237-.94-.542-1.85.495a.5.5 0 0 1-.258-.966l.883-.237-1.12-.646a.5.5 0 1 1 .5-.866l1.12.646-.237-.883a.5.5 0 0 1 .966-.258l.495 1.849.94.542-.236-.883a.5.5 0 0 1 .966-.258l.495 1.849 1.236.713V5.707L6.147 4.354a.5.5 0 1 1 .707-.708l.646.647V3.207L6.147 1.854a.5.5 0 1 1 .707-.708l.646.647V.5a.5.5 0 0 1 1 0v1.293l.647-.647a.5.5 0 1 1 .707.708L8.5 3.207v1.086l.647-.647a.5.5 0 1 1 .707.708L8.5 5.707v1.427l1.236-.713.495-1.85a.5.5 0 1 1 .966.26l-.236.882.94-.542.495-1.85a.5.5 0 1 1 .966.26l-.236.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.883.237a.5.5 0 1 1-.26.966l-1.848-.495-.94.542.883.237a.5.5 0 1 1-.26.966l-1.848-.495L9 8l1.236.713 1.849-.495a.5.5 0 0 1 .259.966l-.883.237.94.542 1.849-.495a.5.5 0 0 1 .259.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.236.883a.5.5 0 1 1-.966.258l-.495-1.849-.94-.542.236.883a.5.5 0 0 1-.966.258L9.736 9.58 8.5 8.866v1.427l1.354 1.353a.5.5 0 0 1-.707.708l-.647-.647v1.086l1.354 1.353a.5.5 0 0 1-.707.708l-.647-.647V15.5a.5.5 0 0 1-.5.5z" />
+              </svg></h1>
+
+
+              <div [hidden]="seleccio_voyager">
+            <div class="imagen__mantenimiento">
+              <img
+                style=" margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;     height: 250px;
+                width: 400px;"
+                src="../../../assets/equipos/precedent.PNG" alt="">
+            </div>
+
+
+            <div id="inicio" class="inicio">
+                <div id="carouselExampleCaptions" class="carousel-fade carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                     <img src="../../../assets/imagenes/introduccion-seleccion.PNG" class="d-block w-100 h-100" alt="...">
+                        <div (click)="pasoNombre('introduccion')" (click)=" scrollToElement('introduccion')"  class="carousel-caption  d-md-block">
+                          <h5>INTRODUCCI&Oacute;N</h5>
+                          <p>No importa cuál sea la aplicación, ya que las unidades Precedent y Voyager proporciona la solución</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../../../assets/imagenes/servi.PNG" class="d-block w-100 h-100" alt="...">
+                        <div (click)="pasoNombre('service_fact')" (click)=" scrollToElement('service_fact')" class="carousel-caption  d-md-block">
+                          <h5>SERVICES FACTS</h5>
+                          <p>Secuencia de operación.
+                            Datos de rendimiento.
+                            Rendimiento del ventilador del
+                            evaporador.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../../../assets/imagenes/scroll_compresor.PNG" class="d-block w-100 h-100" alt="...">
+                        <div (click)="pasoNombre('compresor_scroll')" (click)=" scrollToElement('compresor_scroll')" class="carousel-caption  d-md-block">
+                          <h5>FUNCION DEL COMPRESOR SCROLL</h5>
+                          <p>La función del compresor es mantener un
+                            diferencial de presión</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+            </div>
+
+
+
+            <div class="contenido_seleccion" [hidden]="introduccion">
+              <div class="dropdownn">
+                <button class="dropbtn"> <img src="../../../assets/imagenes/flecha-hacia-arriba.png"  height="25px" width="20px" alt=""> </button>
+                <div class="dropdownn-content">
+                  <a  (click)=" scrollToElement('inicio')">Inicio</a>
+                  <a  (click)=" scrollToElement('introduccion')">Introducción</a>
+                  <a  (click)=" scrollToElement('acceso_por_un_solo_lado')">Acceso por un solo lado</a>
+                  <a  (click)=" scrollToElement('bandeja_de_drene')">Bandeja de drene</a>
+                  <a  (click)=" scrollToElement('guardas_para_proteger')">Guardas para proteger los serpentines</a>
+                  <a  (click)=" scrollToElement('Poleas_tencion')">Poleas de tenci&oacute;n de bandas</a>
+                  <a  (click)=" scrollToElement('RTRM')">Modulo de control RealiaTel</a>
+                  <a  (click)=" scrollToElement('compresores')">Compresores</a>
+                  <a  (click)=" scrollToElement('recistencias')">Resistencia de c&acute;rter</a>
+                  <a  (click)=" scrollToElement('termostato')">Sensores de corte por presi&oacute;n</a>
+                  <a  (click)=" scrollToElement('monitor')">SMonitor de fase</a>
+
+                </div>
+              </div>
+                <div id="introduccion"class="introduccion">
+                    <div class="row">
+                       <div class="col-12 col-md-7">
+
+                        <h1>INTRODUCCI&Oacute;N</h1>
+                        <p>No importa cuál sea la aplicación, ya que las unidades Precedent y Voyager proporciona 
+                            la solución con una amplia gama de modelos y tonelajes que están disponibles con 
+                            compresores simple, circuitos doble, y numerosos accesorios. Las unidades se puede 
+                            instalar en el suelo o en una azotea pueden ser descarga horizontal o hacia bajo con 
+                            ductos largos que se extiende desde el techo o desde el 
+                            suelo</p>
+
+                        
+                       </div>
+                       <div class="col-12 col-md-5">
+                        <img src="../../../assets/imagenes/introduccion-seleccion.PNG" width="350px" height="300px;">
+                       </div>
+                    </div>
+                   </div>
+
+
+                   <div id="acceso_por_un_solo_lado"class="introduccion">
+                    <div class="row">
+                       <div class="col-12 col-md-7">
+
+                        <h1>ACCESO POR UN SOLO LADO</h1>
+                        <p>Acceso a servicio por el frente de la unidad, 
+                            paneles de acceso de facil remocion, 
+                            disponibilidad de paneles de acceso embisagrados opcionales</p>
+
+                        
+                       </div>
+                       <div class="col-12 col-md-5">
+                        <img src="../../../assets/imagenes/acceso_por_un_solo_lado.PNG" width="350px" height="300px;">
+                       </div>
+                    </div>
+                   </div>
+
+                   <div id="bandeja_de_drene" class="introduccion">
+                    <div class="row">
+                       <div class="col-12 col-md-7">
+
+                        <h1>BANDEJA DE DRENE.</h1>
+                        <p>De doble inclinaci&oacute;n con pendiente.</p>
+                        <p>Removible para la limpieza.</p>
+                        <p>Convertible en ambos lados o atraves de la baese.</p>
+                        <p>Anti corrosivo.</p>
+                        <p>Unicamente unidades precedent.</p>
+
+                        
+                       </div>
+                       <div class="col-12 col-md-5">
+                        <img src="../../../assets/imagenes/bandeja.PNG" width="350px" height="300px;">
+                       </div>
+                    </div>
+                   </div>
+
+                   <div id="guardas_para_proteger" class="introduccion">
+                    <div class="row">
+                       <div class="col-12 col-md-6">
+
+                        <button (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/proteger_serpentines.pdf')"
+                        class="css-button css-button-sliding-to-right css-button-sliding-to-left--sky">Guardas para proteger los
+                        serpentines</button>
+                        
+                       </div>
+                       <div class="col-12 col-md-6">
+                        <button (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/economizador_opcional.pdf')"
+                   class="css-button css-button-sliding-to-right css-button-sliding-to-left--sky">Economizador instalado en fabrica (OPCIONAL)</button>
+                       </div>
+                    </div>
+                   </div>
+
+                   <div id="Poleas_tencion" class="introduccion">
+                    <div class="row">
+                       <div class="col-12 col-md-7">
+
+                        <h1>POLEAS DE TENCI&Oacute;N DE BANDAS.</h1>
+                        <p>Están disponibles en todas las unidades de para facilitar el ajuste de bandas sin
+                          necesidad de mover el motor del ventilador.</p>
+                        
+
+                        
+                       </div>
+                       <div class="col-12 col-md-5">
+                        <img src="../../../assets/imagenes/POLEAS_TENCION.PNG" width="350px" height="300px;">
+                       </div>
+                    </div>
+                   </div>
+
+                   
+                   <div id="RTRM" class="introduccion">
+                    <div class="row">
+                       <div class="col-12 col-md-7">
+
+                        <h1>M&Oacute;DULO DE CONTROL RELIATEL</h1>
+                        <p>El Módulo de Control ReliaTel™ es un sistema de
+                          control micro electrónico
+                          conocido como “Módulo de Refrigeración” (RTRM).</p>
+                          
+                          <p>Este módulo realiza funciones específicas de la
+                            unidad que gobiernan la operación de la misma
+                            en respuesta a la temperatura de zona, la
+                            temperatura del aire de suministro y/o
+                            condiciones de humedad, dependiendo de la
+                            aplicación.</p>
+
+                            <div class="botones">
+
+                              <button class="css-button css-button-sliding-to-right css-button-sliding-to-left--sky" (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/diagramas_errores/rtrm.pdf')">Módulo Refrigeración(RTRM)</button>
+                              <button (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/relevadores.pdf')"
+                              class="css-button css-button-sliding-to-right css-button-sliding-to-left--sky">RTRM Relevadores</button>
+                            </div>
+
+                          
+                        
+
+                        
+                       </div>
+                       <div class="col-12 col-md-5">
+                        <img src="../../../assets/imagenes/modulo_Realiatel.PNG" width="350px" height="300px;">
+                       </div>
+                    </div>
+                   </div>
+
+                   <div id="compresores" class="introduccion">
+                    <div class="row">
+                       <div class="col-12 col-md-7">
+
+                        <h1>COMPRESORES</h1>
+                        <p>Las unidades Precedent y Voyager tiene la mejor tecnologia en compresores con el
+                          mas alto desempeño.</p>
+                          
+                          <p>Compresores dobles estan disponibles en los modelos de 7.5 toneladas hasta 25
+                            toneladas permitiendo un enfriamiento eficiente utilisando 3 etapas de operacion (En
+                            modelos de alta eficiencia unicamente)</p>
+
+                           
+                          
+                        
+
+                        
+                       </div>
+                       <div class="col-12 col-md-5">
+                        <img src="../../../assets/imagenes/compresor1.PNG" width="350px" height="300px;">
+                        <img src="../../../assets/imagenes/compresor2.PNG" width="350px" height="300px;">
+                       </div>
+                    </div>
+                   </div>
+
+                   <div id="recistencias" class="introduccion">
+                    <div class="row">
+                       <div class="col-12 col-md-7">
+
+                        <h1>RESISTENCIA DE CARTER</h1>
+                        <p>La resistencia de cárter son del tipo banda o de inserción de 100 a 80 watts para
+                          suministrar un calentamiento al aceite para prevenir la migración durante ciclos de paro
+                          o temperaturas de Bajo ambiente. Estas son estándar en casi todos los modelos.</p>
+                          
+                      
+
+                           
+                          
+                        
+
+                        
+                       </div>
+                       <div class="col-12 col-md-5">
+                       
+                        <img src="../../../assets/imagenes/recistencias.PNG" width="350px" height="300px;">
+                       </div>
+                    </div>
+                   </div>
+
+                   <div id="termostato" class="introduccion">
+                    <div class="row">
+                       <div class="col-12 col-md-12">
+
+                        <h1>SENSORES DE CORTE POR
+                          PRESION</h1>
+                        <p>SENSORES DE CORTE POR ALTA Y BAJA PRESION SON ESTANDAR EN
+                          TODOS LOS MODELOS VOYAGERS
+                          </p>
+                         
+                          <img src="../../../assets/imagenes/sensores.PNG" width="100%" height="300px;">
+                      
+
+                           
+                          
+                        
+
+                        
+                       </div>
+                      
+                    </div>
+                   </div>
+
+                   <div id="monitor" class="introduccion">
+                    <div class="row">
+                       <div class="col-12 col-md-7">
+
+                        <h1>MONITOR DE FASE</h1>
+                        <p>Este modulo supervisa el voltaje entre los 3
+                          conductores del suministro de energía trifásica.
+                          Se suministra con dos indicadores luminosos
+                          (LED).</p>
+
+                          <p>El Modulo protege por perdida de fase reversa
+                            de fase y desbalance de fase, no es ajustable
+                            en campo y se restea automáticamente. </p>
+                          
+                      
+
+                           
+                          
+                            <div class="botones">
+
+                            
+                              <button (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/sit_volumen.pdf')"
+                              class="css-button css-button-sliding-to-right css-button-sliding-to-left--sky">Sistema de volumen de aire
+                              variable</button>
+                            </div>
+
+
+                        
+                       </div>
+                       <div class="col-12 col-md-5">
+                       
+                        <img src="../../../assets/imagenes/monitor.PNG" width="350px" height="300px;">
+                       </div>
+                    </div>
+                   </div>
+
+                   
+
+
+            </div>
+
+            <div class="contenido_seleccion" [hidden]="service_fact">
+              <div class="dropdownn">
+                <button class="dropbtn"> <img src="../../../assets/imagenes/flecha-hacia-arriba.png"  height="25px" width="20px" alt=""> </button>
+                <div class="dropdownn-content">
+                     <a  (click)=" scrollToElement('inicio')">Inicio</a>
+                  <a  (click)=" scrollToElement('service_fact')">Service Facts</a>
+                  <a  (click)=" scrollToElement('desc_modelo')">Descripci&oacute;n del numero de modelo</a>
+
+
+                </div>
+              </div>
+                <div id="service_fact"class="introduccion">
+                    <div class="row">
+                       <div class="col-12 col-md-7">
+
+                        <h1>SERVICE FACTS</h1>
+                        <p>Secuencia de operación.
+                        Datos de rendimiento.
+                        Rendimiento del ventilador del
+                        evaporador.</p>
+                        <p>Velocidades del ventilador.
+                          Los datos de presión estática.
+                          Curvas de presión.
+                          Circuito del Refrigerante.</p>
+
+                        
+                       </div>
+                       <div class="col-12 col-md-5">
+                        
+                        <img src="../../../assets/imagenes/servi.PNG" width="350px" height="300px;">
+                        <img src="../../../assets/imagenes/servi2.PNG" width="350px" height="300px;">
+                       </div>
+                    </div>
+                   </div>
+
+                   <div id="desc_modelo"class="introduccion">
+                    <div class="row">
+                       <div class="col-12 col-md-12">
+
+                        <h1>DESCRIPCION DEL NUMERO DE MODELO</h1>
+                        <p>Todos los productos están identificados mediante un número de modelo de
+                          caracteres múltiples que identifica con precisión un tipo de unidad en
+                          particular. Se proporciona una explicación del código alfanumérico de
+                          identificación. Su utilización permitirá al propietario / operador, contratistas de
+                          instalación y técnicos de mantenimiento definir la operación, los
+                          componentes específicos y otras opciones de cualquier unidad en particular.
+                          </p>
+                        <p><strong>Nota:</strong> Al solicitar piezas de repuesto o asistencia técnica, asegúrese de consultar el número
+                          de modelo,número de serie y número de DL (si procede) específicos estampados en la placa
+                          de identificación de la unidad.</p>
+
+                          <div class="botones">
+
+                            <button  (click)="openMd(contenidoTablas)" class="css-button css-button-sliding-to-right css-button-sliding-to-left--sky">Tablas y diagramas</button>
+                          </div>
+
+                        
+                       </div>
+                      
+                    </div>
+                   </div>
+
+                   
+
+
+
+
+               
+                   
+
+
+
+                   
+
+
+            </div>
+
+
+            <div class="contenido_seleccion" [hidden]="com_scroll">
+              <div class="dropdownn">
+                <button class="dropbtn"> <img src="../../../assets/imagenes/flecha-hacia-arriba.png"  height="25px" width="20px" alt=""> </button>
+                <div class="dropdownn-content">
+                  <a  (click)=" scrollToElement('inicio')">Inicio</a>
+                  <a  (click)=" scrollToElement('compresor_scroll')">Compresor Scorll</a>
+                  <a  (click)=" scrollToElement('func_compresor')">Funci&oacute;n del compresor</a>
+                  <a  (click)=" scrollToElement('compresor_trane')">Compresores TRANE</a>
+                  <a  (click)=" scrollToElement('tencion_electrica')">Tensiones Eléctricas</a>
+                  <a  (click)=" scrollToElement('prot_compresor')">Protección del Compresor</a>
+      
+
+                </div>
+              </div>
+                <div id="compresor_scroll"class="introduccion">
+                    <div class="row">
+
+                      <div class="col-12 col-md-7">
+                        <h1>COMPRESOR SCROLL</h1>
+
+                        <p>Garantiza un ajuste perfecto de la bolsa de compresión.
+                          La espiral orbitante se auto-ajusta. Se desplaza
+                          radialmente hacia adentro y hacia afuera siguiendo
+                          precisamente la geometría de las espirales.
+                          La espiral fija se mueve verticalmente para mantener el
+                          contacto óptimo de los bordes guía.</p>
+                      </div>
+                    
+                       <div class="col-12 col-md-5">
+                        
+                        <img src="../../../assets/imagenes/scroll_compresor0.PNG" width="350px" height="300px;">
+                        
+                       </div>
+
+                       <div class="col-12 col-md-7">
+    <p>El volumen de compresión del scroll se forma por la
+  relación orbitante entre las espirales. Para funcionar
+  adecuadamente, las espirales deben mantener
+  contacto en toda la extensión de la espiral.</p>
+                       </div>
+
+                       <div class="col-12 col-md-5">
+                        <img src="../../../assets/imagenes/scroll_compresor00.PNG" width="350px" height="300px;">
+                       </div>
+
+                       <div class="col-12 col-md-12">
+                        <p>A medida que el rotor gira, el cigüeñal acciona el desplazamiento
+                          dinámico del scroll para realizar un movimiento giratorio excéntrico, y
+                          succionar el refrigerante a baja presión y temperatura y comprimirlo
+                          por el desplazamiento del scroll y descargar el refrigerante a alta
+                          temperatura y presión por el centro del scroll </p>
+
+                          <div class="botones">
+
+                            <button  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/diagramas_errores/compresores.pdf')" class="css-button css-button-sliding-to-right css-button-sliding-to-left--sky">Compresores</button>
+                          </div>
+                       </div>
+                    </div>
+                   </div>
+
+                     <div id="func_compresor"class="introduccion">
+                    <div class="row">
+                       <div class="col-12 col-md-7">
+
+                        <h1>FUNCION DEL COMPRESOR</h1>
+                        <p>La función del compresor es mantener un
+                          diferencial de presión entre su entrada
+                          (succión) y su salida (descarga) que
+                          provocara que el refrigerante fluya en
+                          suficientes cantidades dentro del circuito de
+                          refrigeración.
+                          </p>
+                        <p>Los compresores están diseñados para
+                          bombear solamente vapor refrigerante. Si
+                          se permite la entrada de vapor saturado o
+                          liquido al compresor, puede resultar en
+                          dilución de aceite y daños en los
+                          rodamientos del compresor.
+                          </p>
+
+                          <div class="botones">
+
+                            <button  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/diagrama_compresor.pdf')" class="css-button css-button-sliding-to-right css-button-sliding-to-left--sky">Diagramas</button>
+                          </div>
+
+                        
+                       </div>
+                       <div class="col-12 col-md-5">
+                        
+                      
+                        <img src="../../../assets/imagenes/func_compresor.PNG" width="350px" height="300px;">
+                       </div>
+                    </div>
+                   </div>
+
+
+                   <div id="compresor_trane"class="introduccion">
+                    <div class="row">
+                       <div class="col-12 col-md-7">
+
+                        <h1>FUNCION DEL COMPRESOR</h1>
+                        <p>Los compresores de Trane desde su inicio, su filosofía a girado en torno a dos
+                          principios fundamentales:
+                          
+                          </p>
+                        <p>1. El compresor debe ser capaz de protegerse por sí solo en todos los
+                          sistemas, con mínima dependencia de los controles del sistema.
+                          </p>
+                          <p>2. La confiabilidad y durabilidad del compresor deben comprobarse en el
+                            laboratorio y no en el lugar de la obra.
+                            </p>
+                            <p>Estas dos filosofías se han mejorado continuamente, permaneciendo los
+                              Compresores Trane como líder mundial.</p>
+
+                        
+                       </div>
+                       <div class="col-12 col-md-5">
+                        
+                      
+                        <img src="../../../assets/imagenes/comp_trane.PNG" width="350px" height="300px;">
+                       </div>
+                    </div>
+                   </div>
+
+
+                   <div id="tencion_electrica"class="introduccion">
+                    <div class="row">
+                       <div class="col-12 col-md-7">
+
+                        <h1>TENSIONES ELECTRICAS</h1>
+                        <p>Al estar el compresor en operación, puede producirse un leve
+                          movimiento del embobinado del motor creado por el flujo
+                          magnético entre los alambres. Esta flexión provoca
+                          frotamiento entre los alambres adyacentes, pudiendo afectar
+                          su aislamiento. Los alambres descubiertos pueden provocar
+                          cortos entre devanados que ocasionarán fallas en el motor.
+                          Las fuerzas magnéticas y la flexión aumentan con la corriente,
+                          siendo excepcionalmente severas durante el arranque.</p>
+                       
+
+                        
+                       </div>
+                       <div class="col-12 col-md-5">
+                        
+                      
+                        <img src="../../../assets/imagenes/ten_electrica.PNG" width="350px" height="300px;">
+                       </div>
+                    </div>
+                   </div>
+
+
+                   <div id="prot_compresor"class="introduccion">
+                    <div class="row">
+                       <div class="col-12 col-md-7">
+
+                        <h1>PROTECCION DEL COMPRESOR</h1>
+                        <p>Protección Interna de Sobrecarga - IOL
+                          Ofrece protección contra el sobrecalentamiento ocasionado.</p>
+                       <P>(1) presiones bajas del refrigerante.</P>
+                              <p>(2) corrientes eléctricas excesivas resultantes de condiciones de
+                                operación extremas.</p>
+                                <p>Cuenta con auto-restablecimiento, evitando las llamadas para servicio.
+                                </p> <br>
+                                <p>El motor cuenta con 3 Sensores de temperatura en el motor.
+                                  El controlador de la unidad supervisa las temperaturas del devanado del
+                                  motor en cada fase y cancela la operación del compresor cuando la
+                                  temperatura resulta excesiva. </p> <br>
+                                  <p>La válvula IPR está montada muy próxima al IOL.
+                                    Si la presión diferencial entre los lados de descarga y
+                                    succión excediera los 625-715 psi, la válvula se abrirá
+                                    conduciendo el gas caliente de descarga sobre el IOL. </p>
+
+                                    <div class="botones">
+
+                                      <button  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/diagramas_errores/proteccion.pdf')" class="css-button css-button-sliding-to-right css-button-sliding-to-left--sky">Sistema de protección</button></div>
+          
+                        
+                       </div>
+                       <div class="col-12 col-md-5">
+                        
+                      
+                        <img src="../../../assets/imagenes/prot_compresor.PNG" width="350px" height="300px;">
+                        <img src="../../../assets/imagenes/prot_compresor2.PNG" width="350px" height="300px;">
+                        <img src="../../../assets/imagenes/prot_compresor3.PNG" width="350px" height="300px;">
+                       </div>
+
+                       <div class="col-12 col-md-5">
+                        <img src="../../../assets/imagenes/como_fuc.PNG" width="350px" height="300px;">
+                        
+                       </div>
+                       <div class="col-12 col-md-7">
+                          <h1>¿Cómo trabaja el compresor Scroll?</h1>
+                     <p>El volumen de compresión del scroll se forma por la relación orbitante entre las
+                      espirales. Para funcionar adecuadamente, las espirales deben mantener contacto en
+                      toda la extensión de la espiral.
+                      </p>
+                        </div>
+                    </div>
+                   </div>
+         
+                   
+
+
+            </div>
+
+          </div>
+
+     
+
+          <div [hidden]="diagnostico_compresor">
+            <div class="imagen__mantenimiento">
+              <img
+                style=" margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;     height: 250px;
+                width: 400px;"
+                src="../../../assets/imagenes/diag_compresor.PNG" alt="">
+            </div>
+
+            <div class="dropdownn">
+              <button class="dropbtn"> <img src="../../../assets/imagenes/flecha-hacia-arriba.png"  height="25px" width="20px" alt=""> </button>
+              <div class="dropdownn-content">
+                <a  (click)=" scrollToElement('inicio-diag')">Inicio</a>
+                <a  (click)=" scrollToElement('probl_sistemas')">Problemas en los Sistemas</a>
+                <a  (click)=" scrollToElement('prob_compre')">Problemas en los Compresores</a>
+                <a  (click)=" scrollToElement('relevador')">Relevador de proteccion fase</a>
+                <a  (click)=" scrollToElement('func_resistencia')">Revisando el funcionamiento de la resistencia de carter</a>
+                <a  (click)=" scrollToElement('sobre_carter')">Midiendo el sobrecalentamiento del cárter del compresor</a>
+                <a  (click)=" scrollToElement('rel_compresion')">Relaci&oacute;n de compresi&oacute;n</a>
+                <a  (click)=" scrollToElement('que_hacer')">Lo que debemos hacer</a>
+                <a  (click)=" scrollToElement('lectura_func')">Lectura de funcionamiento y m&aacute;s informacion</a>
+             
+              </div>
+            </div>
+
+            <div class="contenido_seleccion">
+              <div id="inicio-diag" class="introduccion">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <h1 style="color: red;">POR QUE FALLAN LOS COMPRESORES</h1>
+
+                    <p>6 causas principales de falla mec&acute;nica de los compresores.</p>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="row">
+                      <div style="border-width: 3px; background-color: rgba(51, 147, 177, 0.801); border-style: solid; gap: 3px; display: flex; justify-content: center; align-items: center;" class="zom_diag col-6 col-md-6">
+                        <p>RELACION DEL COMPRESOR</p>
+                      </div>
+                      <div style="border-width: 3px; background-color: rgba(51, 147, 177, 0.801); border-style: solid; gap: 3px; display: flex; justify-content: center; align-items: center;" class="zom_diag col-6 col-md-6">
+                        <p>GOLPE E INUNDACIÓN DE LIQUIDO</p>
+                      </div>
+                      <div style="border-width: 3px; background-color: rgba(51, 147, 177, 0.801); border-style: solid; gap: 3px; display: flex; justify-content: center; align-items: center;" class="zom_diag col-6 col-md-6">
+                        <p>ARRANQUES INUNDADOS</p>
+                      </div>
+                      <div style="border-width: 3px; background-color: rgba(51, 147, 177, 0.801); border-style: solid; gap: 3px; display: flex; justify-content: center; align-items: center;" class="zom_diag col-6 col-md-6">
+                        <p>PERDIDAS DE ACEITE DEL COMPRESOR</p>
+                      </div>
+                      <div style="border-width: 3px; background-color: rgba(51, 147, 177, 0.801); border-style: solid; gap: 3px; display: flex; justify-content: center; align-items: center;" class="zom_diag col-6 col-md-6">
+                        <p>SOBRECALENTAMIENTO DEL COMPRESOR</p>
+                      </div>
+                      <div style="border-width: 3px; background-color: rgba(51, 147, 177, 0.801); border-style: solid; gap: 3px; display: flex; justify-content: center; align-items: center;" class="zom_diag col-6 col-md-6">
+                        <p>REGRESO DE LIQUIDO</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                
+
+               
+              </div>
+
+              <div id="probl_sistemas" class="introduccion">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <h1 style="color: rgb(15, 61, 212);">PROBLEMAS EN LOS SISTEMAS</h1>
+
+                    <p>Los problemas en el sistema permitirán a este perder el equilibrio. Cuando el equilibrio es
+                      perdido, se acortará la vida útil del compresor.
+                      Para resolver los problemas del sistema, debemos comprender y familiarizarnos con las
+                      siguiente lecturas.
+                      </p>
+                      <br>
+                      <p>A. Presión de Descarga.</p>
+                      <p>B. Aprovechamiento del Condensador.</p>
+                      <p>C. Sub Enfriamiento.</p>
+                      <p>D. Presión de succión.</p>
+                      <p>E. T Evaporador.</p>
+                      <p>F. Aprovechamiento del evaporador.</p>
+                      <p>G. Sobrecalentamiento.</p>
+            
+                      
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <img src="../../../assets/imagenes/probl_sistemas.PNG" width="350px" height="300px;">
+                    
+                    
+                  </div>
+                  <div class="col-12 col-md-6"> 
+                    <p>Un sistema de Refrigeración, por su propia
+                      naturaleza, presenta varios riesgos
+                      importantes para el compresor. Estos son:</p>
+
+                      <ul>
+                        <li>Golpes de líquido Refrigerante.</li>
+                        <li>Pérdida de Refrigerante.</li>
+                        <li>Dilución de aceite.</li>
+                        <li>Falta de aceite.</li>
+                      </ul>
+                      <p>Tenga en cuenta que estos riesgos se
+                        derivan de dos áreas una de Refrigerante y la
+                        otra del Aceite</p>
+                  </div>
+                  <div class="col-12 col-md-6"><img src="../../../assets/imagenes/probl_sistemas2.PNG" width="350px" height="300px;"> </div>
+
+
+
+                </div>
+                
+
+               
+              </div>
+
+              <div id="prob_compre" class="introduccion">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <h1 style="color: rgb(15, 61, 212);">PROBLEMAS EN LOS COMPRESORES</h1>
+
+                    <p>Bajo ninguna circunstancia permita que los
+                      compresores Scroll funcionen por debajo de 7 psig
+                      para refrigerante 22 y 50 psig para 410ª</p>
+                    <p>Operación en vacío</p>
+                    <p>Fases incorrectas</p>
+                    <p>Inundación de liquido</p>
+                    <p>Perdida de aceite</p>
+                    <p>Perdida de refrigerante </p>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <img src="../../../assets/imagenes/prob_compre.PNG" width="350px" height="300px;">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <p>
+                     <li>En un arranque inicial o en un paro extendido siga las instrucciones del
+                      fabricante permitiendo que la resistencia calefactora de aceite opere por lo
+                      menos 8:00 hrs antes.</li>
+                      <li>Indicador de Nivel de Aceite de 1/4 a ¾</li>
+                  </p>
+                  <p>
+                    A. Asegúrese de que la resistencia de cárter del compresor
+funcione correctamente. (Amp X Volt = W)
+
+                  </p>
+                  <p>B. Tome la temperatura en la parte inferior del cárter con
+                    un termopar.
+                    </p>
+                    <p>C. Tome la presión del refrigerante y transfórmela a
+                      temperatura.
+                      </p>
+                      <p>D. La temperatura del cárter deberá de ser mayor de 30°F
+                        de la temperatura correspondiente de la presión. </p>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <img src="../../../assets/imagenes/prob_compre2.PNG" width="350px" height="300px;">
+                  </div>
+
+                </div>
+                
+
+               
+              </div>
+
+              <div id="relevador" class="introduccion">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <h1 style="color: red;">RELEVADOR DE PROTECCION DE
+                      FASE</h1>
+<p style="color: red;">Solamente Compresores CSHD </p>
+                    <p>Este modulo supervisa el voltaje entre los 3
+                      conductores del suministro de energía
+                      trifásica.
+                      El Modulo protege por perdida de fase
+                      reversa de fase y desbalance de fase, no es
+                      ajustable en campo y se restea
+                      automáticamente.
+                      Se suministra con dos indicadores
+                      luminosos (LED). </p>
+      
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <img src="../../../assets/imagenes/relevador.PNG" width="350px" height="300px;">
+                  </div>
+                </div>
+                
+
+               
+              </div>
+
+              <div id="func_resistencia" class="introduccion">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <h1 style="color: red;">REVISANDO EL FUNCIONAMIENTO
+                      DE LA RESISTENCIA DE CARTER</h1>
+
+                    <p>Medir la temperatura del compresor con un termómetro nos indica
+                      que la resistencia esta funcionando.
+                      Medir el voltaje de la resistencia que es de 460 vca y el amperaje de
+                      la misma que es de 0.2 multiplique estos valores y obtendrá los
+                      watts de consumo de la resistencia de cárter que son 92 watts.</p>
+      
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <img src="../../../assets/imagenes/func_resistencia.PNG" width="350px" height="300px;">
+                  </div>
+                </div>
+                
+
+               
+              </div>
+
+              <div id="sobre_carter"class="introduccion">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <h1 style="color: red;">MIDIENDO EL SOBRECALENTAMIENTO DEL CARTER DEL COMPRESOR</h1>
+
+                    <p>Para asegurar que el compresor tenga un arranque sin
+                      liquido refrigerante. Con el compresor funcionando,
+                      asegurar que no le este llegando liquido refrigerante.
+                      Coloque un termómetro de contacto a la parte inferior del
+                      compresor. (Carter del Compresor).</p>
+      
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <img src="../../../assets/imagenes/sobre_carter.PNG" width="350px" height="300px;">
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <P>Tome la temperatura del
+                      cárter del compresor.
+                      Tome la presión de
+                      succión, y conviértala a
+                      temperatura de refrigerante
+                      saturada</P>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <img src="../../../assets/imagenes/sobre_carter2.PNG" width="350px" height="300px;">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <P>La diferencia de las dos
+                      temperaturas es el
+                      sobrecalentamiento que
+                      deberá de estar entre 20 a 30°F</P>
+                      <br>
+                      <div class="botones">
+
+                        <button  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/diagramas_errores/sobrecalentamiento_carter.pdf')" class="css-button css-button-sliding-to-right css-button-sliding-to-left--sky">Sobrecalentamiento</button></div>
+
+          
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <img src="../../../assets/imagenes/sobre_carter3.PNG" width="350px" height="300px;">
+                  </div>
+                </div>
+                
+
+               
+              </div>
+
+              
+              <div id="rel_compresion" class="introduccion">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <h1 style="color: red;">RELACION DE COMPRESION</h1>
+
+                    <p>Es la relación entre la presión de
+                      descarga absoluta y la presión de
+                      succión absoluta del sistema.</p>
+                      <p>Conocer la relación de
+                        compresión nos permite
+                        determinar en que
+                        condiciones esta trabajando
+                        el compresor.</p>
+      
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <img src="../../../assets/imagenes/rel_compresion.PNG" width="350px" height="300px;">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <ul class="cuadrado">
+
+                      <li>Cuales serian los síntomas que representaría el sistema cuando
+                        encontramos las siguientes relaciones de compresión. R-22 </li>
+                      <li>Condiciones temperatura de condensación 110°F. </li>
+                      <li>Temperatura de evaporación 45°F.
+                      </li>
+                      <li>Presión de descarga = 226 psig. <br>
+                        Presión de succión = 76 psig. <br>
+                        <h2 style="font-weight: bold;"> 240.7 / 90.7 = 2.65</h2>
+                   
+                       </li>
+                       <li>  Presión de descarga = 278 Psig.<br>
+                        Presión de succión = 79 Psig. <br>
+                        <h2 style="font-weight: bold;">292.7 / 93.7 = 3.12</h2>
+                   
+                        
+                       </li><br>
+                        
+                      
+                      
+                      </ul>
+
+                  </div>
+                  <div class="col-12 col-md-6"> 
+                    <img src="../../../assets/imagenes/rel_compresion2.PNG" width="350px" height="300px;">
+                  </div>
+
+                  <div class="col-12 col-md-12">
+                    <ul class="cuadrado">
+                      <li> Cuales serian los síntomas que representaría el sistema cuando
+encontramos las siguientes relaciones de compresión. R 410a</li>
+                      <li >Condiciones temperatura de condensación 110°F</li>
+                      <li>Temperatura de evaporación 45°F.</li>
+                      <li>Presión de descarga = 366 psig. <br> 
+                        presión de succión = 130 psig <br> 
+                        <h2 style="font-weight: bold;">380.7 / 144.7 = 2.63</h2>
+                      </li>
+                      <li>Presión de descarga = 448 Psig.<br> 
+                        Presión de succión = 135 Psig. <br> 
+                        <h2 style="font-weight: bold;">462.7 / 149.7 = 3.09</h2>
+                      </li>
+                    </ul>
+                  </div>
+                
+
+
+                </div>
+                
+
+               
+              </div>
+
+              <div id="que_hacer" class="introduccion">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <h1 style="color: red;">QUE DEBEMOS HACER</h1>
+
+                    <p>Al llegar al lugar de la falla debemos de
+                      utilizar todos los datos posibles que podamos
+                      obtener de cualquier fuente y hablar con el
+                      personal del propietario para averiguar lo que
+                      podamos acerca de cómo funcionaba la unidad
+                      inmediatamente antes de la falla.</p>
+                      <p>El operador mantiene un registro o bitácora
+                        de operación? si lo hiciera su trabajo de
+                        diagnostico será más fácil.</p>
+      
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <img src="../../../assets/imagenes/que_hacer.PNG" width="350px" height="300px;">
+                  </div>
+                
+                  <div class="col-12 col-md-12">
+                    <h1 style="color: red;">HAGALO BIEN LA PRIMERA VEZ</h1>
+                    <p>Cuando un compresor es
+                      reemplazado, el técnico debe
+                      determinar la causa del error y
+                      corregir el problema.
+                      Sin embargo, la causa de la falla por
+                      lo general no se puede determinar.
+                      hasta que el nuevo compresor este
+                      funcionando.</p>
+
+
+                         <div id="lectura_func" class="botones">
+
+                             <button (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/lectura_func.pdf')"
+                              class="css-button css-button-sliding-to-right css-button-sliding-to-left--sky">Lecturas de funcionamiento</button>
+
+                              <button (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/mas_info.pdf')"
+                              class="css-button css-button-sliding-to-right css-button-sliding-to-left--sky">M&aacute;s informaci&oacute;n</button>
+                            </div>
+                  </div>
+
+
+                </div>
+                
+
+               
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <div [hidden]="manten_precedent">
+            <div class="imagen__mantenimiento">
+              <img
+                style=" margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;     height: 250px;
+                width: 400px;"
+                src="../../../assets/imagenes/mante_prec.PNG" alt="">
+            </div>
+<div class="botonesPdf">
+  <div class="botonesPdf2">  <p>Si necesita mas información puede ver los siguientes PDF</p>
+    <button  (click)="archivoPdfmantenimiento(ayudaPdf)" class="css-button css-button-sliding-to-right css-button-sliding-to-left--sky">PDF Mantenimiento</button>
+              </div>
+            
+</div>
+
+<div class="contenido_seleccion">
+            <div id="inicio-diag" class="introduccion">
+              <div class="row">
+                <div class="col-12 col-md-12">
+                  <h1 style="color: red;">MANTENIMIENTO PRECEDENT</h1>
+
+                  <p>Antes de completar las siguientes
+                    revisiones, coloque la unidad en OFF
+                    (apagado) y abra el interruptor de
+                    desconexión principal asegurándolo
+                    con candado.</p>
+                   
+                  </div>
+<div class="prog2"> <div class="barra_progreso">
+  <h3>{{progressValue}}%</h3>
+  <progress max="100" value="{{progressValue}}"></progress>
+</div></div>
+                 
+                  
+                    
+
+                    <div class="pasos-mante">
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <label  class="form-label" style="font-weight: bold; text-align: center;"> Inspeccione los filtros de aire de
+                            retorno y límpielos o
+                            reemplácelos de ser necesario.
+                            Ver Service Facts para mayor
+                            información</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="paso1" class="form-label" style="font-weight: bold; text-align: center; padding-right:5px ;"> HECHO</label>
+                          <input (click)="updatePaso('paso1')" (change)="updateProgress(paso1)" type="checkbox" class="form-check-input" id="paso1">
+              
+                        </div>
+
+
+                        <div class="col-12 col-md-6">
+                          <label  class="form-label" style="font-weight: bold; text-align: center;"> Revise las bandejas de drene y la
+                            tubería de condensados para
+                            asegurar que estén libres de
+                            obstáculos.</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="paso1" class="form-label" style="font-weight: bold; text-align: center; padding-right:5px ;"> HECHO</label>
+                          <input (click)="updatePaso('paso2')" (change)="updateProgress(paso2)" type="checkbox" class="form-check-input" id="paso1">
+              
+                        </div>
+
+
+                        <div class="col-12 col-md-6">
+                          <label  class="form-label" style="font-weight: bold; text-align: center;"> Inspeccione los serpentines del
+                            evaporador y el condensador en
+                            busca de basura y escombros.
+                            Si estuvieran sucios, límpielos de
+                            acuerdo a las instrucciones descritas en “Limpieza de Serpentines”
+                            más adelante en esta sección.</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="paso1" class="form-label" style="font-weight: bold; text-align: center; padding-right:5px ;"> HECHO</label>
+                          <input (click)="updatePaso('paso3')" (change)="updateProgress(paso3)" type="checkbox" class="form-check-input" id="paso1">
+              
+                        </div>
+
+
+                        <div class="col-12 col-md-6">
+                          <label  class="form-label" style="font-weight: bold; text-align: center;">Haga girar el ventilador(es) condensador manualmente para
+                            asegurar su libre movimiento y revisar el desagaste de los roda-
+                            mientos del motor. Verifique que
+                            todo el ensamble del montaje del
+                            ventilador esté bien apretado.</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="paso1" class="form-label" style="font-weight: bold; text-align: center; padding-right:5px ;"> HECHO</label>
+                          <input (click)="updatePaso('paso4')" (change)="updateProgress(paso4)" type="checkbox" class="form-check-input" id="paso1">
+              
+                        </div>
+
+
+                           <div class="col-12 col-md-6">
+                          <label  class="form-label" style="font-weight: bold; text-align: center;"> Inspeccione las bisagras de la
+                            compuerta F/A/R/A y los pernos
+                            para asegurar que todas las
+                            partes en movimiento estén
+                            montadas con toda seguridad.
+                            Mantenga las aspas lo más
+                            limpias posible</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="paso1" class="form-label" style="font-weight: bold; text-align: center; padding-right:5px ;"> HECHO</label>
+                          <input (click)="updatePaso('paso5')" (change)="updateProgress(paso5)" type="checkbox" class="form-check-input" id="paso1">
+              
+                        </div>
+
+
+                        <div class="col-12 col-md-6">
+                          <label  class="form-label" style="font-weight: bold; text-align: center;">Verifique que los brazos de las
+                            compuertas se mueven libremente; lubríquelos con grasa blanca si
+                            fuera necesario.</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="paso1" class="form-label" style="font-weight: bold; text-align: center; padding-right:5px ;"> HECHO</label>
+                          <input (click)="updatePaso('paso6')" (change)="updateProgress(paso6)" type="checkbox" class="form-check-input" id="paso1">
+              
+                        </div>
+
+
+                        <div class="col-12 col-md-6">
+                          <label  class="form-label" style="font-weight: bold; text-align: center;"> Revise los rodamientos del motor
+                            del ventilador de suministro;
+                            repare o reemplace el motor si
+                            fuera necesario.</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="paso1" class="form-label" style="font-weight: bold; text-align: center; padding-right:5px ;"> HECHO</label>
+                          <input (click)="updatePaso('paso7')" (change)="updateProgress(paso7)" type="checkbox" class="form-check-input" id="paso1">
+              
+                        </div>
+
+
+                        <div class="col-12 col-md-6">
+                          <label  class="form-label" style="font-weight: bold; text-align: center;">  Revise el desgaste de los
+                            rodamientos del eje del ventilador.
+                            Reemplace los rodamientos si
+                            fuera necesario.</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="paso1" class="form-label" style="font-weight: bold; text-align: center; padding-right:5px ;"> HECHO</label>
+                          <input (click)="updatePaso('paso8')" (change)="updateProgress(paso8)" type="checkbox" class="form-check-input" id="paso1">
+              
+                        </div>
+
+
+                        <div class="col-12 col-md-6">
+                          <label  class="form-label" style="font-weight: bold; text-align: center;"> Revise la banda del ventilador de
+                            suministro. Si estuviera
+                            desgastado o desgarrado,
+                            reemplácelo. Refiérase a la
+                            sección “Ajuste de la Banda del
+                            Ventilador” sobre el reemplazo y el
+                            ajuste de la banda.</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="paso1" class="form-label" style="font-weight: bold; text-align: center; padding-right:5px ;"> HECHO</label>
+                          <input (click)="updatePaso('paso9')" (change)="updateProgress(paso9)" type="checkbox" class="form-check-input" id="paso1">
+              
+                        </div>
+
+
+                        <div class="col-12 col-md-6">
+                          <label  class="form-label" style="font-weight: bold; text-align: center;">Verifique que todas las conexiones
+                            de las terminales estén apretadas.</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="paso1" class="form-label" style="font-weight: bold; text-align: center; padding-right:5px ;"> HECHO</label>
+                          <input (click)="updatePaso('paso10')" (change)="updateProgress(paso10)" type="checkbox" class="form-check-input" id="paso1">
+              
+                        </div>
+
+                         <div class="col-12 col-md-6">
+                          <label  class="form-label" style="font-weight: bold; text-align: center;">Remueva cualquier corrosión
+                            presente en las superficies
+                            exteriores de la unidad y pinte las
+                            áreas nuevamente.</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="paso1" class="form-label" style="font-weight: bold; text-align: center; padding-right:5px ;"> HECHO</label>
+                          <input (click)="updatePaso('paso11')" (change)="updateProgress(paso11)" type="checkbox" class="form-check-input" id="paso1">
+              
+                        </div>
+
+                         <div class="col-12 col-md-6">
+                          <label  class="form-label" style="font-weight: bold; text-align: center;"> Inspeccione la unidad en general
+                            en busca de condiciones
+                            anormales (por ej. paneles de
+                            acceso sueltos, conexiones de
+                            tubería con fugas, etc.).</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="paso1" class="form-label" style="font-weight: bold; text-align: center; padding-right:5px ;"> HECHO</label>
+                          <input (click)="updatePaso('paso12')" (change)="updateProgress(paso12)" type="checkbox" class="form-check-input" id="paso1">
+              
+                        </div>
+
+
+                           <div class="col-12 col-md-6">
+                          <label  class="form-label" style="font-weight: bold; text-align: center;"> Asegure que todos los tornillos de
+                            retención estén instalados en los
+                            paneles de acceso de la unidad ,
+                            una vez terminadas todas las
+                            revisiones.</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="paso1" class="form-label" style="font-weight: bold; text-align: center; padding-right:5px ;"> HECHO</label>
+                          <input (click)="updatePaso('paso13')" (change)="updateProgress(paso13)" type="checkbox" class="form-check-input" id="paso1">
+              
+                        </div>
+
+                        
+                        <div class="col-12 col-md-6">
+                          <label  class="form-label" style="font-weight: bold; text-align: center;">Con la unidad en operación,
+                            revise y registre: <br>
+                          <ul>
+                            <li>temperatura ambiente</li>
+                            <li> presiones de succión y descarga
+                              del compresor (cada circuito)</li>
+                            <li> sobrecalentamiento (cada circuito)</li>
+                          </ul>
+                          </label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="paso1" class="form-label" style="font-weight: bold; text-align: center; padding-right:5px ;"> HECHO</label>
+                          <input (click)="updatePaso('paso14')" (change)="updateProgress(paso14)" type="checkbox" class="form-check-input" id="paso1">
+              
+                        </div>
+
+
+                          <div class="col-12 col-md-6">
+                          <label  class="form-label" style="font-weight: bold; text-align: center;">Registre estos datos en la “bitácora
+                            de mantenimiento del operador”
+                            como la mostrada en la Tabla. Si
+                            las presiones de operación indican
+                            una falta de refrigerante, mida el
+                            sobrecalentamiento del sistema.
+                            Para mayor guía, refiérase a la
+                            sección “Arranque del Compresor”. <br>
+
+                          </label>
+                          
+                          <div class="botones"> <button  (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/tabla_bitacora.pdf')" class="css-button css-button-sliding-to-right css-button-sliding-to-left--sky">Bitacora</button>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="paso1" class="form-label" style="font-weight: bold; text-align: center; padding-right:5px ;"> HECHO</label>
+                          <input (click)="updatePaso('paso15')" (change)="updateProgress(paso15)" type="checkbox" class="form-check-input" id="paso1">
+              
+                        </div>
+
+
+
+                      </div>
+                    
+                    </div>
+
+
+              
+              
+              </div>
+              
+
+             
+            </div>
+          </div>
+
+          </div>
+
+      
+
+<div [hidden]="fundamentos">
+
+  <b><h1 style="text-align: center; margin-top: 1rem;" class="animate__jello">Fundamentos Mecanicos para Procedent y Voyager.
+  </h1></b>
+<div class="imagen__mantenimiento">
+<img
+  style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;     height: 250px;
+  width: 100%;"
+  src="../../../assets/imagenes/fundal.png" alt="">
+</div>
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+<div class="accordion-item">
+  <h2 class="accordion-header" id="flush-headingOne">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+      Principios básicos de refrigeración
+    </button>
+  </h2>
+  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+    <div class="accordion-body">El estudio de la regrigercación mecánica requiere que el participante entienda completamente los 
+      principios básicos que gobiernan al comportamiento de los refrigerantes, el aire y los componentes mecánicos necesarios para controlar
+      el sisitema de refrigeración y lograr los resultados deceados.
+      <br>
+      <div class="imagen__mantenimiento">
+        <img
+          style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+          src="../../../assets/imagenes/principios basicos.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="flush-headingTwo">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+      La teoría básica es importante!
+    </button>
+  </h2>
+  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+    <div class="accordion-body"> Si NO tienes la teoría, nunca entenderas la causa de las fallas del equipo de airea acondicionado.
+      <br>
+      Esta información puede ayudarte a entender los principios termodinámicos involucrados en este proceso.
+      <br>
+      <div class="imagen__mantenimiento">
+        <img
+          style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+          src="../../../assets/imagenes/La teoria es importante.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="flush-headingThree">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+      ¿Que es la refrigeración?
+    </button>
+  </h2>
+  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+    <div class="accordion-body">regrigeración es el proceso de transferir el calor de un lugar donde no se afecte con la acción del mismo.</div>
+    <br>
+    <div class="">        
+<img
+        style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+        src="../../../assets/imagenes/que es refrigeración.png" alt="">
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+<div class="accordion-item">
+  <h2 class="accordion-header" id="flush-headingcuatro">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecuatro" aria-expanded="false" aria-controls="flush-collapseOne">
+      Que es frio
+    </button>
+  </h2>
+  <div id="flush-collapsecuatro" class="accordion-collapse collapse" aria-labelledby="flush-headingcuatro" data-bs-parent="#accordionFlushExample">
+    <div class="accordion-body"> 
+      -El frio no existe.
+      <br>
+      -Es un termino que denota la ausencia de calor.
+      <br>
+      -Siempre que quitamos calor a una sustancia esta baja su temperatura.
+      <br>
+      -Pruebas en laboratio demuestran que las moléculas de calotr ya no tienen movimientos a una temperatura de -460°F.
+      <br>
+      <div class="imagen__mantenimiento">
+        <img
+          style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+          src="../../../assets/imagenes/Que es frio.png" alt="">
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading5">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapseOne">
+        ¿Que es calor?
+      </button>
+    </h2>
+    <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">El calor es una forma de Energia.
+        <br>
+        -La energia no puede ser creada ni destruida pero puede ser transferida de una sustamcia a otra.
+        <br>
+        -No es un solido ni un liquido.
+        <br>
+        -No se puede medir ni por peso ni volumen.
+        <br>
+        <div class="imagen__mantenimiento">
+          <img
+            style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+            src="../../../assets/imagenes/Calor.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-heading6">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapseOne">
+          Definición de temperatura
+        </button>
+      </h2>
+      <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"> 
+          -Es la unidad para medir la intensidad de calor, de un cuerpo o una sustancia.
+          <br>
+          -Para medir la intensidad de calor se utilizan muchos métodos y escalas.
+          <br>
+          -La temperatura es un factor importante en el estudio de la tranferencia de temperaturas de calor debido
+          a que el calor se transferirá o se moveráde una lado a otro.
+        <br>
+        -El factor o cantidad de transferencia de calor depende de la diferencia de temperaturas en las sustancias, las 
+        distancias que las separa y el medio através del cual el calor habrá de ser transferido.
+        <br>
+        <div class="imagen__mantenimiento">
+          <img
+            style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+            src="../../../assets/imagenes/Definicion temperatura.png" alt="">
+        </div>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> La temperatura de un cuerpo nos sirve para medir la intensidad de calor que contiene, Utilizando la
+            siguiente escala:
+            <div class="imagen__mantenimiento">
+              <img
+                style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+                src="../../../assets/imagenes/Escala temperatura.png" alt="">
+            </div>
+
+      </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-heading7">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapseOne">
+            Principios de la transferencia del calor
+          </button>
+        </h2>
+        <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            -La energía calorífica no puede ser destruida.
+            <br>
+            -El calor siempre fluye de una substancia baja temperatura.
+            <br>
+            -El calor puede ser transferido de una substancia a otra.
+            <br>
+            Leyes de Termodinámica: Primera Ley
+            <div class="imagen__mantenimiento">
+              <img
+                style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+                src="../../../assets/imagenes/Calor primera ley.png" alt="">
+            </div>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"> Leyes de Termodinámica: Segunda Ley
+          </div>
+          </div>
+            <div class="imagen__mantenimiento">
+              <img
+                style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+                src="../../../assets/imagenes/Calor segunda ley.png" alt="">
+            </div>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"> Leyes de Termodinámica: Tercera Ley
+          </div>
+          </div>
+            <div class="imagen__mantenimiento">
+              <img
+                style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+                src="../../../assets/imagenes/Calor tercera ley.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading8">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapseOne">
+              Metodos de transferencia de calor
+            </button>
+          </h2>
+          <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-heading8" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> Conducción
+              <div class="imagen__mantenimiento">
+                <img
+                  style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+                  src="../../../assets/imagenes/Conduccion.png" alt="">
+              </div>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> Convección
+                  <div class="imagen__mantenimiento">
+                    <img
+                      style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+                      src="../../../assets/imagenes/Conveccion.png" alt="">
+                  </div>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> Radiacción
+                      <div class="imagen__mantenimiento">
+                        <img
+                          style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+                          src="../../../assets/imagenes/Radiaccion.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading9">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapseOne">
+                Principios básicos de refrigeración
+              </button>
+            </h2>
+            <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-heading9" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">-La complejidad de un sistema de es puramento mecánico. Un acondicionador de aire de 2 toneladas
+                y una de 100 toneladas deben de realizar las mismas funciones básicas para operar adecuadamente.
+                <br>
+                -La energia de calor transferida por euipo de aire acondicionado se mide en Btu's.
+                <br>
+                <div class="imagen__mantenimiento">
+                  <img
+                    style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+                    src="../../../assets/imagenes/La complejidad de un sistema.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading10">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Que es un Btu's
+                </button>
+              </h2>
+              <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-heading10" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">-La cantidad de color es comúnmente medida en Unidad térmica Británica(BTU) ó kilocaloría en el sistema internacional.
+                  <br>
+                  -Un BTU (Kcal) es la cantidad de calor necesaria aumentar un 1°F o 1°C la temperatura de una libra ó un kg de agua.
+                  <br>
+                  -El calor de un fosforo encendido es aproximado a un BTU.
+                  <br>
+                  <div class="imagen__mantenimiento">
+                    <img
+                      style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+                      src="../../../assets/imagenes/Btu's.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading11">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse11" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Calor especifico
+                  </button>
+                </h2>
+                <div id="flush-collapse11" class="accordion-collapse collapse" aria-labelledby="flush-heading11" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> El calor especifico es la cantidad de calor que requiere una Libra(1 gramo) de un cuerpo
+                    ó substancia para incrementar su temperatura en 1 grado Farenheint(1 grado centigrado).
+                    <br>
+                    <div class="imagen__mantenimiento">
+                      <img
+                        style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+                        src="../../../assets/imagenes/Calor especifica.png" alt="">
+                    </div>
+                    <div class="imagen__mantenimiento">
+                      <img
+                        style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+                        src="../../../assets/imagenes/Calor especifica2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-heading12">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse12" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Rapidez del flujo de calor
+                    </button>
+                  </h2>
+                  <div id="flush-collapse12" class="accordion-collapse collapse" aria-labelledby="flush-heading12" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Esta relación de flujo de calor es comunmente expresada en terminos BTU/HR.
+                      <br>
+                      La cantidad de calor, en Btu, que fluye de una sustancia a otra durante un períodon de 1 hora.
+                      <br>
+                      <div class="imagen__mantenimiento">
+                        <img
+                          style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+                          src="../../../assets/imagenes/Rapidez de flujo de calor.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading13">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse13" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Tonelada de regrigeraciòn
+                      </button>
+                    </h2>
+                    <div id="flush-collapse13" class="accordion-collapse collapse" aria-labelledby="flush-heading13" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Una tonelada de refrigeración es el efecto de derretir mil kilos de hielo (200 libras) en un período de 24 horas.
+                        <div class="imagen__mantenimiento">
+                          <img
+                            style="margin-top: 1rem; margin-bottom: 1rem;  padding-bottom: 1rem; display: block; margin: 0 auto;border-radius: 46px;"
+                            src="../../../assets/imagenes/Tonelada.png" alt="">
+                        </div>
+                        </div>
+                        </div>
+
+
+</div>
+
+        </div>
+
+
+ </div>
+</div>
+
+
+ <!--MODAL QUE SE LANZARA PARA LOS BOTONES-->
+ <ng-template #contenido let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">HVAC SYSTEMS SUPPORT</h4>
+    <button class="close btn btn-danger" aria-label="close" type="button" (click)="modal.dismiss()">
+      <span aria-hidden="true">X</span>
+    </button>
+  </div>
+  <div class="modal-body" style="display: flex; justify-content: center;">
+
+ 
+    
+      <img  [ngStyle]="{'scale':zoomLevel, 'width':tamano}" id="imagen-zoom" src="{{archivo}}" (click)="zoom()" alt="">
+  
+
+   
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="modal.close()">Ok!</button>
+  </div>
+</ng-template>
+
+ <!--MODAL QUE SE LANZARA PARApdf seleccionado-->
+ <ng-template #contenidoPdfSeleccionado let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">HVAC SYSTEMS SUPPORT</h4>
+    <button class="close btn btn-danger" aria-label="close" type="button" (click)="modal.dismiss()">
+      <span aria-hidden="true">X</span>
+    </button>
+  </div>
+  <div class="modal-body" style="display: flex; justify-content: center;">
+    <div class="row" style="width: 100%; height: 100%;">
+      <div class="col-12">
+        <div class="quality-select">
+          <form action="#">
+            <div class="input-counter" style="text-align:center;">
+              <button class="zoomPdf" (click)="menosZoom()">-</button>
+              Zoom
+              <button class="zoomPdf" (click)="masZoom()">+</button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+  
+  <pdf-viewer
+  [src]="archivoPdfS"
+  [rotation]="0"
+  [original-size]="true"
+  [show-all]="true"
+  [fit-to-page]="true"
+  [zoom]="zoomPdf"
+  [zoom-scale]="'page-width'"
+  [stick-to-page]="false"
+  [render-text]="true"
+  [external-link-target]="'blank'"
+  [autoresize]="true"
+  [show-borders]="false"
+  
+  style="width: 100%; height: 600px;"
+></pdf-viewer>
+</div>
+  </div>
+  <div class="modal-footer">
+  
+    <button type="button" class="btn btn-success" (click)="modal.close()">Ok!</button>
+  </div>
+</ng-template>
+
+
+
+<ng-template #contenidoTablas let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">HVAC SYSTEMS SUPPORT</h4>
+    <button class="close btn btn-danger" aria-label="close" type="button" (click)="modal.dismiss()">
+      <span aria-hidden="true">X</span>
+    </button>
+  </div>
+  <div class="modal-body" style="display: flex; justify-content: center; overflow-y: auto; max-height: 400px;">
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Contenido</th>
+          
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+
+          <td>T S C 1 2 0 A 3 R G A 2 E  informaci&oacute;n general</td>
+          <td><button class="btn btn-warning"
+              (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/info_general.pdf')">Escoger</button>
+          </td>
+        </tr>
+
+        <tr>
+
+          <td>Descripción del Número de Modelo</td>
+          <td><button class="btn btn-warning"
+              (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/desc_num_modelo.pdf')">Escoger</button>
+          </td>
+        </tr>
+
+        <tr>
+
+          <td>Datos de Rendimiento</td>
+          <td><button class="btn btn-warning"
+              (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/dat_rendimiento.pdf')">Escoger</button>
+          </td>
+        </tr>
+
+        <tr>
+
+          <td>Rendimiento del ventilador del evaporador</td>
+          <td><button class="btn btn-warning"
+              (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/rend_vent_evap.pdf')">Escoger</button>
+          </td>
+        </tr>
+        <tr>
+
+          <td>RPM del ventilador</td>
+          <td><button class="btn btn-warning"
+              (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/rpm_vent.pdf')">Escoger</button>
+          </td>
+        </tr>
+
+        <tr>
+
+          <td>Datos de Presión Estática</td>
+          <td><button class="btn btn-warning"
+              (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/dat_presion_estatic.pdf')">Escoger</button>
+          </td>
+        </tr>
+
+        <tr>
+
+          <td>Curvas de presión</td>
+          <td><button class="btn btn-warning"
+              (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/curvas_presion.pdf')">Escoger</button>
+          </td>
+        </tr>
+
+        
+        <tr>
+
+          <td>Curvas de presión R-410A</td>
+          <td><button class="btn btn-warning"
+              (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/curvas_r4.pdf')">Escoger</button>
+          </td>
+        </tr>
+
+
+        
+        
+
+      </tbody>
+    </table>
+
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="modal.close()">Ok!</button>
+  </div>
+</ng-template>
+
+<ng-template #ayudaPdf let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">HVAC SYSTEMS SUPPORT</h4>
+    <button class="close btn btn-danger" aria-label="close" type="button" (click)="modal.dismiss()">
+      <span aria-hidden="true">X</span>
+    </button>
+  </div>
+  <div class="modal-body" style="display: flex; justify-content: center; overflow-y: auto; max-height: 400px;">
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Contenido</th>
+          
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+
+          <td>Precedent 3 a 10 TR Bomba de Calor IOM (Español)</td>
+          <td><button class="btn btn-warning"
+              (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/manuales/Precedent 3 a 10 TR Bomba de Calor IOM (Español).pdf')">Escoger</button>
+          </td>
+        </tr>
+
+        <tr>
+
+          <td>Precedent 3 a 10 TR Frío Solo IOM (Español)</td>
+          <td><button class="btn btn-warning"
+              (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/manuales/Precedent 3 a 10 TR Frío Solo IOM (Español).pdf')">Escoger</button>
+          </td>
+        </tr>
+
+        <tr>
+
+          <td>Precedent 3 a 10 TR Gas-Eléctrico IOM (Español)</td>
+          <td><button class="btn btn-warning"
+              (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/manuales/Precedent 3 a 10 TR Gas-Eléctrico IOM (Español).pdf')">Escoger</button>
+          </td>
+        </tr>
+
+        <tr>
+
+          <td>Voyager 27.5 a 50 TR IOM (Español)</td>
+          <td><button class="btn btn-warning"
+              (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/manuales/Voyager 27.5 a 50 TR IOM (Español).pdf')">Escoger</button>
+          </td>
+        </tr>
+        <tr>
+
+         
+        
+        
+
+      </tbody>
+    </table>
+
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="modal.close()">Ok!</button>
+  </div>
+</ng-template>

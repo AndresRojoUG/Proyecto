@@ -1,12 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { BitacoraService } from '../../services/bitacora.service';
+
+import { Platform } from '@ionic/angular';
+import { AlertController } from '@ionic/angular';
+
+import * as FileSaver from 'file-saver';
+
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Router } from '@angular/router';
-import { Bitacora } from '../../../models/bitacora.model';
+import html2canvas from 'html2canvas';
+import { saveAs } from 'file-saver';
+
 import { ToastrService } from 'ngx-toastr';
 import { Location } from '@angular/common';
-import { Codigo } from '../../../models/codigo_error.model';
+import { url } from 'node:inspector';
+import {  Capacitor } from '@capacitor/core';
+
+
+import {Directory, Encoding, FilesystemDirectory, FilesystemEncoding } from '@capacitor/filesystem';
+
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
+import { Observable } from 'rxjs';
+
+
 
 
 @Component({
@@ -28,6 +45,7 @@ export class MiniSplitComponent implements OnInit {
   //MANTENIMIENTO MINISPLIT TIPO MURO ALTO
   formLogin: FormGroup;
   formDiagrama: FormGroup;
+  formDestello: FormGroup;
   start = 0;
   transform = 'scale(1)';
   posicionn = 0
@@ -58,7 +76,7 @@ export class MiniSplitComponent implements OnInit {
 
   fecha_modelo1 = true;
   botonMantenimiento = true;
-  
+  zoomPdf=1
   serpentin
 
 
@@ -118,17 +136,34 @@ export class MiniSplitComponent implements OnInit {
   archivoPdfS;
   loader=false;
   errorE6= true;
+  checkbox1 = false;
+  checkbox2 = false;
+  destelloEscogido=true;
+  codigoEscogido=true;
+  alertCtrl: any;
+  @ViewChild('table', {static: false}) table: ElementRef;
+
+  
   constructor(
     public formBuilder: FormBuilder,
-    private bitacoraService: BitacoraService,
+   
     private router: Router,
     private toast: ToastrService
     , private modal: NgbModal,
-    private location: Location
+    private location: Location,
+    private http: HttpClient,
+    private platform: Platform, private alertController: AlertController
     
   ) {
+   
     this.formCodigo=this.formBuilder.group({
       codigo:['']
+    })
+
+    this.formDestello=this.formBuilder.group({
+      ledRed:[''],
+      ledYellow:[''],
+      ledGreen:['']
     })
     
     this.formDiagrama=this.formBuilder.group({
@@ -183,6 +218,48 @@ export class MiniSplitComponent implements OnInit {
    
   }
 
+  
+
+  ionViewDidEnter() {
+    this.platform.backButton.subscribeWithPriority(9999, () => {
+      this.presentAlertConfirm();
+    });
+  }
+  
+  async presentAlertConfirm() {
+    const alert = await this.alertController.create({
+      header: 'Confirmación',
+      message: '¿Está seguro que desea cerrar la aplicación?',
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          cssClass: 'secondary',
+          handler: (blah) => {}
+        }, {
+          text: 'Salir',
+          handler: () => {
+            navigator['app'].backHistory();
+          }
+        }
+      ]
+    });
+  
+    await alert.present();
+  }
+
+  async download(fileName) {
+   
+  if(window.confirm('Quieres abrir el archivo en el navegador?')){
+  
+
+  let urls = fileName;
+  const fileNamess = urls.substring(urls.lastIndexOf('/') + 1);
+  window.open(`../../../assets/diagramas_errores/${fileNamess}`,'__blank');
+}
+  }
+
+ 
   
   mostrarMantenimiento() {
     this.mantenimiento = false
@@ -847,6 +924,410 @@ this.cerrarCodigos();
     }
   }
 
+
+  
+  buscarErrorLed2(){
+    let codigo=this.formDestello.value['ledGreen'].toUpperCase()
+    
+    
+    
+
+  
+    switch (codigo){
+  
+      case '1':
+        this.errorE6=true
+        this.errorE5=true
+        this.errorE4=true;
+        this.errorE2=true
+        this.errorE3=true
+        this.errorE1=false
+        this.errorF2=true
+        this.errorF4=true;
+        this.errorF1=true
+        this.errorF3=true;
+        this.errorF5=true;
+        this.errorH3=true;
+        this.errorH4=true;
+        this.errorH5=true;
+        this.errorC5=true;
+        this.errorH6=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+      case '2':
+        this.errorE6=true
+        this.errorE5=true
+        this.errorE4=true;
+        this.errorE2=false
+        this.errorE3=true
+        this.errorE1=true
+        this.errorF2=true;
+        this.errorH3=true;
+        this.errorH4=true;
+        this.errorH5=true;
+        this.errorF4=true;
+        this.errorF1=true
+        this.errorF3=true;
+        this.errorF5=true;
+        this.errorH6=true;
+        this.errorC5=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+     
+      case '4':
+        this.errorE6=true
+        this.errorE5=true
+        this.errorH3=true;
+        this.errorH4=true;
+        this.errorH5=true;
+        this.errorE4=false
+        this.errorE3=true
+        this.errorE2=true
+        this.errorE1=true
+        this.errorF2=true
+        this.errorF4=true;
+        this.errorF1=true
+        this.errorC5=true;
+        this.errorF3=true;
+        this.errorF5=true;
+        this.errorH6=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+      case '5':
+        this.errorE6=true
+        this.errorE5=false
+        this.errorE4=true
+        this.errorE3=true
+        this.errorE2=true
+        this.errorE1=true
+        this.errorF2=true
+        this.errorF4=true;
+        this.errorF1=true
+        this.errorF3=true;
+        this.errorF5=true;
+        this.errorH3=true;
+        this.errorH4=true;
+        this.errorH5=true;
+        this.errorH6=true;
+        this.errorC5=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+      case '6':
+        this.errorE6=false
+        this.errorE5=true
+        this.errorE4=true
+        this.errorE3=true
+        this.errorE2=true
+        this.errorE1=true
+        this.errorF2=true
+        this.errorF4=true;
+        this.errorF1=true
+        this.errorF3=true;
+        this.errorH3=true;
+        this.errorH4=true;
+        this.errorH5=true;
+        this.errorF5=true;
+        this.errorH6=true;
+        this.errorC5=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+     
+      default:
+        this.errorH3=true;
+        this.errorH4=true;
+        this.errorH5=true;
+        this.errorC5=true;
+        this.errorH6=true;
+        this.errorE6=true
+        this.errorE5=true
+        this.errorE4=true;
+        this.errorE1=true
+        this.errorE2=true
+        this.errorE3=true
+        this.errorF1=true;
+        this.errorF2=true;
+        this.errorF3=true;
+        this.errorF4=true;
+        this.errorF5=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+    }
+  }
+
+
+
+  
+  buscarErrorLed(){
+    let codigo;
+
+
+    if(this.formDestello.value['ledRed']!= ''){
+      codigo=this.formDestello.value['ledRed']+'R'
+    }else if(this.formDestello.value['ledYellow']!= ''){
+      codigo=this.formDestello.value['ledYellow']+'Y'
+    }else if(this.formDestello.value['ledGreen']!= ''|| this.formDestello.value['ledGreen']=='OFF'  ){
+      codigo=this.formDestello.value['ledGreen']+'G'
+    }
+    console.log(codigo)
+
+  
+    switch (codigo){
+     
+      case '5R':
+        this.errorE6=true
+        this.errorE5=true
+        this.errorE4=true;
+        this.errorE2=true
+        this.errorE3=true
+        this.errorF3=false;
+        this.errorF1=true
+        this.errorF2=true
+        this.errorF4=true;
+        this.errorH3=true;
+        this.errorH4=true;
+        this.errorH5=true;
+        this.errorF5=true;
+        this.errorE1=true
+        this.errorH6=true;
+        this.errorC5=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+      case '6R':
+        this.errorE6=true
+        this.errorE5=true
+        this.errorE4=true;
+        this.errorE2=true
+        this.errorE3=true
+        this.errorF4=false;
+        this.errorF3=true;
+        this.errorH6=true;
+        this.errorH3=true;
+        this.errorH4=true;
+        this.errorH5=true;
+        this.errorF1=true
+        this.errorF2=true
+        this.errorF5=true;
+        this.errorE1=true
+        this.errorC5=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+      case '7Y':
+        this.errorE6=true
+        this.errorE5=true
+        this.errorE4=true;
+        this.errorE2=true
+        this.errorE3=true
+        this.errorF5=false;
+        this.errorF4=true;
+        this.errorF3=true;
+        this.errorF1=true
+        this.errorH3=true;
+        this.errorH4=true;
+        this.errorH5=true;
+        this.errorF2=true
+        this.errorH6=true;
+        this.errorE1=true
+         this.errorC5=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+     
+      case '3Y':
+        this.errorE6=true
+        this.errorE5=true
+        this.errorE4=true;
+        this.errorE2=false
+        this.errorE3=true
+        this.errorE1=true
+        this.errorF2=true;
+        this.errorH3=true;
+        this.errorH4=true;
+        this.errorH5=true;
+        this.errorF4=true;
+        this.errorF1=true
+        this.errorF3=true;
+        this.errorF5=true;
+        this.errorH6=true;
+        this.errorC5=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+      
+      case '7Y':
+        this.errorE6=true
+        this.errorE5=true
+        this.errorH3=true;
+        this.errorH4=true;
+        this.errorH5=true;
+        this.errorE4=false
+        this.errorE3=true
+        this.errorE2=true
+        this.errorE1=true
+        this.errorF2=true
+        this.errorF4=true;
+        this.errorF1=true
+        this.errorC5=true;
+        this.errorF3=true;
+        this.errorF5=true;
+        this.errorH6=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+      case '5Y':
+        this.errorE6=true
+        this.errorE5=false
+        this.errorE4=true
+        this.errorE3=true
+        this.errorE2=true
+        this.errorE1=true
+        this.errorF2=true
+        this.errorF4=true;
+        this.errorF1=true
+        this.errorF3=true;
+        this.errorF5=true;
+        this.errorH3=true;
+        this.errorH4=true;
+        this.errorH5=true;
+        this.errorH6=true;
+        this.errorC5=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+      case 'OFfG':
+        this.errorE6=false
+        this.errorE5=true
+        this.errorE4=true
+        this.errorE3=true
+        this.errorE2=true
+        this.errorE1=true
+        this.errorF2=true
+        this.errorF4=true;
+        this.errorF1=true
+        this.errorF3=true;
+        this.errorH3=true;
+        this.errorH4=true;
+        this.errorH5=true;
+        this.errorF5=true;
+        this.errorH6=true;
+        this.errorC5=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+     
+      case '8Y':
+        this.errorH3=false;
+        this.errorH4=true;
+        this.errorH5=true;
+        this.errorC5=true;
+        this.errorH6=true;
+        this.errorE6=true
+        this.errorE5=true
+        this.errorE4=true
+        this.errorE3=true
+        this.errorE2=true
+        this.errorE1=true
+        this.errorF2=true
+        this.errorF4=true;
+        this.errorF1=true
+        this.errorF3=true;
+        this.errorF5=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+      case '9R':
+        this.errorH3=false;
+        this.errorH4=true;
+        this.errorH5=true;
+        this.errorC5=true;
+        this.errorH6=true;
+        this.errorE6=true
+        this.errorE5=true
+        this.errorE4=true
+        this.errorE3=true
+        this.errorE2=true
+        this.errorE1=true
+        this.errorF2=true
+        this.errorF4=true;
+        this.errorF1=true
+        this.errorF3=true;
+        this.errorF5=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+      case '6Y':
+        this.errorH3=true;
+        this.errorH4=false;
+        this.errorH5=true;
+        this.errorC5=true;
+        this.errorH6=true;
+        this.errorE6=true
+        this.errorE5=true
+        this.errorE4=true
+        this.errorE3=true
+        this.errorE2=true
+        this.errorE1=true
+        this.errorF2=true
+        this.errorF4=true;
+        this.errorF1=true
+        this.errorF3=true;
+        this.errorF5=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+      case '4Y':
+        this.errorH3=true;
+        this.errorH4=true;
+        this.errorH5=false;
+        this.errorC5=true;
+        this.errorH6=true;
+        this.errorE6=true
+        this.errorE5=true
+        this.errorE4=true
+        this.errorE3=true
+        this.errorE2=true
+        this.errorE1=true
+        this.errorF2=true
+        this.errorF4=true;
+        this.errorF1=true
+        this.errorF3=true;
+        this.errorF5=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+
+      default:
+        this.errorH3=true;
+        this.errorH4=true;
+        this.errorH5=true;
+        this.errorC5=true;
+        this.errorH6=true;
+        this.errorE6=true
+        this.errorE5=true
+        this.errorE4=true;
+        this.errorE1=true
+        this.errorE2=true
+        this.errorE3=true
+        this.errorF1=true;
+        this.errorF2=true;
+        this.errorF3=true;
+        this.errorF4=true;
+        this.errorF5=true;
+        this.formDiagrama.reset()
+        this.mostrarPasoSiguiuente('otro')
+      break;
+    }
+  }
+
+
+
   cerrarCodigos(){
     this.formCodigo.value['codigo']='codigon'
     this.buscarError();
@@ -1002,4 +1483,29 @@ this.cerrarCodigos();
     this.modal.open(contenidoPdfSeleccionado, { centered: true, size: 'xl', animation: true, backdrop: true })
   }
 
+
+  // Función para desmarcar checkbox2 al hacer clic en checkbox1
+  onCheckbox1Click() {
+   
+      this.checkbox2 = false;
+      this.destelloEscogido=true;
+      this.codigoEscogido=false;
+
+    
+  }
+
+  // Función para desmarcar checkbox1 al hacer clic en checkbox2
+  onCheckbox2Click() {
+   
+      this.checkbox1 = false;
+      this.destelloEscogido=false;
+      this.codigoEscogido=true;
+    
+  }
+menosZoom(){
+  this.zoomPdf -=0.5;
+}
+masZoom(){
+  this.zoomPdf +=0.5;
+}
 }

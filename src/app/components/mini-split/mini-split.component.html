@@ -13,43 +13,57 @@
 </div>
 <div class="contenedor">
 <div class="menu">
-  <div class="nav_responsive  ">
+  
+  <div class="nav_responsive">
+    <div class="row">
+    <div class="col-4 col-md-4"  style="display: flex;
+    justify-content: center;
+    align-items: center;">
+      <button routerLink="/home" class="css-button css-button-sliding-to-right css-button-sliding-to-left--sky">Regresar</button>
+          
+    </div>
+    <div class="col-4 col-md-4" >
+      <nav class="navbar">
 
-    
-    
-    <nav class="navbar">
-
-      <div class="row">
-        <div class="col-6" style="display:flex; justify-content: center; align-items: center;">
+      
        
-            <li style="list-style: none;" class="nav-item dropdown liMenu-no"><a class="nav-link dropdown-toggle" href="#" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false"><img class="menu_hamburguesa" src="../../../assets/imagenes/menu-button.svg" alt=""></a>
-              <ul class="dropdown-menu" style="background-color: rgb(9, 8, 63);">
-                <li><a calss="dropdown-item">   <h4 class="animate__animated animate__bounce"> Tipo de servicio</h4></a></li>
-          <li><a class="dropdown-item" (click)="manuales(contenidoPdf)">Mostrar manuales</a></li>
-          <li class="liMenu dropdown-item"><a (click)="mostrarDiagnostico()">Diagnostic&oacute;n</a></li>
-          <li class="liMenu dropdown-item"><a (click)="mostrarMantenimiento()">Mantenimiento</a></li>
-          <li class="liMenu dropdown-item"><a (click)="mostrarReparacion()">Reparaci&oacute;n</a></li>
-          <li class="liMenu dropdown-item"><a href="#">Servicios</a></li>
-          <li class="liMenu dropdown-item"><a href="../home/#company">Contacto</a></li>
+         
+              <li style="list-style: none;" class="nav-item dropdown liMenu-no"><a class="nav-link dropdown-toggle" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false"><img class="menu_hamburguesa" src="../../../assets/imagenes/menu-button.svg" alt=""></a>
+                <ul class="dropdown-menu" style="background-color: rgb(9, 8, 63);">
+                  <li><a calss="dropdown-item">   <h4 class="animate__animated animate__bounce"> Tipo de servicio</h4></a></li>
+            <li><a class="dropdown-item" (click)="manuales(contenidoPdf)">Mostrar manuales</a></li>
+            <li class="liMenu dropdown-item"><a (click)="mostrarDiagnostico()">Diagnostic&oacute;</a></li>
+            <li class="liMenu dropdown-item"><a (click)="mostrarMantenimiento()">Mantenimiento</a></li>
         
-      
-      
-              </ul>
-            </li>
+            <li class="liMenu dropdown-item"><a routerLink="/home">Servicios</a></li>
+            <li class="liMenu dropdown-item"><a href="../home/#company">Contacto</a></li>
+          
+        
+        
+                </ul>
+              </li>
+       
+         
+         
+  
+       
      
-        </div>
-        <div class="col-6" style="display:flex; justify-content: center; align-items: center;">
+        
+        </nav>
+  
 
+    </div>
+    <div class="col-4 col-md-4" style="display: flex;
+    justify-content: center;
+    align-items: center;">
+          
+      <img src="../../../assets/imagenes/hvac.png" alt="Bootstrap" width="10" height="17">
      
-        <a class="navbar-brand" >
-          <img src="../../../assets/imagenes/hvac.png" alt="Bootstrap" width="10" height="17">
-        </a>
-      </div>
       
-      </div>
-      </nav>
-
+    </div>
+  </div>
+   
   </div>
 
   <div class="no_responsive">
@@ -68,10 +82,10 @@
             <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
           </svg> Tipo de servicio</h4>
         <ul class="menuUl">
-          <li class="liMenu"><a (click)="mostrarDiagnostico()">Diagnostic&oacute;n</a></li>
+          <li class="liMenu"><a (click)="mostrarDiagnostico()">Diagnostic&oacute;</a></li>
           <li class="liMenu"><a (click)="mostrarMantenimiento()">Mantenimiento</a></li>
-          <li class="liMenu"><a (click)="mostrarReparacion()">Reparaci&oacute;n</a></li>
-          <li class="liMenu"><a href="#">Servicios</a></li>
+        
+          <li class="liMenu"><a routerLink="/home" routerLinkActive="router-link-active"  >Servicios</a></li>
           <li class="liMenu"><a href="../home/#company">Contacto</a></li>
           <li class="nav-item dropdown liMenu"><a class="nav-link dropdown-toggle" href="#" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">Ayuda</a>
@@ -148,23 +162,7 @@
                           </div>
                         </div>
 
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input style="margin-bottom: 0;" class="btn btn-warning"
-                              (click)="paso1('R-410a_split_system.PNG')" type="button" value="archivo">
-
-                          </div>
-
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning" (click)="paso1('R-410a_split_system.PNG')" type="button"
-                              value="archivo">
-                          </div>
-
-                        </div>
+                  
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" id="paso1check" type="checkbox" formControlName="paso1check"
@@ -201,22 +199,7 @@
                           </div>
                         </div>
 
-                        <div class="col-md-2">
-                          <div class="form-check ">
-                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
-                              value="archivo">
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-                          </div>
-                        </div>
+                       
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso2check"
@@ -246,25 +229,7 @@
 
                           </div>
                         </div>
-                        <div class="col-md-2">
-
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
-                              value="lanzar modal XL">
-
-
-                          </div>
-                        </div>
+                       
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso3check"
@@ -308,25 +273,7 @@
 
                           </div>
                         </div>
-                        <div class="col-md-2">
-
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
-                              value="lanzar modal XL">
-
-
-                          </div>
-                        </div>
+                      
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso4check"
@@ -366,25 +313,7 @@
 
                           </div>
                         </div>
-                        <div class="col-md-2">
-
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
-                              value="lanzar modal XL">
-
-
-                          </div>
-                        </div>
+                       
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso5check"
@@ -413,25 +342,7 @@
 
                           </div>
                         </div>
-                        <div class="col-md-2">
-
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
-                              value="lanzar modal XL">
-
-
-                          </div>
-                        </div>
+                      
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso6check"
@@ -459,25 +370,7 @@
 
                           </div>
                         </div>
-                        <div class="col-md-2">
-
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
-                              value="lanzar modal XL">
-
-
-                          </div>
-                        </div>
+                      
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso7check"
@@ -503,25 +396,7 @@
 
                           </div>
                         </div>
-                        <div class="col-md-2">
-
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
-                              value="lanzar modal XL">
-
-
-                          </div>
-                        </div>
+                      
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso8check"
@@ -550,25 +425,7 @@
 
                           </div>
                         </div>
-                        <div class="col-md-2">
-
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
-                              value="lanzar modal XL">
-
-
-                          </div>
-                        </div>
+                      
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso9check"
@@ -597,25 +454,7 @@
 
                           </div>
                         </div>
-                        <div class="col-md-2">
-
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
-                              value="lanzar modal XL">
-
-
-                          </div>
-                        </div>
+                       
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso10check"
@@ -642,25 +481,7 @@
 
                           </div>
                         </div>
-                        <div class="col-md-2">
-
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
-                              value="lanzar modal XL">
-
-
-                          </div>
-                        </div>
+                       
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso11check"
@@ -686,25 +507,7 @@
 
                           </div>
                         </div>
-                        <div class="col-md-2">
-
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
-                              value="lanzar modal XL">
-
-
-                          </div>
-                        </div>
+                      
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso12check"
@@ -730,25 +533,7 @@
 
                           </div>
                         </div>
-                        <div class="col-md-2">
-
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning" (click)="openXL(contenido,'R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/mini.jpg')" type="button"
-                              value="lanzar modal XL">
-
-
-                          </div>
-                        </div>
+                       
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso13check"
@@ -781,21 +566,7 @@
                           </div>
                         </div>
 
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input style="margin-bottom: 0;" class="btn btn-warning" type="button" value="archivo">
-
-                          </div>
-
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning" type="button" value="archivo">
-                          </div>
-
-                        </div>
+                      
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" id="paso1Unidadescheck" type="checkbox"
@@ -835,22 +606,7 @@
                           </div>
                         </div>
 
-                        <div class="col-md-2">
-                          <div class="form-check ">
-                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
-                              value="archivo">
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-                          </div>
-                        </div>
+                        
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso15check"
@@ -882,22 +638,7 @@
                           </div>
                         </div>
 
-                        <div class="col-md-2">
-                          <div class="form-check ">
-                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
-                              value="archivo">
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-                          </div>
-                        </div>
+                       
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso16check"
@@ -929,22 +670,7 @@
                           </div>
                         </div>
 
-                        <div class="col-md-2">
-                          <div class="form-check ">
-                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
-                              value="archivo">
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-                          </div>
-                        </div>
+                       
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso18check"
@@ -977,22 +703,7 @@
                           </div>
                         </div>
 
-                        <div class="col-md-2">
-                          <div class="form-check ">
-                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
-                              value="archivo">
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-                          </div>
-                        </div>
+                       
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso19check"
@@ -1025,22 +736,7 @@
                           </div>
                         </div>
 
-                        <div class="col-md-2">
-                          <div class="form-check ">
-                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
-                              value="archivo">
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-                          </div>
-                        </div>
+                       
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso20check"
@@ -1071,22 +767,7 @@
                           </div>
                         </div>
 
-                        <div class="col-md-2">
-                          <div class="form-check ">
-                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
-                              value="archivo">
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-                          </div>
-                        </div>
+                        
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso21check"
@@ -1120,22 +801,7 @@
                           </div>
                         </div>
 
-                        <div class="col-md-2">
-                          <div class="form-check ">
-                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
-                              value="archivo">
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-                          </div>
-                        </div>
+                        
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso22check"
@@ -1168,22 +834,7 @@
                           </div>
                         </div>
 
-                        <div class="col-md-2">
-                          <div class="form-check ">
-                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
-                              value="archivo">
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-                          </div>
-                        </div>
+                     
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso23check"
@@ -1216,22 +867,7 @@
                           </div>
                         </div>
 
-                        <div class="col-md-2">
-                          <div class="form-check ">
-                            <!--IMAGEN QUE APARECERA DESPUES DE PASAR EL CURSOR-->
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/imagenes/hvac.png')" type="button"
-                              value="archivo">
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-check ">
-
-                            <input class="btn btn-warning"
-                              (click)="openXL(contenido,'../../../assets/equipos/R-410a_split_system.PNG')"
-                              type="button" value="archivo">
-                          </div>
-                        </div>
+                      
                         <div class="col-md-2">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" formControlName="paso24check"
@@ -1249,33 +885,7 @@
                     </div>
 
 
-                    <div class="fecha_modelo1" [hidden]="fecha_modelo1">
-                      <h3 style="text-align: center;">fecha modelo 1</h3>
-                      <div class="row" style="display: flex;  align-items: center;">
-                        <div class="col-md-6">
-                          <div class="form-check">
-                            <label class="form-check-label" for="exampleRadio1">
-                              Fecha
-                            </label>
-                            <input style="width: 130px;" id="exampleRadio1" type="date" class="form-control"
-                              formControlName="fecha" required>
-
-                          </div>
-                        </div>
-
-                        <div class="col-md-2">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox"
-                              (click)="mostrarSiguiente('botonMantenimiento')" name="exampleRadios" id="exampleRadio2"
-                              value="option2" required>
-                            <label class="form-check-label" for="exampleRadio2">
-                              Hecho
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
+                 
 
 
 
@@ -1292,9 +902,7 @@
 
                   </div>
 
-                  <input hidden="true" type="number" [value]="posicionn" formControlName="posicion">
-
-                  <button [hidden]="botonMantenimiento" type="submit" class="btn btn-enviar">Enviar</button>
+            
                 </form>
 
 
@@ -1302,59 +910,10 @@
             </div>
 
           </div>
-          <!--
+        
 
 
-           <div class="containe_form">
-            <h2 style="text-align: center;margin-top: 1rem; ">BITACORA</h2>
-            <div s class="tabla__mantenimiento">
-
-              <table class="table table-hover table-primary">
-                <thead>
-
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody>
-
-                  <tr *ngFor="let bit of bitacora | slice:start:start+5">
-                    <td>id peroo {{ bit.posicion }}</td>
-  
-                    <td>{{ bit.fecha | date}}</td>
-
-                  </tr>
-
-
-                </tbody>
-              </table>
-
-
-
-            </div>
-            
-            <nav aria-label="Page navigation example">
-              <ul class="pagination">
-                <li class="page-item"><a class="page-link" (click)="paginatioNext('regresa')">Previous</a></li>
-                <li class="page-item"><a class="page-link">{{ pagina}}</a></li>
-                <li class="page-item"><a class="page-link" (click)="paginatioNext('siguiente')">Next</a></li>
-              </ul>
-            </nav>
-
-          </div>
-         -->
+        
         </div>
 
       </div>
@@ -1483,29 +1042,96 @@
 
     <!---->
 
-    <!-- APARTADO PARA LA INSTALACION-->
+    <!-- APARTADO PARA DIAGNOSTICO-->
 
     <div class="contenedor_diagnostico" [hidden]="diagnostico">
       <h1 style="justify-content: center; text-align: center; margin-top: 2rem;">DIAGNOSTICO</h1>
       <h2 class="h2">LED parpadeante de la unidad interior/exterior y juicio principal</h2>
 
-      <h2 class="h2">Inserte el codigo de error que se le muestra</h2>
-      <div class="form_codigo" style="margin-top: 2rem;">
-        <form [formGroup]="formCodigo">
+      <div class="seleccioncod">
+      <h1>SELECCIONE SI ES POR CODIGO O POR DESTELLO DE LED</h1>
+
+      <div class="row">
+      <div class="col-2">
+        &nbsp;
+      </div>
+      <div class="col-4">
+        <div class="form-check">
+        <label for="destello" class="form-label" style="font-weight: bold; text-align: center;">Codigo</label>
+        <input [(ngModel)]="checkbox1" (change)="checkbox2 = !checkbox1"   (click)="onCheckbox1Click()" type="checkbox" class="form-check-input" id="destellosLed">
+      </div>
+      </div>
+      <div class="col-4">
+        <div class="form-check">
+        <label for="codigoErrorP" class="form-label" style="font-weight: bold; text-align: center;">Destello</label>
+        <input [(ngModel)]="checkbox2" (change)="checkbox1 = !checkbox2" (click)="onCheckbox2Click()" type="checkbox" class="form-check-input" id="codigoErrorP">
+      </div>
+      </div>
+      <div class="col-2">
+        &nbsp;
+      </div>
+    </div>
+      </div>
+
+      <div class="destelloEscogido" [hidden]="destelloEscogido">
+        <h2 class="h2">Inserte cuantos destellos tiene en el led correspondiente</h2>
+      <div class="form_codigo-destello" style="margin-top: 2rem;">
+        <form [formGroup]="formDestello">
           <div class="mb-3">
-            <label for="codigoError" class="form-label" style="font-weight: bold; text-align: center;">Codigo</label>
-            <input autocomplete="off" type="text" class="form-control" id="codigoError"
-              onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"
-              aria-describedby="codigoError" formControlName="codigo">
+            <label for="ledRed" class="form-label" style="font-weight: bold; text-align: center;">Led Rojo</label>
+            <input autocomplete="off" type="text" class="form-control" id="ledRed" formControlName="ledRed">
 
           </div>
-          <button (click)="buscarError()" type="submit" class="btn btn-primary">Buscar</button>
+          <div class="mb-3">
+            <label for="ledYellow" class="form-label" style="font-weight: bold; text-align: center;">Led Amarillo</label>
+            <input autocomplete="off" type="text" class="form-control" id="ledYellow" formControlName="ledYellow">
+
+          </div>
+          <div class="mb-3">
+            <label for="ledGreen" class="form-label" style="font-weight: bold; text-align: center;">Led Verde</label>
+            <input  onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" autocomplete="off" type="text" class="form-control" id="ledGreen" formControlName="ledGreen">
+
+          </div>
+          <button (click)="buscarErrorLed()" type="submit" class="btn btn-primary">Buscar</button>
         </form>
       </div>
 
+
+      <h2 class="h2">Metodo De pantalla unidad interior</h2>
+      <div class="form_codigo-destello" style="margin-top: 2rem;">
+        <form [formGroup]="formDestello">
+          
+          <div class="mb-3">
+            <label for="ledGreen" class="form-label" style="font-weight: bold; text-align: center;">Destellos led</label>
+            <input  onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" autocomplete="off" type="text" class="form-control" id="ledGreen" formControlName="ledGreen">
+
+          </div>
+          <button (click)="buscarErrorLed2()" type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+      </div>
+      </div>
+
+      <div class="codigoEscogido" [hidden]="codigoEscogido">
+        <h2 class="h2">Inserte el codigo de error que se le muestra</h2>
+        <div class="form_codigo" style="margin-top: 2rem;">
+          <form [formGroup]="formCodigo">
+            <div class="mb-3">
+              <label for="codigoError" class="form-label" style="font-weight: bold; text-align: center;">Codigo</label>
+              <input autocomplete="off" type="text" class="form-control" id="codigoError"
+                onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"
+                aria-describedby="codigoError" formControlName="codigo">
+  
+            </div>
+            <button (click)="buscarError()" type="submit" class="btn btn-primary">Buscar</button>
+          </form>
+        </div>
+      </div>
+
+     
+
       <div class="erroresF1" style="margin-top: 3rem;" [hidden]="errorF1">
         <div class="herramientas">
-          <button (click)="openXL(contenido,'../../../assets/imagenes/herramientasF.PNG')"
+          <button (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/herramientasF.pdf')"
             class="btn btn-success">Herramientas necesarias</button>
         </div>
 
@@ -1524,7 +1150,7 @@
           <div class="imagf1">
             <img width="400px" height="300px" src="../../../assets/imagenes/sENSOR_TEMP_INTERIOR.PNG" alt="">
 
-            <button (click)="openXL(contenido,'../../../assets/imagenes/tablaF1.PNG')" class="btn btn-success"
+            <button (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/tablaF1.pdf')" class="btn btn-success"
               class="btn btn-success">valores de resistencia</button>
           </div>
         </div>
@@ -1532,7 +1158,7 @@
 
       <div class="erroresF2" style="margin-top: 3rem;" [hidden]="errorF2">
         <div class="herramientas">
-          <button (click)="openXL(contenido,'../../../assets/imagenes/herramientasF.PNG')"
+          <button (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/herramientasF.pdf')"
             class="btn btn-success">Herramientas necesarias</button>
         </div>
 
@@ -1552,7 +1178,7 @@
           <div class="imagf1">
             <img width="400px" height="300px" src="../../../assets/imagenes/errorF2.PNG" alt="">
 
-            <button (click)="openXL(contenido,'../../../assets/imagenes/tablaF2.PNG')" class="btn btn-success"
+            <button (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/tablaF2.pdf')" class="btn btn-success"
               class="btn btn-success">valores de resistencia</button>
           </div>
         </div>
@@ -2562,7 +2188,7 @@
 
       <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorF3">
         <div class="herramientas">
-          <button (click)="openXL(contenido,'../../../assets/imagenes/herramientasF.PNG')"
+          <button (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/herramientasF.pdf')"
             class="btn btn-success">Herramientas necesarias</button>
         </div>
 
@@ -2582,7 +2208,7 @@
           <div class="imagf1">
             <img width="400px" height="300px" src="../../../assets/imagenes/errorF3.PNG" alt="">
 
-            <button (click)="openXL(contenido,'../../../assets/imagenes/tablaF3.PNG')" class="btn btn-success"
+            <button (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/tablaF3.pdf')" class="btn btn-success"
               class="btn btn-success">valores de resistencia</button>
           </div>
         </div>
@@ -2590,7 +2216,7 @@
 
       <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorF4">
         <div class="herramientas">
-          <button (click)="openXL(contenido,'../../../assets/imagenes/herramientasF.PNG')"
+          <button (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/herramientasF.pdf')"
             class="btn btn-success">Herramientas necesarias</button>
         </div>
 
@@ -2610,7 +2236,7 @@
           <div class="imagf1">
             <img width="400px" height="300px" src="../../../assets/imagenes/errorF4.PNG" alt="">
 
-            <button (click)="openXL(contenido,'../../../assets/imagenes/tablaF4.PNG')" class="btn btn-success"
+            <button (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/tablaF4.pdf')" class="btn btn-success"
               class="btn btn-success">valores de resistencia</button>
           </div>
         </div>
@@ -2618,7 +2244,7 @@
 
       <div class="erroresF3" style="margin-top: 3rem;" [hidden]="errorF5">
         <div class="herramientas">
-          <button (click)="openXL(contenido,'../../../assets/imagenes/herramientasF.PNG')"
+          <button (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/herramientasF.pdf')"
             class="btn btn-success">Herramientas necesarias</button>
         </div>
 
@@ -2638,7 +2264,7 @@
           <div class="imagf1">
             <img width="400px" height="300px" src="../../../assets/imagenes/errorF5.PNG" alt="">
 
-            <button (click)="openXL(contenido,'../../../assets/imagenes/tablaF5.PNG')" class="btn btn-success"
+            <button (click)="archivoPdf(contenidoPdfSeleccionado,'../../../assets/imagenes/tablaF5.pdf')" class="btn btn-success"
               class="btn btn-success">valores de resistencia</button>
           </div>
         </div>
@@ -3323,13 +2949,28 @@ voltaje</h2>
         </button>
       </div>
       <div class="modal-body" style="display: flex; justify-content: center;">
+
+        <div class="row" style="width: 100%; height: 100%;">
+            <div class="col-12">
+              <div class="quality-select">
+                <form action="#">
+                  <div class="input-counter" style="text-align:center;">
+                    <button class="zoomPdf" (click)="menosZoom()">-</button>
+                    Zoom
+                    <button class="zoomPdf" (click)="masZoom()">+</button>
+
+                  </div>
+                </form>
+              </div>
+            </div>
+        
         <pdf-viewer
         [src]="archivoPdfS"
         [rotation]="0"
         [original-size]="true"
         [show-all]="true"
         [fit-to-page]="true"
-        [zoom]="1"
+        [zoom]="zoomPdf"
         [zoom-scale]="'page-width'"
         [stick-to-page]="false"
         [render-text]="true"
@@ -3339,6 +2980,7 @@ voltaje</h2>
         
         style="width: 100%; height: 600px;"
       ></pdf-viewer>
+    </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-success" (click)="modal.close()">Ok!</button>

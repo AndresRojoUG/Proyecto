@@ -2,17 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 
-///importamos nuestros componentes
-
-import { canActivate, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
 
 
-import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { HomeComponent } from './components/home/home.component';
 
 
 import { MiniSplitComponent } from './components/mini-split/mini-split.component';
+import { PrecedentVoyagerComponent } from './components/precedent-voyager/precedent-voyager.component';
 
 
 
@@ -31,6 +28,11 @@ const routes: Routes = [
   { 
   path: 'R410asplit',
   component:MiniSplitComponent,
+ 
+},
+{ 
+  path: 'precedent',
+  component:PrecedentVoyagerComponent,
  
 },
  

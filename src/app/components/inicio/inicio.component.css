@@ -134,13 +134,19 @@
   }
   .tarjetas_presentacion{
     margin-top: 0 !important;
-        /* justify-content: center; */
-        
-        /* display: flex; */
-        align-items: center;
-        justify-items: center;
-        align-items: center;
-        padding-left: 2rem;
+    align-items: center !important;
+    display: flex;
+    justify-items: center;
+    /* align-items: center; */
+    /* padding-left: 2rem; */
+    justify-content: center;
+    align-content: center;
+  }
+  .centrar_t{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
   }
 }
 .home {
